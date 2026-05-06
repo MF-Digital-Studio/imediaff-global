@@ -1,10 +1,9 @@
-@import 'tailwindcss';
+﻿@import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Pitch black base */
   --background: oklch(0 0 0);
   --foreground: oklch(0.97 0 0);
 
@@ -14,9 +13,8 @@
   --popover: oklch(0.04 0 0);
   --popover-foreground: oklch(0.97 0 0);
 
-  /* Electric cyan accent */
-  --primary: oklch(0.86 0.18 210);
-  --primary-foreground: oklch(0 0 0);
+  --primary: #fd8514;
+  --primary-foreground: #000000;
 
   --secondary: oklch(0.14 0 0);
   --secondary-foreground: oklch(0.97 0 0);
@@ -24,32 +22,32 @@
   --muted: oklch(0.12 0 0);
   --muted-foreground: oklch(0.62 0 0);
 
-  --accent: oklch(0.86 0.18 210);
-  --accent-foreground: oklch(0 0 0);
+  --accent: #e515ab;
+  --accent-foreground: #ffffff;
 
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.97 0 0);
 
   --border: oklch(0.18 0 0);
   --input: oklch(0.18 0 0);
-  --ring: oklch(0.86 0.18 210);
+  --ring: #ffbd1e;
 
-  --chart-1: oklch(0.86 0.18 210);
-  --chart-2: oklch(0.7 0.14 210);
-  --chart-3: oklch(0.5 0.1 210);
-  --chart-4: oklch(0.3 0 0);
+  --chart-1: #e515ab;
+  --chart-2: #fa1702;
+  --chart-3: #fd8514;
+  --chart-4: #ffbd1e;
   --chart-5: oklch(0.97 0 0);
 
   --radius: 0rem;
 
   --sidebar: oklch(0.04 0 0);
   --sidebar-foreground: oklch(0.97 0 0);
-  --sidebar-primary: oklch(0.86 0.18 210);
-  --sidebar-primary-foreground: oklch(0 0 0);
+  --sidebar-primary: #fd8514;
+  --sidebar-primary-foreground: #000000;
   --sidebar-accent: oklch(0.14 0 0);
   --sidebar-accent-foreground: oklch(0.97 0 0);
   --sidebar-border: oklch(0.18 0 0);
-  --sidebar-ring: oklch(0.86 0.18 210);
+  --sidebar-ring: #ffbd1e;
 }
 
 .dark {
@@ -59,38 +57,38 @@
   --card-foreground: oklch(0.97 0 0);
   --popover: oklch(0.04 0 0);
   --popover-foreground: oklch(0.97 0 0);
-  --primary: oklch(0.86 0.18 210);
-  --primary-foreground: oklch(0 0 0);
+  --primary: #fd8514;
+  --primary-foreground: #000000;
   --secondary: oklch(0.14 0 0);
   --secondary-foreground: oklch(0.97 0 0);
   --muted: oklch(0.12 0 0);
   --muted-foreground: oklch(0.62 0 0);
-  --accent: oklch(0.86 0.18 210);
-  --accent-foreground: oklch(0 0 0);
+  --accent: #e515ab;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.97 0 0);
   --border: oklch(0.18 0 0);
   --input: oklch(0.18 0 0);
-  --ring: oklch(0.86 0.18 210);
-  --chart-1: oklch(0.86 0.18 210);
-  --chart-2: oklch(0.7 0.14 210);
-  --chart-3: oklch(0.5 0.1 210);
-  --chart-4: oklch(0.3 0 0);
+  --ring: #ffbd1e;
+  --chart-1: #e515ab;
+  --chart-2: #fa1702;
+  --chart-3: #fd8514;
+  --chart-4: #ffbd1e;
   --chart-5: oklch(0.97 0 0);
   --sidebar: oklch(0.04 0 0);
   --sidebar-foreground: oklch(0.97 0 0);
-  --sidebar-primary: oklch(0.86 0.18 210);
-  --sidebar-primary-foreground: oklch(0 0 0);
+  --sidebar-primary: #fd8514;
+  --sidebar-primary-foreground: #000000;
   --sidebar-accent: oklch(0.14 0 0);
   --sidebar-accent-foreground: oklch(0.97 0 0);
   --sidebar-border: oklch(0.18 0 0);
-  --sidebar-ring: oklch(0.86 0.18 210);
+  --sidebar-ring: #ffbd1e;
 }
 
 @theme inline {
-  --font-sans: 'Inter Tight', 'Inter Tight Fallback', system-ui, sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback', ui-monospace, monospace;
-  --font-display: 'Inter Tight', 'Inter Tight Fallback', system-ui, sans-serif;
+  --font-sans: var(--font-instrument-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-instrument-sans);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -143,6 +141,7 @@
   body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    background: #000;
   }
   ::selection {
     background: var(--primary);
@@ -163,11 +162,15 @@
   .will-change-opacity {
     will-change: opacity;
   }
-  /* Thin hairline dividers used across the site */
+  .bg-sunset-gradient {
+    background-image: linear-gradient(to right, #e515ab, #fa1702, #fd8514, #ffbd1e);
+  }
+  .shadow-sunset-glow {
+    box-shadow: 0 0 22px rgba(229, 21, 171, 0.28), 0 0 36px rgba(250, 23, 2, 0.22), 0 0 48px rgba(255, 189, 30, 0.18);
+  }
   .hairline {
     border-color: color-mix(in oklab, var(--foreground) 12%, transparent);
   }
-  /* Subtle grain overlay */
   .grain::before {
     content: '';
     position: fixed;

@@ -1,12 +1,12 @@
-import BusinessHeader from "@/components/business/business-header"
+﻿import BusinessHeader from "@/components/business/business-header"
 import BentoServices from "@/components/business/bento-services"
 import ProcessTimeline from "@/components/business/process-timeline"
 import BusinessCta from "@/components/business/business-cta"
 
 export const metadata = {
-  title: "İşletmeler / VOLT",
+  title: "Services | imediaff Global",
   description:
-    "Markalar için uçtan uca sosyal medya yönetimi. Strateji, kreatif, reklam ve veri aynı çatı altında.",
+    "End-to-end social and digital execution for ambitious brands across Dubai and MENA.",
 }
 
 export default function BusinessPage() {

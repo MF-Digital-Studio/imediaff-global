@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { motion, useScroll, useSpring, useTransform, type MotionValue } from "motion/react"
 import { useRef } from "react"
@@ -11,19 +11,19 @@ type ManifestoSection = {
 
 const SECTIONS: ManifestoSection[] = [
   {
-    kicker: "01 - Strateji",
-    title: "Algoritma seni degil, biz onu takip ediyoruz.",
-    body: "Her platformun kendine ozgu dili var. TikTok'un ritmi, Instagram'in estetigi, YouTube'un hikayesi. Biz bu dillerin tumune ayni anda sesleniyoruz.",
+    kicker: "01 - Strategy",
+    title: "We do not chase algorithms. We design for them.",
+    body: "Every platform has its own language. We architect cross-platform narratives that convert attention into brand equity and measurable growth.",
   },
   {
-    kicker: "02 - Yaraticilik",
-    title: "Icerik uretmiyoruz. Kultur uretiyoruz.",
-    body: "Trend takip etmek gecmiste kaldi. Trendin kendisi oluyoruz. Markanin sesini, jargonun disina tasiyip konusulan bir hale getiriyoruz.",
+    kicker: "02 - Creativity",
+    title: "We do not publish content. We build cultural relevance.",
+    body: "From concept to execution, we shape ideas that travel across markets, communities, and categories while preserving brand consistency.",
   },
   {
-    kicker: "03 - Performans",
-    title: "Her gosterimin, her tiklamanin hesabi var.",
-    body: "Sanat ve data ayni masada. Yaraticiligi olcumluyor, kampanyalari canli verilere gore optimize ediyoruz. Yalnizca gorunmek icin degil, donusmek icin calisiyoruz.",
+    kicker: "03 - Performance",
+    title: "Every impression, click, and conversion is accountable.",
+    body: "Creative and data operate as one system. We optimize continuously and scale what performs across Dubai and the wider MENA region.",
   },
 ]
 
@@ -46,15 +46,13 @@ export default function StickyManifesto() {
               / Manifesto
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.5rem,7vw,6rem)] font-semibold leading-[0.9] tracking-[-0.035em] text-balance max-w-4xl">
-              Biz ne yapiyoruz?
+              What do we build?
               <br />
-              <span className="text-primary">Seni</span> konusulan yapiyoruz.
+              We build brands people <span className="text-primary">talk about</span>.
             </h2>
           </div>
           <p className="max-w-md text-sm md:text-base text-muted-foreground leading-relaxed">
-            Uc adimda, yayindan kulture, kulturden kalici buyumeye. Her katman
-            parent scroll ilerlemesine gore temiz sekilde bir sonrakinin altina
-            cekilir.
+            A three-layer growth model from strategy to culture to measurable business outcomes.
           </p>
         </div>
       </div>
@@ -127,23 +125,18 @@ function ManifestoStackCard({
   const opacity = useSpring(opacityTarget, SPRING)
 
   return (
-      <motion.article
-        style={{ y, scale, opacity, zIndex }}
-        className="sticky top-0 h-screen w-full flex items-center justify-center bg-[#050505]"
-      >
-        <div className="absolute inset-0 pointer-events-none">
-          <motion.div
-            style={{ opacity: dimOpacity }}
-            className="absolute inset-0 bg-black"
-          />
-          <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-black/35 to-transparent" />
-        </div>
+    <motion.article
+      style={{ y, scale, opacity, zIndex }}
+      className="sticky top-0 h-screen w-full flex items-center justify-center bg-[#050505]"
+    >
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div style={{ opacity: dimOpacity }} className="absolute inset-0 bg-black" />
+        <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-black/35 to-transparent" />
+      </div>
 
       <div className="mx-auto max-w-[1600px] w-full px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-3 hidden md:block">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
-            {kicker}
-          </p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">{kicker}</p>
           <p className="mt-4 font-display text-[10rem] leading-none font-semibold tracking-[-0.05em] text-foreground/25">
             {String(index + 1).padStart(2, "0")}
           </p>
@@ -170,3 +163,4 @@ function ManifestoStackCard({
     </motion.article>
   )
 }
+

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -7,23 +7,23 @@ import { motion } from "motion/react"
 const FEATURED = [
   {
     client: "AURA STUDIOS",
-    title: "Lüks kampanyayı 48 saatte viralleştirdik",
-    metric: "2.4M organik gösterim",
-    tag: "Moda",
+    title: "Luxury launch amplified globally in 48 hours",
+    metric: "2.4M organic views",
+    tag: "Fashion",
     image: "/showcase/project-1.jpg",
   },
   {
     client: "NOIR SKIN",
-    title: "Yeni lansmanı 7 günde satışa çevirdik",
+    title: "New product launch converted into demand in 7 days",
     metric: "14x ROAS",
-    tag: "Güzellik",
+    tag: "Beauty",
     image: "/showcase/project-2.jpg",
   },
   {
     client: "GRID MOTORS",
-    title: "Showroom lansmanında %320 katılım artışı",
-    metric: "+320% erişim",
-    tag: "Otomotiv",
+    title: "Showroom debut drove a 320% engagement lift",
+    metric: "+320% reach",
+    tag: "Automotive",
     image: "/showcase/project-4.jpg",
   },
 ]
@@ -35,19 +35,19 @@ export default function FeaturedWork() {
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              / Seçili İşler
+              / Featured Work
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.25rem,6vw,5rem)] font-semibold leading-[0.9] tracking-[-0.035em] text-balance max-w-3xl">
-              Son kampanyalar.
+              Recent campaigns.
               <br />
-              <span className="text-muted-foreground">Gerçek sonuçlar.</span>
+              <span className="text-muted-foreground">Proven impact.</span>
             </h2>
           </div>
           <Link
-            href="/projeler"
+            href="/case-studies"
             className="group inline-flex items-center gap-2 border border-foreground/20 px-4 py-2 text-sm font-semibold hover:border-primary hover:text-primary"
           >
-            Tüm projeler
+            All case studies
             <span aria-hidden className="transition-transform group-hover:translate-x-1">
               →
             </span>
@@ -80,7 +80,7 @@ export default function FeaturedWork() {
                 <div className="absolute top-4 left-4 bg-background/70 backdrop-blur px-2 py-1 font-mono text-[10px] uppercase tracking-[0.2em]">
                   {f.tag}
                 </div>
-                <div className="absolute bottom-4 right-4 bg-primary text-primary-foreground px-3 py-1.5 font-mono text-xs font-semibold">
+                <div className="absolute bottom-4 right-4 bg-sunset-gradient px-3 py-1.5 font-mono text-xs font-semibold text-black">
                   {f.metric}
                 </div>
               </div>
@@ -107,3 +107,5 @@ export default function FeaturedWork() {
     </section>
   )
 }
+
+

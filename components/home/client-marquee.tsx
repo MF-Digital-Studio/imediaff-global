@@ -1,16 +1,16 @@
-const CLIENTS = [
+﻿const CLIENTS = [
   "MERCEDES",
-  "VAKIFBANK",
-  "L'ORÉAL",
+  "EMAAR",
+  "L'OREAL",
   "NIKE",
-  "TURKISH AIRLINES",
-  "MAVİ",
-  "BEYMEN",
-  "LCW",
-  "HEPSIBURADA",
-  "GETIR",
-  "TRENDYOL",
-  "YEMEKSEPETİ",
+  "QATAR AIRWAYS",
+  "NOON",
+  "SEPHORA",
+  "ADIDAS",
+  "HILTON",
+  "NETFLIX",
+  "AMAZON",
+  "SAMSUNG",
 ]
 
 export default function ClientMarquee() {
@@ -19,9 +19,9 @@ export default function ClientMarquee() {
     <section className="relative border-y border-border py-10 overflow-hidden">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 mb-6 flex items-center justify-between">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          / Güvenen Markalar
+          / Trusted by leading brands
         </p>
-        <p className="font-mono text-xs text-muted-foreground">{"// "}2019 — şimdi</p>
+        <p className="font-mono text-xs text-muted-foreground">{"// "}2019 - present</p>
       </div>
       <div className="relative overflow-hidden">
         <div className="flex w-max marquee-track gap-16 whitespace-nowrap">
@@ -39,3 +39,4 @@ export default function ClientMarquee() {
     </section>
   )
 }
+

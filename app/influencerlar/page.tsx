@@ -1,11 +1,11 @@
-import InfluencerHeader from "@/components/influencers/influencer-header"
+﻿import InfluencerHeader from "@/components/influencers/influencer-header"
 import InfluencerGrid from "@/components/influencers/influencer-grid"
 import InfluencerCta from "@/components/influencers/influencer-cta"
 
 export const metadata = {
-  title: "Influencerlar / VOLT",
+  title: "Talent | imediaff Global",
   description:
-    "VOLT ailesi. Editorial estetikle küratörlüğü yapılan, yüksek etkileşimli içerik yaratıcıları.",
+    "A curated global creator roster built for premium campaigns and measurable brand growth.",
 }
 
 export default function InfluencerPage() {

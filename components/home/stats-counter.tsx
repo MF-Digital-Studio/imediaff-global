@@ -1,13 +1,13 @@
-"use client"
+﻿"use client"
 
 import { useEffect, useRef, useState } from "react"
 import { motion, useInView, useSpring, useTransform } from "motion/react"
 
 const STATS = [
-  { value: 2400000000, suffix: "", prefix: "", label: "Organik gösterim", note: "son 12 ay" },
-  { value: 480, suffix: "+", prefix: "", label: "Tamamlanan kampanya", note: "2019'dan beri" },
-  { value: 34, suffix: "x", prefix: "", label: "Ortalama ROAS", note: "performans kampanyaları" },
-  { value: 96, suffix: "%", prefix: "", label: "Geri dönen marka", note: "iki ve üzeri proje" },
+  { value: 2400000000, suffix: "", prefix: "", label: "Organic views", note: "last 12 months" },
+  { value: 480, suffix: "+", prefix: "", label: "Campaigns delivered", note: "since 2019" },
+  { value: 34, suffix: "x", prefix: "", label: "Average ROAS", note: "performance media programs" },
+  { value: 96, suffix: "%", prefix: "", label: "Client retention", note: "repeat engagements" },
 ]
 
 function formatNumber(n: number) {
@@ -24,13 +24,13 @@ export default function StatsCounter() {
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              / Rakamlar
+              / Performance
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.25rem,6vw,5rem)] font-semibold leading-[0.9] tracking-[-0.035em] text-balance max-w-3xl">
-              Ölçülmeyen iş yapılmaz.
+              What gets measured gets scaled.
             </h2>
           </div>
-          <p className="font-mono text-xs text-muted-foreground">{"//"} canlı panel</p>
+          <p className="font-mono text-xs text-muted-foreground">{"//"} live dashboard</p>
         </div>
 
         <div className="mt-14 grid grid-cols-2 md:grid-cols-4 border-t border-border">
@@ -97,3 +97,4 @@ function StatCell({
     </motion.div>
   )
 }
+

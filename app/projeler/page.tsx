@@ -1,12 +1,12 @@
-import ProjectsHeader from "@/components/projects/projects-header"
+﻿import ProjectsHeader from "@/components/projects/projects-header"
 import HorizontalGallery from "@/components/projects/horizontal-gallery"
 import ProjectsIndex from "@/components/projects/projects-index"
 import ProjectsCta from "@/components/projects/projects-cta"
 
 export const metadata = {
-  title: "Projeler / VOLT",
+  title: "Case Studies | imediaff Global",
   description:
-    "Seçili kampanyalar, yatay kayan galeride. Moda, güzellik, otomotiv, teknoloji ve daha fazlası.",
+    "Selected global campaigns across fashion, beauty, automotive, and technology.",
 }
 
 export default function ProjectsPage() {

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import Lenis from "lenis"
 import { usePathname } from "next/navigation"
@@ -135,3 +135,4 @@ export function useLenis() {
   }
   return context
 }
+

@@ -1,14 +1,14 @@
-import type { Metadata } from "next"
-import { Inter_Tight, Geist_Mono } from "next/font/google"
+﻿import type { Metadata } from "next"
+import { Instrument_Sans, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import SiteNav from "@/components/site-nav"
 import SiteFooter from "@/components/site-footer"
 import LenisProvider from "@/components/providers/LenisProvider"
 
-const interTight = Inter_Tight({
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
-  variable: "--font-inter-tight",
+  variable: "--font-instrument-sans",
   display: "swap",
 })
 const geistMono = Geist_Mono({
@@ -18,14 +18,14 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "VOLT / Sınırları Zorla — Sosyal Medya Ajansı",
+  title: "imediaff Global | 360° Digital Agency",
   description:
-    "VOLT, influencer'ları ve markaları viral döngünün merkezine taşıyan yeni nesil sosyal medya ajansıdır. Sınırları zorla, markanı dönüştür.",
+    "imediaff Global connects world-class creators and ambitious brands across Dubai and the MENA region through strategy, creativity, and measurable growth.",
   generator: "v0.app",
   openGraph: {
-    title: "VOLT / Sınırları Zorla",
+    title: "imediaff Global | 360° Digital Agency",
     description:
-      "Influencer'lar ve markalar için yeni nesil sosyal medya ajansı. Viral döngünün merkezinde.",
+      "The global hub for influencer power and 360° digital media execution across Dubai and MENA.",
     type: "website",
   },
   icons: {
@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr" className={`${interTight.variable} ${geistMono.variable} bg-background dark`}>
+    <html lang="en" className={`${instrumentSans.variable} ${geistMono.variable} bg-background dark`}>
       <body className="font-sans antialiased bg-background text-foreground overflow-x-hidden grain">
         <LenisProvider>
           <SiteNav />
