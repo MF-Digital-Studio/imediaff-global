@@ -57,10 +57,27 @@ export default function SiteNav() {
         <div className="hidden md:flex items-center gap-3">
           <Link 
             href="/contact" 
-            className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] px-8 py-3 rounded-full text-sm font-display font-bold tracking-tight text-black transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(229,21,171,0.3)] hover:shadow-[0_0_30px_rgba(229,21,171,0.5)]"
+            className="btn-request-proposal group relative inline-flex items-center gap-2.5 rounded-full px-10 py-3.5 text-sm font-bold uppercase tracking-widest text-white transition-all duration-300 hover:scale-105 bg-transparent hover:bg-white/10"
+            style={{
+              boxShadow: "0 0 20px rgba(229,21,171,0.3)",
+            }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 35px rgba(255,189,30,0.5)"
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 20px rgba(229,21,171,0.3)"
+            }}
           >
-            <span>Request Proposal</span>
-            <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+            <span 
+              className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E]"
+              style={{
+                WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                WebkitMaskComposite: "xor",
+                maskComposite: "exclude"
+              }}
+            />
+            <span className="relative z-10">Request Proposal</span>
+            <span aria-hidden className="relative z-10 transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </div>
 
@@ -84,10 +101,21 @@ export default function SiteNav() {
               })}
               <Link 
                 href="/contact" 
-                className="mt-6 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] px-8 py-4 rounded-full text-base font-display font-bold tracking-tight text-black shadow-[0_0_20px_rgba(229,21,171,0.3)]"
+                className="mt-6 group relative inline-flex items-center justify-center gap-2 rounded-full px-10 py-4 text-base font-bold uppercase tracking-widest text-white bg-transparent hover:bg-white/10 transition-all duration-300"
+                style={{
+                  boxShadow: "0 0 20px rgba(229,21,171,0.3)"
+                }}
               >
-                <span>Request Proposal</span>
-                <span aria-hidden>→</span>
+                <span 
+                  className="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E]"
+                  style={{
+                    WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    WebkitMaskComposite: "xor",
+                    maskComposite: "exclude"
+                  }}
+                />
+                <span className="relative z-10">Request Proposal</span>
+                <span aria-hidden className="relative z-10">→</span>
               </Link>
             </div>
           </motion.div>
