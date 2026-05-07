@@ -1,110 +1,124 @@
-﻿"use client"
+"use client"
 
 import { useRef } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import {
   motion,
   useScroll,
   useTransform,
   useSpring,
-  type MotionStyle,
-  type MotionValue,
 } from "motion/react"
 
 export default function ScrollHero() {
   const containerRef = useRef<HTMLDivElement | null>(null)
+  
+  // Height of 250vh allows for a long, smooth scroll transition before the next section appears
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end end"] })
-  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 24, mass: 0.6 })
+  const progress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, mass: 0.8 })
 
-  const titleScale = useTransform(progress, [0, 0.35], [1, 2.2])
-  const titleOpacity = useTransform(progress, [0, 0.25, 0.38], [1, 0.7, 0])
-  const titleY = useTransform(progress, [0, 0.4], [0, -60])
-  const subOpacity = useTransform(progress, [0, 0.15, 0.3], [1, 0.6, 0])
-  const bgColor = useTransform(progress, [0, 0.3, 0.7], ["oklch(0.08 0 0)", "oklch(0.04 0 0)", "oklch(0 0 0)"])
-  const copyOpacity = useTransform(progress, [0.55, 0.75], [0, 1])
-  const copyY = useTransform(progress, [0.55, 0.75], [40, 0])
+  // ── Layer A (Text) Animation Logic ──
+  // Shrinks slightly and fades out early in the scroll
+  const textOpacity = useTransform(progress, [0, 0.4], [1, 0])
+  const textScale = useTransform(progress, [0, 0.4], [1, 0.95])
+
+  // ── Layer B (World Map) Animation Logic ──
+  // Floats up, scales into focus, and fades in as the text disappears
+  const mapOpacity = useTransform(progress, [0.2, 0.8], [0, 1])
+  const mapY = useTransform(progress, [0.2, 0.8], [100, 0])
+  const mapScale = useTransform(progress, [0.2, 0.8], [0.8, 1])
 
   return (
-    <motion.section ref={containerRef} style={{ backgroundColor: bgColor }} className="relative h-[320vh]" aria-label="Hero">
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 40%, color-mix(in oklab, var(--primary) 12%, transparent) 0%, transparent 55%)" }} />
+    <motion.section ref={containerRef} className="relative h-[250vh] bg-black text-white" aria-label="Hero">
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
 
-        <div aria-hidden className="pointer-events-none absolute inset-0 opacity-[0.08]" style={{ backgroundImage: "linear-gradient(to right, var(--foreground) 1px, transparent 1px), linear-gradient(to bottom, var(--foreground) 1px, transparent 1px)", backgroundSize: "80px 80px", maskImage: "radial-gradient(ellipse at center, black 40%, transparent 75%)" }} />
+        {/* ── Layer B: The Global Map Anchor ── */}
+        <motion.div 
+          className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
+          style={{ opacity: mapOpacity, y: mapY, scale: mapScale }}
+        >
+          <div className="relative w-full max-w-[1400px] aspect-[16/9] md:aspect-video px-6 flex items-center justify-center">
+            
+            {/* Minimalist World Map Silhouette with Soft Elliptical Edges */}
+            <div 
+              className="absolute inset-0 opacity-[0.15] mix-blend-screen flex items-center justify-center"
+              style={{ 
+                maskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 100%)'
+              }}
+            >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" 
+                alt="World Map Silhouette" 
+                className="w-full h-auto max-h-[80vh] object-contain invert grayscale"
+                draggable={false}
+              />
+            </div>
+            
+            {/* Ambient Neutral Glow (B&W Theme) */}
+            <div className="absolute inset-0 rounded-full bg-white blur-[150px] opacity-[0.03]" />
 
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-          <motion.p style={{ opacity: subOpacity }} className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">/ Global Influencer & Digital Media Agency</motion.p>
+            {/* Central Anchor: iMediaff Logo */}
+            <div className="relative z-50 flex flex-col items-center justify-center pointer-events-auto">
+              <div className="relative w-48 h-20 md:w-72 md:h-28 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                <Image 
+                  src="/logo.png" 
+                  alt="iMediaff" 
+                  fill 
+                  className="object-contain" 
+                  priority 
+                />
+              </div>
+              
+              {/* Radar/Beacon Pulse Effect (Neutral) */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none">
+                <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border border-white/20 animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
+              </div>
+            </div>
 
-          <motion.h1 style={{ scale: titleScale, opacity: titleOpacity, y: titleY }} className="mt-6 font-display font-bold leading-[0.85] tracking-[-0.045em] text-balance text-[clamp(3.25rem,14vw,14rem)] will-change-transform">
-            The Global Hub for
-            <br />
-            Influencer Power &amp; <span className="text-primary">360° Digital Media.</span>
-          </motion.h1>
-
-          <motion.p style={{ opacity: subOpacity }} className="mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed text-balance">
-            Bridging the gap between world-class influencers and industry-leading brands through data-driven creativity and strategic execution.
-          </motion.p>
-
-          <motion.div style={{ opacity: subOpacity }} className="mt-12 flex items-center gap-2 text-xs font-mono text-muted-foreground">
-            <span className="inline-block h-8 w-px bg-foreground/30" />
-            <span>SCROLL</span>
-          </motion.div>
-        </div>
-
-        <FlyInMockups progress={progress} />
-
-        <motion.div style={{ opacity: copyOpacity, y: copyY }} className="pointer-events-none absolute inset-x-0 bottom-16 z-20 mx-auto max-w-2xl px-6 text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">/ Global Momentum</p>
-          <p className="mt-4 text-xl md:text-3xl font-bold tracking-tight text-balance">
-            Three platforms. One strategy.
-            <span className="text-muted-foreground"> Unlimited reach.</span>
-          </p>
+          </div>
         </motion.div>
+
+        {/* ── Layer A: The Text & CTAs ── */}
+        <motion.div 
+          className="relative z-20 flex flex-col items-center px-6 text-center"
+          style={{ opacity: textOpacity, scale: textScale }}
+        >
+          <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#FFBD1E] mb-6">
+            / Global Digital Authority
+          </p>
+
+          <h1 className="font-display font-bold leading-[0.9] tracking-[-0.035em] text-balance text-[clamp(2.5rem,7vw,7rem)] max-w-6xl mx-auto pointer-events-auto">
+            Architecting <br className="hidden md:block" /> Extraordinary <br className="hidden md:block" />
+            <span className="bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E] bg-clip-text text-transparent">
+              Global Narratives
+            </span>
+          </h1>
+
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto">
+            <Link
+              href="/contact"
+              className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-white transition-transform hover:scale-105"
+            >
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E] p-[2px] opacity-100 transition-shadow duration-500 group-hover:shadow-[0_0_20px_rgba(229,21,171,0.5)]">
+                <div className="h-full w-full rounded-full bg-black" />
+              </div>
+              <span className="relative z-10 flex items-center gap-2">
+                Start a Project
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+
+            <Link
+              href="/case-studies"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-8 py-4 font-semibold text-white transition-colors hover:border-white hover:bg-white/5"
+            >
+              Explore Our Talents
+            </Link>
+          </div>
+        </motion.div>
+
       </div>
     </motion.section>
-  )
-}
-
-function FlyInMockups({ progress }: { progress: MotionValue<number> }) {
-  const leftX = useTransform(progress, [0.05, 0.55], ["-70vw", "-12vw"])
-  const leftRot = useTransform(progress, [0.05, 0.55], [-22, -8])
-  const leftY = useTransform(progress, [0.05, 0.55], ["10vh", "0vh"])
-  const leftScale = useTransform(progress, [0.05, 0.55], [0.85, 1])
-  const leftOpacity = useTransform(progress, [0.05, 0.2, 0.85, 1], [0, 1, 1, 0.4])
-
-  const rightX = useTransform(progress, [0.05, 0.55], ["70vw", "12vw"])
-  const rightRot = useTransform(progress, [0.05, 0.55], [22, 8])
-  const rightY = useTransform(progress, [0.05, 0.55], ["10vh", "0vh"])
-  const rightScale = useTransform(progress, [0.05, 0.55], [0.85, 1])
-  const rightOpacity = useTransform(progress, [0.05, 0.2, 0.85, 1], [0, 1, 1, 0.4])
-
-  const centerY = useTransform(progress, [0.15, 0.55], ["28vh", "0vh"])
-  const centerScale = useTransform(progress, [0.15, 0.55], [0.7, 1.08])
-  const centerOpacity = useTransform(progress, [0.15, 0.3, 0.85, 1], [0, 1, 1, 0.6])
-
-  const clusterY = useTransform(progress, [0.55, 1], ["0vh", "-20vh"])
-  const clusterOpacity = useTransform(progress, [0.85, 1], [1, 0.3])
-
-  return (
-    <motion.div style={{ y: clusterY, opacity: clusterOpacity }} className="pointer-events-none absolute inset-0 z-[5] flex items-center justify-center" aria-hidden>
-      <div className="relative h-[62vh] w-full max-w-[1200px]">
-        <MockupCard src="/mockups/tiktok-mockup.jpg" alt="TikTok" label="TIKTOK" style={{ x: leftX, y: leftY, rotate: leftRot, scale: leftScale, opacity: leftOpacity }} className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
-        <MockupCard src="/mockups/instagram-mockup.jpg" alt="Instagram" label="INSTAGRAM" style={{ y: centerY, scale: centerScale, opacity: centerOpacity }} className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10" />
-        <MockupCard src="/mockups/youtube-mockup.jpg" alt="YouTube" label="YOUTUBE" style={{ x: rightX, y: rightY, rotate: rightRot, scale: rightScale, opacity: rightOpacity }} className="left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
-      </div>
-    </motion.div>
-  )
-}
-
-function MockupCard({ src, alt, label, style, className }: { src: string; alt: string; label: string; style: MotionStyle; className?: string }) {
-  return (
-    <motion.div style={style} className={`absolute aspect-[9/19] h-[55vh] max-h-[640px] will-change-transform ${className ?? ""}`}>
-      <div className="relative h-full w-full overflow-hidden border border-border/80 bg-card">
-        <Image src={src || "/placeholder.svg"} alt={alt} fill sizes="(max-width: 768px) 60vw, 320px" className="object-cover" priority />
-        <div className="absolute left-2 top-2 flex items-center gap-1.5 bg-background/70 backdrop-blur px-2 py-1 font-mono text-[10px] tracking-[0.2em] text-primary">
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-          {label}
-        </div>
-      </div>
-    </motion.div>
   )
 }
