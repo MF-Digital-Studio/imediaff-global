@@ -244,13 +244,13 @@ export default function AboutClientPage() {
             priority
             sizes="100vw"
             className="object-cover"
-            style={{ 
+            style={{
               WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
               maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)'
             }}
           />
         </motion.div>
-        
+
         {/* Caption */}
         <div className="absolute inset-0 flex items-end">
           <div className="mx-auto w-full max-w-[1600px] px-6 md:px-10 pb-12 md:pb-24">
@@ -310,7 +310,7 @@ export default function AboutClientPage() {
       {/* ── Core Services (Black Theme) ── */}
       <section className="bg-black text-white pb-16 md:pb-28 relative overflow-hidden z-10">
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#E515AB]/10 via-[#FA1702]/10 to-[#FFBD1E]/10 blur-[100px] rounded-full opacity-50" />
-        
+
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -338,7 +338,7 @@ export default function AboutClientPage() {
                 className={`group relative overflow-hidden rounded-2xl bg-white/[0.03] backdrop-blur-md p-[1px] transition-all duration-500 ${i % 3 === 1 ? 'lg:translate-y-12' : i % 3 === 2 ? 'lg:translate-y-24' : ''}`}
               >
                 <div className="absolute inset-0 bg-white/10 transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#E515AB] group-hover:via-[#FA1702] group-hover:to-[#FFBD1E]" />
-                
+
                 <div className="relative flex flex-col h-full bg-black/90 backdrop-blur-md rounded-[15px] p-8 md:p-10">
                   <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#E515AB]/20 group-hover:to-[#FFBD1E]/20 transition-colors duration-700" />
 
@@ -464,13 +464,13 @@ export default function AboutClientPage() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10 text-center md:text-left"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-black/60 font-bold">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-white font-bold">
             / Start Today
           </p>
-          <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-black">
+          <h2 className="mt-6 font-display text-[clamp(3rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.045em] text-balance text-white">
             Scale beyond borders.
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-black/80 md:text-xl font-medium mx-auto md:mx-0">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white md:text-xl font-medium mx-auto md:mx-0">
             Whether you are a brand seeking MENA entry or a creator ready for global reach — your next chapter starts here.
           </p>
           <div className="mt-12 flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -482,7 +482,7 @@ export default function AboutClientPage() {
             </Link>
             <Link
               href="/case-studies"
-              className="inline-flex items-center gap-2 border-2 border-black px-10 py-5 text-base font-bold text-black transition-all hover:bg-black hover:text-white rounded-full"
+              className="inline-flex items-center gap-2 border-2 border-black px-10 py-5 text-base font-bold text-white transition-all hover:bg-black hover:text-white rounded-full"
             >
               View Case Studies
             </Link>
