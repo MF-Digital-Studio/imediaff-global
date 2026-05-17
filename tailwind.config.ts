@@ -1,4 +1,4 @@
-﻿import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -9,13 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "brand-magenta": "#E515AB",
+        "accent": "#2563EB",
+        "secondary": "#16A34A",
+        "brand-magenta": "#2563EB",
         "brand-red": "#FA1702",
-        "brand-orange": "#FD8514",
-        "brand-yellow": "#FFBD1E",
+        "brand-orange": "#2563EB",
+        "brand-yellow": "#2563EB",
       },
       backgroundImage: {
-        "sunset-gradient": "linear-gradient(to right, #E515AB, #FA1702, #FD8514, #FFBD1E)",
+        "sunset-gradient": "linear-gradient(135deg, #2563EB, #16A34A)",
+        "accent-gradient": "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
       },
       fontFamily: {
         sans: ["var(--font-instrument-sans)"],

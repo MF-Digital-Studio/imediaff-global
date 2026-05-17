@@ -55,7 +55,7 @@ export default function StickyManifesto() {
               We build brands people{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(90deg, #E515AB 0%, #FF8A1E 55%, #FFBD1E 100%)",
+                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -145,14 +145,14 @@ function ManifestoStackCard({
 
       <div className="relative z-20 mx-auto max-w-[1600px] w-full px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-3 hidden md:block">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#E515AB]">{kicker}</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[#2563EB]">{kicker}</p>
           <p className="mt-4 font-sans text-[10rem] leading-none font-bold tracking-[-0.05em] text-white/10">
             {String(index + 1).padStart(2, "0")}
           </p>
         </div>
 
         <div className="md:col-span-8 md:col-start-5">
-          <p className="md:hidden font-mono text-[10px] uppercase tracking-[0.4em] text-[#E515AB] mb-4">
+          <p className="md:hidden font-mono text-[10px] uppercase tracking-[0.4em] text-[#2563EB] mb-4">
             {kicker}
           </p>
           <h3 className="font-sans text-[clamp(2.5rem,5.5vw,5rem)] font-bold leading-[1.1] tracking-[-0.03em] text-white text-balance">

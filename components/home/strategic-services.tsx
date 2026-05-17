@@ -64,14 +64,14 @@ export default function StrategicServices() {
                 boxShadow: "0 0 0 rgba(0,0,0,0)",
               }}
               onMouseEnter={e => {
-                (e.currentTarget as HTMLDivElement).style.boxShadow = "0 25px 50px -12px rgba(229,21,171,0.06)"
+                (e.currentTarget as HTMLDivElement).style.boxShadow = "0 25px 50px -12px rgba(37,99,235,0.06)"
               }}
               onMouseLeave={e => {
                 (e.currentTarget as HTMLDivElement).style.boxShadow = "0 0 0 rgba(0,0,0,0)"
               }}
             >
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#E515AB] to-[#FF8A1E] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.05] text-white group-hover:bg-white group-hover:text-black transition-colors duration-500">
                 <service.icon strokeWidth={1.5} className="h-5 w-5" />
@@ -86,7 +86,7 @@ export default function StrategicServices() {
               </p>
               
               {/* Bottom Right Dot */}
-              <div className="absolute bottom-6 right-6 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E515AB] to-[#FF8A1E] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-6 right-6 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </div>

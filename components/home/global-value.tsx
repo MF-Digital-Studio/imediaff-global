@@ -11,7 +11,7 @@ const PILLARS = [
     title: "Strategic Precision",
     description: "Targeting the right influence, not just the highest reach. We optimize for conversion, not just impressions.",
     icon: <Target className="w-6 h-6 text-black" strokeWidth={1.5} />,
-    glowColor: "rgba(229,21,171,0.15)",
+    glowColor: "rgba(37,99,235,0.15)",
   },
   {
     title: "Operational Speed",
@@ -82,7 +82,7 @@ export default function GlobalValue() {
               <div
                 className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
-                  background: "linear-gradient(135deg, #E515AB, #FF8A1E, #FFBD1E)",
+                  background: "linear-gradient(135deg, #2563EB, #16A34A)",
                   padding: "1px",
                   WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
                   WebkitMaskComposite: "xor",

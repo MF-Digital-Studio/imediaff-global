@@ -12,25 +12,25 @@ function MarqueeSlice() {
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #E515AB, #FFBD1E)" }}
+        style={{ background: "linear-gradient(135deg, #2563EB, #2563EB)" }}
       />
       <span>CREATORS</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #E515AB, #FFBD1E)" }}
+        style={{ background: "linear-gradient(135deg, #2563EB, #2563EB)" }}
       />
       <span>MENA DOMINANCE</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #E515AB, #FFBD1E)" }}
+        style={{ background: "linear-gradient(135deg, #2563EB, #2563EB)" }}
       />
       <span>STRATEGIC INFLUENCE</span>
       <span
         aria-hidden
         className="inline-block h-[0.22em] w-[0.22em] shrink-0"
-        style={{ background: "linear-gradient(135deg, #E515AB, #FFBD1E)" }}
+        style={{ background: "linear-gradient(135deg, #2563EB, #2563EB)" }}
       />
     </span>
   )
@@ -93,7 +93,7 @@ export default function CtaStrip() {
       </section>
 
       {/* ── Final CTA (Sunset Gradient Theme - Mirrored from Services) ── */}
-      <section ref={ctaRef} className="bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] text-white py-24 md:py-36 relative overflow-hidden">
+      <section ref={ctaRef} className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}

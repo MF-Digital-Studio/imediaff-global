@@ -82,7 +82,7 @@ export default function ServicesClientPage() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FFBD1E]">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
             / Capabilities
           </p>
           <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
@@ -104,7 +104,7 @@ export default function ServicesClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-16 md:mb-32 text-center md:text-left"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
               / Integrated Capabilities
             </p>
             <h2 className="mt-5 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-black">
@@ -150,7 +150,7 @@ export default function ServicesClientPage() {
                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
                     className={`w-[90%] md:w-1/2 lg:w-5/12 -mt-20 md:mt-0 relative z-20 rounded-[2rem] bg-white/80 backdrop-blur-2xl border border-gray-200 p-8 md:p-14 shadow-xl ${isEven ? "md:-ml-24 lg:-ml-32" : "md:-mr-24 lg:-mr-32"}`}
                   >
-                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB] mb-6 font-bold">
+                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6 font-bold">
                       / {String(i + 1).padStart(2, '0')}
                     </p>
                     <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-0.03em] text-black mb-6 leading-[1.05]">
@@ -163,7 +163,7 @@ export default function ServicesClientPage() {
                     <div className="flex flex-col gap-5">
                       {service.features.map(feat => (
                         <div key={feat} className="flex items-center gap-4 group/feat">
-                          <div className="h-px w-6 bg-gray-300 transition-all duration-300 group-hover/feat:w-10 group-hover/feat:bg-gradient-to-r group-hover/feat:from-[#E515AB] group-hover/feat:to-[#FFBD1E]" />
+                          <div className="h-px w-6 bg-gray-300 transition-all duration-300 group-hover/feat:w-10 group-hover/feat:bg-gradient-to-r group-hover/feat:from-[#2563EB] group-hover/feat:to-[#2563EB]" />
                           <span className="font-mono text-[11px] md:text-xs uppercase tracking-[0.15em] text-gray-600 font-medium transition-colors duration-300 group-hover/feat:text-black">
                             {feat}
                           </span>
@@ -189,7 +189,7 @@ export default function ServicesClientPage() {
             className="mb-14 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6"
           >
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
                 / Clear Timeline
               </p>
               <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
@@ -210,10 +210,10 @@ export default function ServicesClientPage() {
               >
                 {/* Connecting line for desktop */}
                 {i < PROCESS.length - 1 && (
-                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#E515AB]/50 transition-colors duration-500" />
+                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#2563EB]/50 transition-colors duration-500" />
                 )}
                 
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black font-mono text-sm text-[#FFBD1E] transition-colors duration-500 group-hover:border-[#E515AB] group-hover:text-[#E515AB] mb-6">
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black font-mono text-sm text-[#2563EB] transition-colors duration-500 group-hover:border-[#2563EB] group-hover:text-[#2563EB] mb-6">
                   {step.step}
                 </div>
                 
@@ -230,7 +230,7 @@ export default function ServicesClientPage() {
       </section>
 
       {/* ── Final CTA (Sunset Gradient Theme) ── */}
-      <section className="bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] text-white py-24 md:py-36 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

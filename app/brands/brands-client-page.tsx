@@ -59,10 +59,10 @@ export default function BrandsClientPage() {
 
       {/* ── Hero (Black Theme) ────────────────────────────────────────────────── */}
       <section className="bg-black text-white pt-32 pb-16 md:pt-48 md:pb-24 border-b border-white/10 relative overflow-hidden">
-        <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#E515AB]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
+        <div className="pointer-events-none absolute right-0 top-0 w-full max-w-[800px] h-[800px] bg-gradient-to-bl from-[#2563EB]/10 to-transparent blur-[120px] rounded-full opacity-50 translate-x-1/3 -translate-y-1/3" />
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FFBD1E]">/ Brand Partnerships</p>
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">/ Brand Partnerships</p>
             <h1 className="mt-6 font-display text-[clamp(2.5rem,8vw,8.5rem)] font-bold leading-[0.9] tracking-[-0.04em] text-balance">
               International <br /> Authority.
             </h1>
@@ -98,10 +98,10 @@ export default function BrandsClientPage() {
       {/* ── Infinite Marquee (White Theme) ─────────────────────────────────────── */}
       <section className="bg-white text-black py-20 md:py-28 overflow-hidden border-b border-gray-200 relative">
         {/* Sunset glow behind the marquee (subtle for white bg) */}
-        <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-r from-[#E515AB]/5 via-[#FA1702]/5 to-[#FFBD1E]/5 blur-3xl" />
+        <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 bg-gradient-to-br from-[#2563EB]/5 to-[#16A34A]/5 blur-3xl" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 mb-12 relative z-10">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">/ Trusted by Industry Leaders</p>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">/ Trusted by Industry Leaders</p>
         </div>
 
         {/* Fading edge masks for white background */}
@@ -116,7 +116,7 @@ export default function BrandsClientPage() {
           >
             {[...ALL_BRANDS, ...ALL_BRANDS].map((brand, i) => (
               <div key={`${brand}-${i}`} className="group cursor-default whitespace-nowrap">
-                <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#E515AB] group-hover:to-[#FFBD1E]">
+                <span className="font-display text-3xl md:text-5xl font-bold tracking-tight lowercase text-black/20 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#2563EB] group-hover:to-[#2563EB]">
                   {brand}
                 </span>
               </div>
@@ -137,11 +137,11 @@ export default function BrandsClientPage() {
               viewport={{ once: true, margin: "-10% 0px" }}
               transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FFBD1E] mb-6 font-bold">/ The MENA Gateway</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6 font-bold">/ The MENA Gateway</p>
               <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-black mb-10">
                 Your Strategic <br /> Gateway to the <br /> MENA Region.
               </h2>
-              <div className="h-px w-full bg-gradient-to-r from-[#E515AB] to-[#FFBD1E] mb-10" />
+              <div className="h-px w-full bg-gradient-to-br from-[#2563EB] to-[#16A34A] mb-10" />
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-sans mb-6">
                 We don't just run campaigns; we navigate cultures.
               </p>
@@ -198,11 +198,11 @@ export default function BrandsClientPage() {
               transition={{ duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="order-1 lg:order-2"
             >
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB] mb-6">/ Data-Led Creator Selection</p>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] mb-6">/ Data-Led Creator Selection</p>
               <h2 className="font-display text-[clamp(2.5rem,4.5vw,5rem)] font-bold tracking-[-0.03em] leading-[1.05] text-white mb-10">
                 Proprietary Tech, <br /> Proven Creators.
               </h2>
-              <div className="h-px w-full bg-gradient-to-r from-[#E515AB] to-[#FFBD1E] mb-10" />
+              <div className="h-px w-full bg-gradient-to-br from-[#2563EB] to-[#16A34A] mb-10" />
               <p className="text-xl md:text-2xl text-white/80 leading-relaxed font-sans mb-6">
                 Leveraging our database of 17,000+ verified influencers.
               </p>
@@ -244,7 +244,7 @@ export default function BrandsClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="p-8 md:p-12 rounded-[2rem] bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="h-px w-12 bg-gradient-to-r from-[#E515AB] to-[#FFBD1E] mb-8" />
+                <div className="h-px w-12 bg-gradient-to-br from-[#2563EB] to-[#16A34A] mb-8" />
                 <h3 className="font-display text-3xl font-bold text-black mb-4">{col.title}.</h3>
                 <p className="text-gray-600 leading-relaxed font-sans">{col.desc}</p>
               </motion.div>
@@ -254,7 +254,7 @@ export default function BrandsClientPage() {
       </section>
 
       {/* ── Final CTA (Sunset Gradient Theme) ─────────────────────────────────── */}
-      <section className="bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] text-white py-24 md:py-36 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-white py-24 md:py-36 relative overflow-hidden">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

@@ -24,7 +24,7 @@ export default function ServicesPreview() {
               We turn attention into{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(90deg, #E515AB 0%, #FF8A1E 55%, #FFBD1E 100%)",
+                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -34,7 +34,7 @@ export default function ServicesPreview() {
               </span>.
             </h2>
           </div>
-          <Link href="/services" className="group inline-flex items-center gap-2 border border-black/20 px-5 py-3 text-sm font-semibold text-black hover:border-[#E515AB] hover:text-[#E515AB] transition-colors">
+          <Link href="/services" className="group inline-flex items-center gap-2 border border-black/20 px-5 py-3 text-sm font-semibold text-black hover:border-[#2563EB] hover:text-[#2563EB] transition-colors">
             View all services
             <span aria-hidden className="transition-transform group-hover:translate-x-1">-&gt;</span>
           </Link>
@@ -51,14 +51,14 @@ export default function ServicesPreview() {
               className="group relative min-h-[280px] border-b border-r border-black/10 bg-white p-8 md:p-10 flex flex-col justify-between overflow-hidden hover:bg-black/[0.02] transition-colors duration-500"
             >
               {/* Subtle top border glow on hover */}
-              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-[#E515AB] to-[#FF8A1E] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative">
                 <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-black/30 group-hover:text-black/70 transition-colors">
                   {String(index + 1).padStart(2, "0")}
                 </p>
-                <div className="mt-6 inline-flex h-12 w-12 items-center justify-center border border-black/10 bg-black/[0.02] transition-colors duration-500 group-hover:border-[#E515AB]/30 group-hover:bg-[#E515AB]/10">
-                  <service.icon strokeWidth={1.5} className="h-5 w-5 text-[#E515AB] group-hover:text-[#FF8A1E] transition-colors duration-500" />
+                <div className="mt-6 inline-flex h-12 w-12 items-center justify-center border border-black/10 bg-black/[0.02] transition-colors duration-500 group-hover:border-[#2563EB]/30 group-hover:bg-[#2563EB]/10">
+                  <service.icon strokeWidth={1.5} className="h-5 w-5 text-[#2563EB] group-hover:text-[#2563EB] transition-colors duration-500" />
                 </div>
               </div>
 

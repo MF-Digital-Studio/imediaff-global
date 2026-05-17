@@ -84,13 +84,13 @@ export default function ScrollHero() {
           className="relative z-20 flex flex-col items-center px-6 text-center"
           style={{ opacity: textOpacity, scale: textScale }}
         >
-          <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#FFBD1E] mb-6">
+          <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-[#2563EB] mb-6">
             / Global Digital Authority
           </p>
 
           <h1 className="font-display font-bold leading-[0.9] tracking-[-0.035em] text-balance text-[clamp(2.5rem,7vw,7rem)] max-w-6xl mx-auto pointer-events-auto">
             Architecting <br className="hidden md:block" /> Extraordinary <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent">
               Global Narratives
             </span>
           </h1>
@@ -100,7 +100,7 @@ export default function ScrollHero() {
               href="/contact"
               className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-white transition-transform hover:scale-105"
             >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E] p-[2px] opacity-100 transition-shadow duration-500 group-hover:shadow-[0_0_20px_rgba(229,21,171,0.5)]">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2563EB] to-[#16A34A] p-[2px] opacity-100 transition-shadow duration-500 group-hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]">
                 <div className="h-full w-full rounded-full bg-black" />
               </div>
               <span className="relative z-10 flex items-center gap-2">

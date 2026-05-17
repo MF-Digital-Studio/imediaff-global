@@ -148,7 +148,7 @@ export default function CaseStudiesClientPage() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
             / Case Studies
           </p>
           <h1 className="mt-6 font-display text-[clamp(3rem,9vw,9rem)] font-bold leading-[0.88] tracking-[-0.04em] text-balance">
@@ -190,7 +190,7 @@ export default function CaseStudiesClientPage() {
                       {study.client}
                     </p>
                     <div className={`h-px w-8 ${isWhite ? 'bg-black/20' : 'bg-white/20'}`} />
-                    <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#E515AB]">
+                    <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#2563EB]">
                       {study.sector}
                     </p>
                   </div>
@@ -206,8 +206,8 @@ export default function CaseStudiesClientPage() {
                   {/* ── KPI Grid ── */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
                     {study.kpis.map((kpi, i) => (
-                      <div key={kpi.label} className="flex flex-col border-l-2 border-gradient pl-4" style={{ borderImage: "linear-gradient(to bottom, #E515AB, #FFBD1E) 1" }}>
-                        <p className="font-mono text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] bg-clip-text text-transparent mb-2">
+                      <div key={kpi.label} className="flex flex-col border-l-2 border-gradient pl-4" style={{ borderImage: "linear-gradient(to bottom, #2563EB, #16A34A) 1" }}>
+                        <p className="font-mono text-4xl md:text-5xl font-bold bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent mb-2">
                           <Counter
                             to={kpi.to}
                             prefix={kpi.prefix}
@@ -226,10 +226,10 @@ export default function CaseStudiesClientPage() {
                   <div>
                     <button className={`group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 px-8 py-4 font-mono text-sm font-bold uppercase tracking-widest transition-all ${
                       isWhite 
-                        ? "border-[#E515AB]/30 text-black hover:border-transparent" 
-                        : "border-[#E515AB]/30 text-white hover:border-transparent"
+                        ? "border-[#2563EB]/30 text-black hover:border-transparent" 
+                        : "border-[#2563EB]/30 text-white hover:border-transparent"
                     }`}>
-                      <span className="absolute inset-0 bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                      <span className="absolute inset-0 bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                       <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
                         View Detailed Report
                       </span>

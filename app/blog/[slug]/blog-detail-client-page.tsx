@@ -33,7 +33,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10 w-full">
            <motion.div {...fadeUp()} className="max-w-[1000px]">
              <div className="flex items-center gap-4 mb-6">
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#E515AB] font-bold">{post.category}</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#2563EB] font-bold">{post.category}</span>
                 <span className="h-px w-5 bg-white/30" />
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/60">{post.date}</span>
                 <span className="h-px w-5 bg-white/30" />
@@ -51,7 +51,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
         <div className="mx-auto max-w-[800px] px-6 md:px-10">
            <motion.div 
              {...fadeUp(0.2)}
-             className="prose prose-invert prose-lg md:prose-xl prose-p:text-white/80 prose-p:font-sans prose-p:leading-relaxed prose-headings:font-display prose-headings:font-bold prose-headings:tracking-[-0.02em] prose-a:text-[#E515AB] prose-strong:text-white w-full max-w-none"
+             className="prose prose-invert prose-lg md:prose-xl prose-p:text-white/80 prose-p:font-sans prose-p:leading-relaxed prose-headings:font-display prose-headings:font-bold prose-headings:tracking-[-0.02em] prose-a:text-[#2563EB] prose-strong:text-white w-full max-w-none"
              dangerouslySetInnerHTML={{ __html: post.content }}
            />
 
@@ -63,7 +63,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
               <button className="flex-1 w-full flex items-center justify-center gap-3 rounded-full border border-white/20 py-5 font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
                 Share this Insight
               </button>
-              <Link href="/contact" className="flex-1 w-full flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] py-5 font-mono text-xs font-bold uppercase tracking-widest text-white shadow-lg transition-transform hover:scale-105">
+              <Link href="/contact" className="flex-1 w-full flex items-center justify-center gap-3 rounded-full bg-gradient-to-br from-[#2563EB] to-[#16A34A] py-5 font-mono text-xs font-bold uppercase tracking-widest text-white shadow-lg transition-transform hover:scale-105">
                 Start a Conversation
               </Link>
            </motion.div>
@@ -74,7 +74,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
       <section className="bg-white text-black py-20 md:py-32 border-t border-gray-200">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
            <motion.div {...fadeUp()} className="mb-14">
-             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB] font-bold">/ Keep Reading</p>
+             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB] font-bold">/ Keep Reading</p>
            </motion.div>
            
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -91,7 +91,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
                        />
                      </div>
                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-3">{p.category}</span>
-                     <h3 className="font-display text-2xl font-bold leading-[1.1] tracking-[-0.02em] group-hover:text-[#E515AB] transition-colors line-clamp-2">
+                     <h3 className="font-display text-2xl font-bold leading-[1.1] tracking-[-0.02em] group-hover:text-[#2563EB] transition-colors line-clamp-2">
                        {p.title}
                      </h3>
                   </Link>

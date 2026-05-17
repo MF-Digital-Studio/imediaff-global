@@ -32,9 +32,9 @@ const REPEL_STRENGTH = 2.2
 const FRICTION       = 0.88
 
 const BRAND_PALETTE = [
-  { color: "#E515AB", glow: "rgba(229,21,171," },
-  { color: "#FF8A1E", glow: "rgba(255,138,30," },
-  { color: "#FFBD1E", glow: "rgba(255,189,30," },
+  { color: "#2563EB", glow: "rgba(37,99,235," },
+  { color: "#2563EB", glow: "rgba(255,138,30," },
+  { color: "#2563EB", glow: "rgba(255,189,30," },
 ]
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
@@ -271,7 +271,7 @@ function MetricCard({
         animate={inView ? { scaleX: 1 } : {}}
         transition={{ duration: 0.9, delay: index * 0.11 + 0.3, ease: [0.22, 1, 0.36, 1] }}
         style={{ originX: 0 }}
-        className="absolute bottom-0 left-6 right-6 h-[1.5px] bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E] opacity-50"
+        className="absolute bottom-0 left-6 right-6 h-[1.5px] bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-50"
       />
     </motion.div>
   )
@@ -303,9 +303,9 @@ function ProductionVisual({ visible }: { visible: boolean }) {
           visible
             ? {
                 background: [
-                  "radial-gradient(ellipse at center, rgba(229,21,171,0.18) 0%, rgba(255,138,30,0.08) 50%, transparent 75%)",
-                  "radial-gradient(ellipse at center, rgba(229,21,171,0.32) 0%, rgba(255,189,30,0.14) 50%, transparent 75%)",
-                  "radial-gradient(ellipse at center, rgba(229,21,171,0.18) 0%, rgba(255,138,30,0.08) 50%, transparent 75%)",
+                  "radial-gradient(ellipse at center, rgba(37,99,235,0.18) 0%, rgba(255,138,30,0.08) 50%, transparent 75%)",
+                  "radial-gradient(ellipse at center, rgba(37,99,235,0.32) 0%, rgba(255,189,30,0.14) 50%, transparent 75%)",
+                  "radial-gradient(ellipse at center, rgba(37,99,235,0.18) 0%, rgba(255,138,30,0.08) 50%, transparent 75%)",
                 ],
               }
             : {}
@@ -318,7 +318,7 @@ function ProductionVisual({ visible }: { visible: boolean }) {
         <div 
           className="relative w-[340px] h-[460px] md:w-[420px] md:h-[580px] rounded-3xl overflow-hidden"
           style={{
-            boxShadow: "0 0 40px rgba(229,21,171,0.25), 0 0 80px rgba(229,21,171,0.1)",
+            boxShadow: "0 0 40px rgba(37,99,235,0.25), 0 0 80px rgba(37,99,235,0.1)",
             border: "1px solid rgba(255,255,255,0.05)"
           }}
         >
@@ -363,7 +363,7 @@ export default function AuthorityMetrics() {
           className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[75%] w-[85%]"
           style={{
             background:
-              "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(229,21,171,0.16) 0%, rgba(255,138,30,0.09) 38%, transparent 70%)",
+              "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(37,99,235,0.16) 0%, rgba(255,138,30,0.09) 38%, transparent 70%)",
           }}
         />
         {/* right gold accent */}
@@ -385,7 +385,7 @@ export default function AuthorityMetrics() {
               opacity: 0.05 + (i % 2) * 0.02,
               background:
                 i % 2 === 0
-                  ? "linear-gradient(to top, rgba(229,21,171,0.8) 0%, rgba(255,138,30,0.4) 60%, transparent 100%)"
+                  ? "linear-gradient(to top, rgba(37,99,235,0.8) 0%, rgba(255,138,30,0.4) 60%, transparent 100%)"
                   : "linear-gradient(to top, rgba(255,138,30,0.7) 0%, rgba(255,189,30,0.3) 60%, transparent 100%)",
             }}
           />
@@ -423,7 +423,7 @@ export default function AuthorityMetrics() {
               iMediaff Global —{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(90deg, #E515AB 0%, #FF8A1E 55%, #FFBD1E 100%)",
+                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -454,8 +454,8 @@ export default function AuthorityMetrics() {
                 href="/about"
                 className="group inline-flex items-center gap-3 rounded-full px-10 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all duration-300 hover:scale-105"
                 style={{
-                  background: "linear-gradient(90deg, #E515AB 0%, #FF8A1E 50%, #FFBD1E 100%)",
-                  boxShadow: "0 0 30px rgba(229,21,171,0.45), inset 0 0 12px rgba(255,255,255,0.07)",
+                  background: "linear-gradient(90deg, #2563EB 0%, #2563EB 50%, #2563EB 100%)",
+                  boxShadow: "0 0 30px rgba(37,99,235,0.45), inset 0 0 12px rgba(255,255,255,0.07)",
                   border: "1px solid rgba(255,255,255,0.10)",
                 }}
                 onMouseEnter={e => {
@@ -464,7 +464,7 @@ export default function AuthorityMetrics() {
                 }}
                 onMouseLeave={e => {
                   (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                    "0 0 30px rgba(229,21,171,0.45), inset 0 0 12px rgba(255,255,255,0.07)"
+                    "0 0 30px rgba(37,99,235,0.45), inset 0 0 12px rgba(255,255,255,0.07)"
                 }}
               >
                 <span>Learn more</span>

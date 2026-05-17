@@ -42,7 +42,7 @@ export default function SiteFooter() {
     <footer className="relative border-t border-border bg-background">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-14 grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="md:col-span-3">
-          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-white">imediaff<span className="text-[#E515AB]">.</span></Link>
+          <Link href="/" className="font-display text-lg font-semibold tracking-tight text-white">imediaff<span className="text-[#2563EB]">.</span></Link>
           <p className="mt-4 max-w-sm text-sm text-white/60 leading-relaxed font-sans">A 360° digital agency connecting ambitious brands and world-class creators across Dubai and the MENA region.</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {SOCIAL.map((s) => (

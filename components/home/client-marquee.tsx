@@ -31,7 +31,7 @@ export default function ClientMarquee() {
               className="font-sans text-4xl md:text-6xl font-bold tracking-[-0.03em] text-black/20 hover:text-black transition-colors duration-500 cursor-default"
             >
               {c}
-              <span className="text-[#E515AB]">.</span>
+              <span className="text-[#2563EB]">.</span>
             </span>
           ))}
         </div>

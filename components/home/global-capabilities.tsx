@@ -11,10 +11,10 @@ const CAPABILITIES = [
     title: "Creator Strategy",
     description:
       "Engineering high-conversion creator roadmaps that align with your brand's global DNA — from talent selection to content architecture.",
-    glow: "rgba(229,21,171,0.22)",
-    glowHover: "rgba(229,21,171,0.45)",
-    accentFrom: "#E515AB",
-    accentTo: "#FF8A1E",
+    glow: "rgba(37,99,235,0.22)",
+    glowHover: "rgba(37,99,235,0.45)",
+    accentFrom: "#2563EB",
+    accentTo: "#2563EB",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <circle cx="16" cy="11" r="5" stroke="currentColor" strokeWidth="1.3" />
@@ -30,8 +30,8 @@ const CAPABILITIES = [
       "Your strategic gateway to the Dubai and MENA markets, ensuring cultural fluency and rapid scaling through established regional networks.",
     glow: "rgba(255,138,30,0.20)",
     glowHover: "rgba(255,138,30,0.42)",
-    accentFrom: "#FF8A1E",
-    accentTo: "#FFBD1E",
+    accentFrom: "#2563EB",
+    accentTo: "#2563EB",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <circle cx="16" cy="16" r="11" stroke="currentColor" strokeWidth="1.3" />
@@ -47,8 +47,8 @@ const CAPABILITIES = [
       "End-to-end execution of multi-platform campaigns with transparent, real-time reporting and performance guarantees built in.",
     glow: "rgba(255,189,30,0.18)",
     glowHover: "rgba(255,189,30,0.38)",
-    accentFrom: "#FFBD1E",
-    accentTo: "#FF8A1E",
+    accentFrom: "#2563EB",
+    accentTo: "#2563EB",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" strokeWidth="1.3" />
@@ -62,10 +62,10 @@ const CAPABILITIES = [
     title: "Strategic Consultancy",
     description:
       "Expert advisory on digital expansion, tax-efficient structures, and legal contract architecture across international jurisdictions.",
-    glow: "rgba(229,21,171,0.20)",
-    glowHover: "rgba(229,21,171,0.42)",
-    accentFrom: "#E515AB",
-    accentTo: "#FFBD1E",
+    glow: "rgba(37,99,235,0.20)",
+    glowHover: "rgba(37,99,235,0.42)",
+    accentFrom: "#2563EB",
+    accentTo: "#2563EB",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" className="w-7 h-7" aria-hidden>
         <path d="M16 4L4 10v6c0 7 5.4 13 12 14 6.6-1 12-7 12-14v-6L16 4z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
@@ -92,9 +92,9 @@ function LiteParticleCanvas() {
   const rafRef    = useRef<number>(0)
 
   const PALETTE = [
-    { dot: "#E515AB", glow: "rgba(229,21,171," },
-    { dot: "#FF8A1E", glow: "rgba(255,138,30," },
-    { dot: "#FFBD1E", glow: "rgba(255,189,30," },
+    { dot: "#2563EB", glow: "rgba(37,99,235," },
+    { dot: "#2563EB", glow: "rgba(255,138,30," },
+    { dot: "#2563EB", glow: "rgba(255,189,30," },
   ]
 
   const mkP = useCallback((w: number, h: number): LiteParticle => {
@@ -298,7 +298,7 @@ export default function GlobalCapabilities() {
       aria-label="Global Capabilities"
     >
       {/* White → Black gradient seam at top */}
-      <div className="w-full h-[2px] bg-gradient-to-r from-[#E515AB] via-[#FF8A1E] to-[#FFBD1E]" />
+      <div className="w-full h-[2px] bg-gradient-to-br from-[#2563EB] to-[#16A34A]" />
 
       {/* Living Ocean particles — continuity layer */}
       <LiteParticleCanvas />
@@ -308,7 +308,7 @@ export default function GlobalCapabilities() {
         className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 h-[50%] w-[70%]"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 100%, rgba(229,21,171,0.10) 0%, rgba(255,138,30,0.06) 40%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% 100%, rgba(37,99,235,0.10) 0%, rgba(255,138,30,0.06) 40%, transparent 70%)",
         }}
       />
 
@@ -329,7 +329,7 @@ export default function GlobalCapabilities() {
               Built to{" "}
               <span
                 style={{
-                  backgroundImage: "linear-gradient(90deg, #E515AB 0%, #FF8A1E 55%, #FFBD1E 100%)",
+                  backgroundImage: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",

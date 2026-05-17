@@ -155,7 +155,7 @@ export default function AboutClientPage() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
             / Regional Power
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -168,7 +168,7 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.55, delay: index * 0.08 }}
                 className="border border-gray-200 bg-white p-8 md:p-10 shadow-sm transition-shadow hover:shadow-md rounded-2xl"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#E515AB]">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#2563EB]">
                   {item.region}
                 </p>
                 <h2 className="mt-4 font-display text-3xl font-bold tracking-[-0.03em] text-black">
@@ -192,7 +192,7 @@ export default function AboutClientPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FFBD1E]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
               / Heritage
             </p>
             <h2 className="mt-6 font-display text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[0.88] tracking-[-0.045em] text-balance text-white">
@@ -218,7 +218,7 @@ export default function AboutClientPage() {
                   className="font-display font-bold leading-none tracking-[-0.05em] text-white"
                   style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
                 >
-                  <span className="bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent">
                     {m.value}
                   </span>
                 </p>
@@ -273,7 +273,7 @@ export default function AboutClientPage() {
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
               / Global Capabilities
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
@@ -291,7 +291,7 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="group relative bg-black px-8 py-10 transition-colors duration-300 hover:bg-white/[0.03] md:px-10 md:py-12"
               >
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-[#E515AB] to-[#FFBD1E] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
                   {cap.index}
                 </p>
@@ -309,7 +309,7 @@ export default function AboutClientPage() {
 
       {/* ── Core Services (Black Theme) ── */}
       <section className="bg-black text-white pb-16 md:pb-28 relative overflow-hidden z-10">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#E515AB]/10 via-[#FA1702]/10 to-[#FFBD1E]/10 blur-[100px] rounded-full opacity-50" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#2563EB]/10 to-[#16A34A]/10 blur-[100px] rounded-full opacity-50" />
 
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
           <motion.div
@@ -319,7 +319,7 @@ export default function AboutClientPage() {
             transition={{ duration: 0.7 }}
             className="mb-14 md:mb-20"
           >
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FFBD1E]">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
               / Core Expertise
             </p>
             <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
@@ -337,26 +337,26 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className={`group relative overflow-hidden rounded-2xl bg-white/[0.03] backdrop-blur-md p-[1px] transition-all duration-500 ${i % 3 === 1 ? 'lg:translate-y-12' : i % 3 === 2 ? 'lg:translate-y-24' : ''}`}
               >
-                <div className="absolute inset-0 bg-white/10 transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#E515AB] group-hover:via-[#FA1702] group-hover:to-[#FFBD1E]" />
+                <div className="absolute inset-0 bg-white/10 transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-[#2563EB] group-hover:via-[#FA1702] group-hover:to-[#2563EB]" />
 
                 <div className="relative flex flex-col h-full bg-black/90 backdrop-blur-md rounded-[15px] p-8 md:p-10">
-                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#E515AB]/20 group-hover:to-[#FFBD1E]/20 transition-colors duration-700" />
+                  <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-gradient-to-br group-hover:from-[#2563EB]/20 group-hover:to-[#2563EB]/20 transition-colors duration-700" />
 
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="mb-10 relative inline-flex h-20 w-20 items-center justify-center transition-transform duration-500 group-hover:scale-110">
-                      <div className="absolute inset-0 rounded-2xl bg-white/[0.04] ring-1 ring-white/10 transition-colors duration-500 group-hover:ring-[#E515AB]/40" />
+                      <div className="absolute inset-0 rounded-2xl bg-white/[0.04] ring-1 ring-white/10 transition-colors duration-500 group-hover:ring-[#2563EB]/40" />
                       <service.PrimaryIcon
                         size={36}
                         strokeWidth={1.4}
                         className="relative z-10 text-white transition-all duration-500"
                         style={{
-                          filter: "drop-shadow(0 0 6px rgba(229,21,171,0.55)) drop-shadow(0 0 14px rgba(229,21,171,0.25))",
+                          filter: "drop-shadow(0 0 6px rgba(37,99,235,0.55)) drop-shadow(0 0 14px rgba(37,99,235,0.25))",
                         }}
                       />
                       <service.AccentIcon
                         size={16}
                         strokeWidth={2}
-                        className="absolute bottom-2 right-2 z-20 text-[#FFBD1E] transition-all duration-500 group-hover:text-[#FFBD1E]"
+                        className="absolute bottom-2 right-2 z-20 text-[#2563EB] transition-all duration-500 group-hover:text-[#2563EB]"
                         style={{
                           filter: "drop-shadow(0 0 4px rgba(255,189,30,0.7))",
                         }}
@@ -387,7 +387,7 @@ export default function AboutClientPage() {
             className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
           >
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E515AB]">
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
                 / Strategic Partnerships
               </p>
               <h2 className="mt-5 font-display text-[clamp(2rem,5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-black">
@@ -409,7 +409,7 @@ export default function AboutClientPage() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="group bg-white px-6 py-8 transition-colors duration-300 hover:bg-gray-50 md:px-8 md:py-10"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gray-400 transition-colors duration-300 group-hover:text-[#E515AB]">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-gray-400 transition-colors duration-300 group-hover:text-[#2563EB]">
                   {p.sector}
                 </p>
                 <p className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-black md:text-3xl">
@@ -445,7 +445,7 @@ export default function AboutClientPage() {
             <div className="mt-8 grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-3 rounded-lg overflow-hidden">
               {["Data-driven creativity", "Talent management", "Market-first strategies"].map((item) => (
                 <div key={item} className="bg-black px-4 py-5 text-center">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#E515AB]">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#2563EB]">
                     {item}
                   </p>
                 </div>
@@ -456,7 +456,7 @@ export default function AboutClientPage() {
       </section>
 
       {/* ── Scale CTA (Sunset Gradient Theme) ── */}
-      <section className="bg-gradient-to-r from-[#E515AB] via-[#FA1702] to-[#FFBD1E] text-black py-24 md:py-36">
+      <section className="bg-gradient-to-br from-[#2563EB] to-[#16A34A] text-black py-24 md:py-36">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
