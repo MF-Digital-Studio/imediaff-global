@@ -51,18 +51,18 @@ export default function AzerbaijanPage() {
 
 
       {/* SECTION 2 — Who Can Apply? */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 border-border bg-[#ffffff] border-t border-[#e5e7eb] relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.02)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
           viewport={{ once: true, margin: "-100px" }} 
           transition={{ duration: 0.7 }} 
-          className="mx-auto max-w-[1600px] px-6 md:px-10"
+          className="mx-auto max-w-[1600px] px-6 md:px-10 z-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Who Can Apply?</h2>
-            <p className="text-xl text-muted-foreground">Application Requirements</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Who Can Apply?</h2>
+            <p className="text-xl text-[#4b5563]">Application Requirements</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -73,16 +73,16 @@ export default function AzerbaijanPage() {
               { icon: FileText, text: "Must have a signed agency contract" },
               { icon: ShieldCheck, text: "Must comply with all Trendyol Partnership Program rules" }
             ].map((req, i) => (
-              <div key={i} className="flex items-center gap-4 bg-white/5 border border-white/10 p-6 rounded-2xl">
+              <div key={i} className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl">
                 <req.icon className="w-8 h-8 text-[#2563EB] shrink-0" />
-                <span className="font-medium">{req.text}</span>
+                <span className="text-[#111827] font-medium">{req.text}</span>
               </div>
             ))}
           </div>
 
-          <div className="p-6 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl flex items-start gap-4">
+          <div className="p-6 border border-[#bfdbfe] bg-[#eff6ff] rounded-xl flex items-start gap-4 shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <AlertCircle className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
-            <p className="text-[#2563EB] text-sm md:text-base">
+            <p className="text-[#2563EB] text-sm md:text-base font-medium">
               Apply via the link on our Instagram page. If approved within 1–5 business days, the TrendFam program application link will be sent to your Instagram account. Note: the agency form and TrendFam form are different — both must be completed.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 3 — How You Earn */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -99,51 +99,51 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> Earn</h2>
-            <p className="text-xl text-muted-foreground">Commission Rates per Segment.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How You Earn</h2>
+            <p className="text-xl text-[#4b5563]">Commission Rates per Segment.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
               <span className="text-2xl mb-2">🥇</span>
-              <h4 className="font-bold mb-2">Platinum</h4>
+              <h4 className="font-bold mb-2 text-[#111827]">Platinum</h4>
               <div className="text-2xl font-bold text-[#2563EB]">40%</div>
-              <p className="text-xs text-muted-foreground mt-1">In-Link</p>
+              <p className="text-xs text-[#4b5563] mt-1">In-Link</p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
               <span className="text-2xl mb-2">🥈</span>
-              <h4 className="font-bold mb-2">Gold</h4>
+              <h4 className="font-bold mb-2 text-[#111827]">Gold</h4>
               <div className="text-2xl font-bold text-[#2563EB]">30%</div>
-              <p className="text-xs text-muted-foreground mt-1">In-Link</p>
+              <p className="text-xs text-[#4b5563] mt-1">In-Link</p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
               <span className="text-2xl mb-2">🥉</span>
-              <h4 className="font-bold mb-2">Silver</h4>
-              <div className="text-2xl font-bold text-zinc-300">20%</div>
-              <p className="text-xs text-muted-foreground mt-1">In-Link</p>
+              <h4 className="font-bold mb-2 text-[#111827]">Silver</h4>
+              <div className="text-2xl font-bold text-[#374151]">20%</div>
+              <p className="text-xs text-[#4b5563] mt-1">In-Link</p>
             </div>
-            <div className="border border-white/10 bg-[#16A34A]/10 p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="border border-[#16A34A] bg-[#f0fdf4] p-6 rounded-2xl flex flex-col items-center text-center shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
               <span className="text-2xl mb-2">🌱</span>
               <h4 className="font-bold mb-2 text-[#16A34A]">Starter</h4>
               <div className="text-2xl font-bold text-[#16A34A]">30%</div>
-              <p className="text-xs text-[#16A34A]/70 mt-1">In-Link</p>
+              <p className="text-xs text-[#15803d] mt-1 font-semibold">In-Link</p>
             </div>
           </div>
 
-          <h3 className="text-2xl font-bold mb-6">Special Rate Rules</h3>
-          <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/40 border border-white/10 p-8 rounded-3xl">
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> Out-of-collection products: 15% commission</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> Electronics: 5% commission (same for in-link and out-link)</li>
-              <li className="flex items-center gap-3"><Ban className="text-red-400 w-5 h-5" /> Mobile phones and gold products: 0% commission</li>
-              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> Maximum earning per order: $30 (excess is deducted from order)</li>
+          <h3 className="text-2xl font-bold mb-6 text-[#111827]">Special Rate Rules</h3>
+          <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
+            <ul className="space-y-4 text-[#374151] font-medium">
+              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Out-of-collection products: 15% commission</span></li>
+              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Electronics: 5% commission (same for in-link and out-link)</span></li>
+              <li className="flex items-center gap-3"><Ban className="text-red-500 w-5 h-5" /> <span>Mobile phones and gold products: 0% commission</span></li>
+              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> <span>Maximum earning per order: $30 (excess is deducted from order)</span></li>
             </ul>
           </div>
         </motion.div>
       </section>
 
       {/* SECTION 4 — Payments & Fees */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -152,44 +152,44 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Payments & Fees</h2>
-            <p className="text-xl text-muted-foreground">Agency Commission & Payment Schedule.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Payments & Fees</h2>
+            <p className="text-xl text-[#4b5563]">Agency Commission & Payment Schedule.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <Percent className="w-10 h-10 text-[#2563EB] mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Agency Split</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-[#111827]">Agency Split</h3>
+              <p className="text-[#4b5563] leading-relaxed">
                 60% of total earnings go to you. The remaining 40% covers all government taxes and agency commission — no additional fees.
               </p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <CalendarDays className="w-10 h-10 text-[#2563EB] mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Payment Timeline</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-[#111827]">Payment Timeline</h3>
+              <p className="text-[#4b5563] leading-relaxed">
                 Trendyol transfers payment to the agency 30 days after invoicing. The agency then forwards your payment within 15 days.
               </p>
             </div>
           </div>
 
-          <div className="overflow-x-auto border border-white/10 rounded-2xl mb-8 max-w-3xl">
+          <div className="overflow-x-auto border border-[#e5e7eb] rounded-2xl mb-8 max-w-3xl">
             <table className="w-full text-sm text-left">
               <thead className="bg-[#2563EB] text-white">
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
+                <tr className="text-white">
                   <th className="px-6 py-4">Month Earned</th>
                   <th className="px-6 py-4">Payment Received</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">March</td><td className="px-6 py-4 text-muted-foreground">Second week of May</td></tr>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">April</td><td className="px-6 py-4 text-muted-foreground">Second week of June</td></tr>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">May</td><td className="px-6 py-4 text-muted-foreground">Second week of July</td></tr>
+                <tr className="border-b border-[#e5e7eb] odd:bg-[#ffffff] even:bg-[#f9fafb]"><td className="px-6 py-4 font-semibold text-[#111827]">March</td><td className="px-6 py-4 text-[#374151]">Second week of May</td></tr>
+                <tr className="border-b border-[#e5e7eb] odd:bg-[#ffffff] even:bg-[#f9fafb]"><td className="px-6 py-4 font-semibold text-[#111827]">April</td><td className="px-6 py-4 text-[#374151]">Second week of June</td></tr>
+                <tr className="border-b border-[#e5e7eb] odd:bg-[#ffffff] even:bg-[#f9fafb]"><td className="px-6 py-4 font-semibold text-[#111827]">May</td><td className="px-6 py-4 text-[#374151]">Second week of July</td></tr>
               </tbody>
             </table>
           </div>
 
-          <div className="border-l-4 border-[#2563EB] bg-[#2563EB]/10 p-6 rounded-r-xl max-w-3xl">
+          <div className="border-l-4 border-[#2563EB] bg-[#eff6ff] border border-y border-r border-[#bfdbfe]/50 p-6 rounded-r-xl max-w-3xl shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <p className="text-[#2563EB] text-sm md:text-base font-medium">
               Important: Payments are calculated based on the TL exchange rate of the invoicing month, then converted to Manat. Do not calculate earnings by converting USD directly to Manat. A 1.5% bank processing fee is also deducted.
             </p>
@@ -198,7 +198,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 5 — How to Track Your Performance */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] border-b border-[#e5e7eb] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -207,12 +207,12 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">How to Track Your Performance</h2>
-            <p className="text-xl text-muted-foreground">Tracking Your Earnings</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How to Track Your Performance</h2>
+            <p className="text-xl text-[#4b5563]">Tracking Your Earnings</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative mb-12">
-            <div className="hidden md:block absolute top-[60px] left-[12%] right-[12%] h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+            <div className="hidden md:block absolute top-[60px] left-[12%] right-[12%] h-[1px] bg-gradient-to-r from-transparent via-[#e5e7eb] to-transparent" />
             
             {[
               { step: "01", text: "Log in to your Trendyol account" },
@@ -221,17 +221,17 @@ export default function AzerbaijanPage() {
               { step: "04", text: "Check 'Link Revenue' to see which collections perform best" }
             ].map((step, i) => (
               <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full border-4 border-background bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
+                <div className="w-20 h-20 rounded-full border-4 border-[#ffffff] bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6">
                   {step.step}
                 </div>
-                <p className="text-foreground/90 font-medium max-w-[200px]">{step.text}</p>
+                <p className="text-[#374151] font-semibold max-w-[200px]">{step.text}</p>
               </div>
             ))}
           </div>
 
-          <div className="p-6 border border-[#2563EB]/30 bg-blue-500/5 rounded-xl flex items-start gap-4">
+          <div className="p-6 border border-[#bfdbfe] bg-[#eff6ff] rounded-xl flex items-start gap-4 shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <RefreshCw className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
-            <p className="text-[#2563EB] text-sm md:text-base">
+            <p className="text-[#2563EB] text-sm md:text-base font-medium">
               Troubleshooting note: If Influencer Center is not visible: update the app, log out and back in. If the issue persists, delete and reinstall the app.
             </p>
           </div>
@@ -255,17 +255,17 @@ export default function AzerbaijanPage() {
           <div className="overflow-x-auto border border-white/10 rounded-2xl mb-6 max-w-3xl">
             <table className="w-full text-sm text-left">
               <thead className="bg-[#2563EB] text-white">
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
+                <tr className="border-b border-white/10 text-white">
                   <th className="px-6 py-4">Ranking</th>
                   <th className="px-6 py-4">Coupon (AZN)</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">1–50</td><td className="px-6 py-4 font-bold text-[#2563EB]">125 AZN</td></tr>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">51–150</td><td className="px-6 py-4 font-bold text-[#2563EB]">100 AZN</td></tr>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">151–250</td><td className="px-6 py-4 font-bold text-[#2563EB]">75 AZN</td></tr>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">251–500</td><td className="px-6 py-4 font-bold text-[#2563EB]">50 AZN</td></tr>
-                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">501–750</td><td className="px-6 py-4 font-bold text-[#2563EB]">35 AZN</td></tr>
+                <tr className="border-b border-white/10 odd:bg-white/5 even:bg-white/10 text-white"><td className="px-6 py-4 font-medium text-white">1–50</td><td className="px-6 py-4 font-bold text-[#2563EB]">125 AZN</td></tr>
+                <tr className="border-b border-white/10 odd:bg-white/5 even:bg-white/10 text-white"><td className="px-6 py-4 font-medium text-white">51–150</td><td className="px-6 py-4 font-bold text-[#2563EB]">100 AZN</td></tr>
+                <tr className="border-b border-white/10 odd:bg-white/5 even:bg-white/10 text-white"><td className="px-6 py-4 font-medium text-white">151–250</td><td className="px-6 py-4 font-bold text-[#2563EB]">75 AZN</td></tr>
+                <tr className="border-b border-white/10 odd:bg-white/5 even:bg-white/10 text-white"><td className="px-6 py-4 font-medium text-white">251–500</td><td className="px-6 py-4 font-bold text-[#2563EB]">50 AZN</td></tr>
+                <tr className="border-b border-white/10 odd:bg-white/5 even:bg-white/10 text-white"><td className="px-6 py-4 font-medium text-white">501–750</td><td className="px-6 py-4 font-bold text-[#2563EB]">35 AZN</td></tr>
               </tbody>
             </table>
           </div>
@@ -276,8 +276,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 7 — Types of Links You Can Create */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 border-border bg-[#ffffff] border-t border-b border-[#e5e7eb] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -286,31 +285,31 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Types of Links You Can Create</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Types of Links You Can Create</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <LinkIcon className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">Single Product Link</h3>
-              <p className="text-muted-foreground text-sm">Share one specific item</p>
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Single Product Link</h3>
+              <p className="text-[#4b5563] text-sm">Share one specific item</p>
             </div>
-            <div className="border border-[#2563EB]/30 bg-gradient-to-b from-[#2563EB]/10 to-transparent p-8 rounded-3xl relative">
+            <div className="border border-[#2563EB] bg-[#f0f4ff] shadow-[0_4px_12px_rgba(37,99,235,0.1)] p-8 rounded-3xl relative">
               <div className="absolute top-4 right-4 bg-[#2563EB] text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Most Effective</div>
               <Layers className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3 text-white">Collection Link</h3>
-              <p className="text-foreground/80 text-sm">Group products into a themed collection</p>
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Collection Link</h3>
+              <p className="text-[#374151] text-sm leading-relaxed">Group products into a themed collection</p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <ShoppingCart className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">Brand Commission Model</h3>
-              <p className="text-muted-foreground text-sm">Pre-built brand collections — just copy and share the link</p>
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Brand Commission Model</h3>
+              <p className="text-[#4b5563] text-sm">Pre-built brand collections — just copy and share the link</p>
             </div>
           </div>
 
-          <div className="p-6 border border-red-500/30 bg-red-500/5 rounded-xl flex items-start gap-4">
-            <AlertTriangle className="w-6 h-6 text-red-400 shrink-0 mt-0.5" />
-            <p className="text-red-200 text-sm md:text-base font-medium">
+          <div className="border border-red-200 bg-red-50/90 text-red-700 p-6 rounded-xl flex items-start gap-4 shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
+            <AlertTriangle className="w-6 h-6 text-red-600 shrink-0 mt-0.5" />
+            <p className="text-red-700 text-sm md:text-base font-semibold">
               Warning: Always enable 'mobile redirect' when creating links.
             </p>
           </div>
@@ -413,7 +412,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 11 — Bonus Opportunities */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] border-t border-b border-[#e5e7eb] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -422,8 +421,8 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-12">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> Opportunities</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Bonus Opportunities</h2>
+            <p className="text-xl text-[#4b5563] leading-relaxed">
               Trendyol offers extra earning opportunities for high-performing influencers. Gold and Platinum segment influencers are prioritised for bonus targeting.
             </p>
           </div>
@@ -435,15 +434,15 @@ export default function AzerbaijanPage() {
               { icon: FileText, text: "Complete a specific number of posts" },
               { icon: TrendingUp, text: "Achieve a specific sales volume from posts" }
             ].map((item, i) => (
-              <div key={i} className="bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col items-center text-center">
+              <div key={i} className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
                 <item.icon className="w-8 h-8 text-[#2563EB] mb-4" />
-                <span className="font-medium">{item.text}</span>
+                <span className="font-semibold text-[#374151]">{item.text}</span>
               </div>
             ))}
           </div>
 
-          <div className="p-6 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl">
-            <p className="text-[#2563EB] text-sm md:text-base font-medium text-center">
+          <div className="p-6 border border-[#bfdbfe] bg-[#eff6ff] rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
+            <p className="text-[#2563EB] text-sm md:text-base font-semibold text-center">
               Note: Successfully completing all assigned missions earns you an additional bonus on top of your regular commission.
             </p>
           </div>

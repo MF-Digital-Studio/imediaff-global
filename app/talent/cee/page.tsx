@@ -51,8 +51,7 @@ export default function CeePage() {
       </section>
 
 {/* 2. ABOUT THE PROGRAM */}
-          <section className="py-24 relative overflow-hidden bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 relative overflow-hidden bg-[#ffffff] border-t border-[#e5e7eb] border-b border-[#e5e7eb]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -61,8 +60,8 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
         >
           <div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">The TrendFam Program</h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">The TrendFam Program</h2>
+            <div className="space-y-6 text-lg text-[#374151] leading-relaxed">
               <p>
                 TrendFam is a performance and commission-based influencer marketing program created exclusively for influencers by Trendyol. Participating influencers promote products available on the Trendyol platform through their social media accounts and earn commission per sale.
               </p>
@@ -72,8 +71,8 @@ export default function CeePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 to-[#2563EB]/20 blur-3xl rounded-full" />
-            <div className="relative bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden">
+            <div className="absolute inset-0 bg-[#2563EB]/5 blur-3xl rounded-full" />
+            <div className="relative bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden">
               <div className="grid grid-cols-2 gap-6">
                 {[
                   { icon: TrendingUp, label: "Performance Based" },
@@ -81,9 +80,9 @@ export default function CeePage() {
                   { icon: Smartphone, label: "Multi-Platform" },
                   { icon: Globe, label: "Global Reach" }
                 ].map((item, i) => (
-                  <div key={i} className="flex flex-col items-center justify-center p-6 border border-white/5 bg-black/20 rounded-2xl text-center">
+                  <div key={i} className="flex flex-col items-center justify-center p-6 border border-[#e5e7eb] bg-[#ffffff] rounded-2xl text-center shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
                     <item.icon className="w-10 h-10 text-[#2563EB] mb-4" strokeWidth={1.5} />
-                    <span className="font-medium text-sm">{item.label}</span>
+                    <span className="font-medium text-sm text-[#111827]">{item.label}</span>
                   </div>
                 ))}
               </div>
@@ -211,8 +210,7 @@ export default function CeePage() {
       </section>
 
       {/* 5. EARNINGS MODEL */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 border-border bg-[#ffffff] border-t border-[#e5e7eb] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -221,66 +219,66 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> Earn</h2>
-            <p className="text-xl text-muted-foreground">Understanding the commission models and tracking windows.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> <span className="text-[#0a0a0a]">Earn</span></h2>
+            <p className="text-xl text-[#4b5563]">Understanding the commission models and tracking windows.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* In-link */}
-            <div className="border border-[#2563EB]/30 bg-gradient-to-b from-[#2563EB]/5 to-transparent p-8 md:p-10 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/10 blur-3xl rounded-full" />
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2563EB]/20 text-[#2563EB] text-sm font-semibold mb-6">
+            <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
                 <LinkIcon className="w-4 h-4" /> 100% Commission Rate
               </div>
-              <h3 className="text-3xl font-display font-bold mb-4">In-link</h3>
-              <p className="text-lg text-[#2563EB] mb-6">
+              <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">In-link</h3>
+              <p className="text-lg text-[#4b5563] mb-6">
                 When your follower purchases a product directly from your curated collection link, this is counted as an in-link transaction.
               </p>
-              <div className="bg-black/40 border border-white/5 p-5 rounded-xl">
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-white">Example:</strong> You share an Adidas sneaker collection. Your follower clicks your link and buys an Adidas sneaker → <span className="text-[#2563EB] font-semibold">In-link</span>.
+              <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl">
+                <p className="text-sm text-[#4b5563]">
+                  <strong className="text-[#111827]">Example:</strong> You share an Adidas sneaker collection. Your follower clicks your link and buys an Adidas sneaker → <span className="text-[#2563EB] font-semibold">In-link</span>.
                 </p>
               </div>
             </div>
 
             {/* Out-link */}
-            <div className="border border-[#2563EB]/30 bg-gradient-to-b from-[#2563EB]/5 to-transparent p-8 md:p-10 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/10 blur-3xl rounded-full" />
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2563EB]/20 text-[#2563EB] text-sm font-semibold mb-6">
+            <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
                 <ExternalLink className="w-4 h-4" /> 50% Commission Rate
               </div>
-              <h3 className="text-3xl font-display font-bold mb-4">Out-link</h3>
-              <p className="text-lg text-[#2563EB] mb-6">
+              <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">Out-link</h3>
+              <p className="text-lg text-[#4b5563] mb-6">
                 When your follower clicks your link but purchases a different product on Trendyol, this is counted as an out-link transaction.
               </p>
-              <div className="bg-black/40 border border-white/5 p-5 rounded-xl">
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-white">Example:</strong> You share an Adidas sneaker link. Your follower clicks it but buys a Puma sneaker instead → <span className="text-[#2563EB] font-semibold">Out-link</span>.
+              <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl">
+                <p className="text-sm text-[#4b5563]">
+                  <strong className="text-[#111827]">Example:</strong> You share an Adidas sneaker link. Your follower clicks it but buys a Puma sneaker instead → <span className="text-[#2563EB] font-semibold">Out-link</span>.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
-              <Clock className="w-8 h-8 text-muted-foreground" />
+            <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
+              <Clock className="w-8 h-8 text-[#2563EB]" />
               <div>
-                <p className="text-sm text-muted-foreground">In-link tracking window</p>
-                <p className="text-xl font-bold">24 hours</p>
+                <p className="text-sm text-[#4b5563]">In-link tracking window</p>
+                <p className="text-xl font-bold text-[#2563EB]">24 hours</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
-              <Clock className="w-8 h-8 text-muted-foreground" />
+            <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
+              <Clock className="w-8 h-8 text-[#2563EB]" />
               <div>
-                <p className="text-sm text-muted-foreground">Out-link tracking window</p>
-                <p className="text-xl font-bold">12 hours</p>
+                <p className="text-sm text-[#4b5563]">Out-link tracking window</p>
+                <p className="text-xl font-bold text-[#2563EB]">12 hours</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
-              <Euro className="w-8 h-8 text-muted-foreground" />
+            <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
+              <Euro className="w-8 h-8 text-[#2563EB]" />
               <div>
-                <p className="text-sm text-muted-foreground">Maximum earning</p>
-                <p className="text-xl font-bold">€100 <span className="text-sm font-normal text-muted-foreground">/ transaction</span></p>
+                <p className="text-sm text-[#4b5563]">Maximum earning</p>
+                <p className="text-xl font-bold text-[#2563EB]">€100 <span className="text-sm font-normal text-[#4b5563]">/ transaction</span></p>
               </div>
             </div>
           </div>
@@ -288,7 +286,7 @@ export default function CeePage() {
       </section>
 
       {/* 6. BONUS & INCENTIVES */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] border-b border-[#e5e7eb] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -297,74 +295,74 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> Opportunities</h2>
-            <p className="text-xl text-muted-foreground">Unlock extra earnings and rewards beyond standard commissions.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> <span className="text-[#0a0a0a]">Opportunities</span></h2>
+            <p className="text-xl text-[#4b5563]">Unlock extra earnings and rewards beyond standard commissions.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <Gift className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Welcome Bonus</h3>
-              <p className="text-muted-foreground mb-4">Jumpstart your journey with our sign-up incentives.</p>
+              <h3 className="text-2xl font-bold mb-4 text-[#111827]">Welcome Bonus</h3>
+              <p className="text-[#4b5563] mb-4">Jumpstart your journey with our sign-up incentives.</p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
-                  <span><strong>€100</strong> in coins upon joining</span>
+                  <span className="text-[#374151]"><strong className="text-[#111827]">€100</strong> in coins upon joining</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
-                  <span><strong>€100</strong> voucher after your first post</span>
+                  <span className="text-[#374151]"><strong className="text-[#111827]">€100</strong> voucher after your first post</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <Users className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Referral Bonus</h3>
-              <p className="text-muted-foreground mb-4">Earn for every influencer you refer to the program based on their follower count:</p>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left">
+              <h3 className="text-2xl font-bold mb-4 text-[#111827]">Referral Bonus</h3>
+              <p className="text-[#4b5563] mb-4">Earn for every influencer you refer to the program based on their follower count:</p>
+              <div className="overflow-x-auto border border-[#e5e7eb] rounded-lg">
+                <table className="w-full text-sm text-left border-collapse">
                   <thead className="bg-[#2563EB] text-white">
-                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
-                      <th className="px-4 py-3 rounded-tl-lg">Followers</th>
-                      <th className="px-4 py-3 rounded-tr-lg">Bonus</th>
+                    <tr>
+                      <th className="px-4 py-3 font-semibold">Followers</th>
+                      <th className="px-4 py-3 font-semibold">Bonus</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">1,000,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€500</td></tr>
-                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">500,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€300</td></tr>
-                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">100,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€150</td></tr>
-                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">50,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€50</td></tr>
-                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium rounded-bl-lg">10,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold rounded-br-lg">€25</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">1,000,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€500</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">500,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€300</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium">100,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€150</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#f9fafb] text-[#374151]"><td className="px-4 py-3 font-medium">50,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€50</td></tr>
+                    <tr className="border-b border-[#e5e7eb] bg-[#ffffff] text-[#374151]"><td className="px-4 py-3 font-medium rounded-bl-lg">10,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold rounded-br-lg">€25</td></tr>
                   </tbody>
                 </table>
               </div>
             </div>
 
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <Award className="w-10 h-10 text-[#2563EB] mb-4" />
-              <h3 className="text-xl font-bold mb-2">Performance Rewards</h3>
-              <p className="text-muted-foreground text-sm">Exclusive incentives unlocked as you grow and hit performance milestones within TrendFam.</p>
+              <h3 className="text-xl font-bold mb-2 text-[#111827]">Performance Rewards</h3>
+              <p className="text-[#4b5563] text-sm">Exclusive incentives unlocked as you grow and hit performance milestones within TrendFam.</p>
             </div>
 
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <Tags className="w-10 h-10 text-[#2563EB] mb-4" />
-              <h3 className="text-xl font-bold mb-2">Brand Bonus Campaigns</h3>
-              <p className="text-muted-foreground text-sm">Sellers on Trendyol occasionally run extra bonus campaigns to boost product promotion.</p>
+              <h3 className="text-xl font-bold mb-2 text-[#111827]">Brand Bonus Campaigns</h3>
+              <p className="text-[#4b5563] text-sm">Sellers on Trendyol occasionally run extra bonus campaigns to boost product promotion.</p>
             </div>
 
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl md:col-span-2">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl md:col-span-2">
               <div className="flex items-start md:items-center gap-6 flex-col md:flex-row">
                 <Coins className="w-12 h-12 text-[#2563EB] shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Daily Coin Rewards</h3>
-                  <p className="text-muted-foreground text-sm">Earn additional coins by simply logging into the Trendyol app daily. Consistently engage to maximize your passive rewards.</p>
+                  <h3 className="text-xl font-bold mb-2 text-[#111827]">Daily Coin Rewards</h3>
+                  <p className="text-[#4b5563] text-sm">Earn additional coins by simply logging into the Trendyol app daily. Consistently engage to maximize your passive rewards.</p>
                 </div>
               </div>
             </div>
           </div>
           
-          <p className="text-xs text-muted-foreground/60 text-center">
+          <p className="text-xs text-[#4b5563]/60 text-center">
             * Bonuses are not guaranteed and are subject to campaign-specific terms and Trendyol&apos;s active promotional periods.
           </p>
         </motion.div>

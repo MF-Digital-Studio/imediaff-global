@@ -19,17 +19,17 @@ const PRESENCE = [
   {
     region: "TR",
     city: "Istanbul",
-    note: "Creative strategy and high-fidelity production operations.",
+    note: "Creative strategy, legal advisory, and high-fidelity production hub. Home to our Turkey operations with 5,000+ influencer partners in the Trendyol affiliate network.",
   },
   {
     region: "Dubai",
     city: "UAE",
-    note: "Regional headquarters for GCC partnerships and strategic market entry.",
+    note: "Regional headquarters for Gulf and MENA partnerships. Active TrendFam operations across KSA, UAE, and Kuwait.",
   },
   {
-    region: "MENA",
-    city: "Regional Network",
-    note: "Holistic campaign execution and cultural adaptation across the region.",
+    region: "CEE & AZ",
+    city: "Growth Markets",
+    note: "Active since October 2024 across Romania, Poland, Bulgaria, Greece, and Azerbaijan — our fastest-growing affiliate markets.",
   },
 ]
 
@@ -51,25 +51,25 @@ const CAPABILITIES = [
     index: "01",
     title: "Creator Strategy",
     description:
-      "Managing careers and campaigns for the digital elite. From talent discovery to brand alignment, we engineer influence that converts.",
+      "Full-service TrendFam affiliate program management — influencer onboarding, link tracking, commission reporting, and payment processing across all 4 regions.",
   },
   {
     index: "02",
     title: "Market Entry & Growth",
     description:
-      "Bridging the gap for brands entering the Dubai and MENA markets. We deliver the cultural intelligence and network access to accelerate your launch.",
+      "Strategic entry into MENA, Gulf, CEE, and Azerbaijani markets with local cultural fluency, network access, and full operational infrastructure.",
   },
   {
     index: "03",
     title: "Production & Media",
     description:
-      "High-fidelity content creation and targeted ad performance. Every asset is built to command attention across every platform.",
+      "High-fidelity content creation and advertising production optimized for social platforms across MENA and European markets.",
   },
   {
     index: "04",
     title: "Strategic Consultancy",
     description:
-      "Legal, financial, and strategic blueprints for digital expansion. We are the operating system behind your international growth.",
+      "Legal contract architecture, tax compliance, KVKK/GDPR protection, and financial advisory — covering every jurisdiction we operate in.",
   },
 ]
 
@@ -142,6 +142,9 @@ export default function AboutClientPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/50 md:text-xl">
             imediaff Global connects brands and creators through a unified strategic model built for market relevance, cultural fluency, and measurable growth.
+          </p>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/40 md:text-lg">
+            As one of Trendyol&apos;s top 3 global partner agencies, we manage affiliate and influencer marketing operations across Turkey, CEE, Gulf, and Azerbaijan — delivering structured, transparent, and performance-based partnerships.
           </p>
         </motion.div>
       </section>
@@ -307,6 +310,74 @@ export default function AboutClientPage() {
         </div>
       </section>
 
+      {/* ── How We Work (Black Theme) ── */}
+      <section className="bg-black text-white py-16 md:py-28 relative z-10 border-t border-white/10">
+        <div className="mx-auto max-w-[1600px] px-6 md:px-10">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px" }}
+            transition={{ duration: 0.7 }}
+            className="mb-14 md:mb-20"
+          >
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#2563EB]">
+              / How We Work
+            </p>
+            <h2 className="mt-5 font-display text-[clamp(2rem,5.5vw,4.5rem)] font-bold leading-[0.92] tracking-[-0.04em] text-balance text-white">
+              A transparent,{"\u00A0"}<br />performance-driven{"\u00A0"}model.
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {[
+              {
+                step: "01",
+                title: "Onboarding & Review",
+                desc: "Influencer or brand profile reviewed within 1–5 business days. Eligibility confirmed against regional program requirements.",
+              },
+              {
+                step: "02",
+                title: "Contract & Agreement",
+                desc: "A 1-year partnership contract signed by both parties. Commission rates, payment schedule, and compliance rules clearly defined.",
+              },
+              {
+                step: "03",
+                title: "Program Activation",
+                desc: "Affiliate links activated. Influencer Center access granted. Agency WhatsApp channel access provided.",
+              },
+              {
+                step: "04",
+                title: "Active Management",
+                desc: "Ongoing performance tracking, campaign updates, bonus mission alerts, and 1-on-1 consultancy support.",
+              },
+              {
+                step: "05",
+                title: "Reporting & Payment",
+                desc: "Monthly commission reports with full breakdowns. Payments processed on a 30-day cycle — directly to IBAN or local account. No upfront fees. Commission-only model.",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={item.step}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-10% 0px" }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="relative flex flex-col group"
+              >
+                {i < 4 && (
+                  <div className="hidden md:block absolute top-6 left-12 w-full h-[1px] bg-white/10 group-hover:bg-[#2563EB]/50 transition-colors duration-500" />
+                )}
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black font-mono text-sm text-[#2563EB] transition-colors duration-500 group-hover:border-[#2563EB] group-hover:text-[#2563EB] mb-6">
+                  {item.step}
+                </div>
+                <h3 className="font-display text-xl font-bold text-white mb-3">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-white/50">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Core Services (Black Theme) ── */}
       <section className="bg-black text-white pb-16 md:pb-28 relative overflow-hidden z-10">
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#2563EB]/10 to-[#16A34A]/10 blur-[100px] rounded-full opacity-50" />
@@ -415,6 +486,11 @@ export default function AboutClientPage() {
                 <p className="mt-3 font-display text-2xl font-bold tracking-[-0.03em] text-black md:text-3xl">
                   {p.name}
                 </p>
+                {p.name === "Trendyol" && (
+                  <p className="mt-2 text-xs leading-relaxed text-gray-500">
+                    iMediaff is one of Trendyol&apos;s top 3 authorized global partner agencies — managing TrendFam operations across MENA, CEE, Turkey, and Azerbaijan.
+                  </p>
+                )}
               </motion.div>
             ))}
           </div>

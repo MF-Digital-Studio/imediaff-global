@@ -6,68 +6,68 @@ import { motion } from "motion/react"
 
 const DETAILED_SERVICES = [
   {
-    title: "Strategic & Financial Advisory",
-    description: "Professional roadmaps for digital expansion, tax-efficient structures in MENA, and legal contract architecture for global creators.",
+    title: "Affiliate Marketing Management",
+    description: "Full-service TrendFam affiliate program management — influencer onboarding, link creation, commission tracking, and payment processing. We are one of Trendyol's top 3 authorized partner agencies globally.",
     image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
-    features: ["Digital Expansion Roadmaps", "MENA Tax Structures", "Global Creator Contracts"],
+    features: ["TrendFam Partner", "4 Regions", "Commission Tracking"],
   },
   {
-    title: "Brand & Product Engineering",
-    description: "Beyond identity creation—we build market-ready product lines and brand ecosystems that dominate local and global shelves.",
+    title: "Influencer & Brand Partnerships",
+    description: "Strategic matchmaking between brands and vetted influencers. Every partnership operates under a structured 1-year contract with clear KPIs, transparent reporting, and protected rights for both parties.",
     image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2064&auto=format&fit=crop",
-    features: ["Ecosystem Design", "Product Line Architecture", "Market Dominance"],
+    features: ["5,000+ Influencers", "1-Year Contracts", "Performance-Based"],
   },
   {
-    title: "Global Talent & Network Management",
-    description: "Managing the careers of 10,000+ verified influencers with a focus on long-term brand equity and partnership integrity.",
+    title: "Creator Consultancy & Growth",
+    description: "One-on-one guidance for influencers — from link strategy and content optimization to audience analytics and earnings maximization. Regular webinars and active campaign channels keep creators ahead.",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-    features: ["10,000+ Influencers", "Brand Equity", "Partnership Integrity"],
+    features: ["1-on-1 Advisory", "Webinars", "WhatsApp Channel"],
   },
   {
-    title: "High-Fidelity Campaign Production",
-    description: "Full-scale set production, high-speed social content creation, and cinematic storytelling tailored for global attention.",
+    title: "Campaign Production & Content",
+    description: "High-fidelity content creation and advertising production for brands seeking regional relevance. From concept to delivery, every asset is built to perform across social platforms.",
     image: "https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?q=80&w=2071&auto=format&fit=crop",
-    features: ["Set Production", "Cinematic Storytelling", "Social Formats"],
+    features: ["Set Production", "Social Formats", "Regional Adaptation"],
   },
   {
-    title: "Performance Media & Ads",
-    description: "Data-driven media buying with a focus on high ROAS (14x average) and precision targeting across UAE and global markets.",
+    title: "Market Entry & Regional Expansion",
+    description: "Strategic entry into MENA, CEE, Gulf, and Azerbaijan markets. Cultural fluency, local network access, and full operational infrastructure for confident regional scaling.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-    features: ["14x Average ROAS", "Precision Targeting", "UAE & Global Markets"],
+    features: ["MENA", "CEE", "Gulf & Azerbaijan"],
   },
   {
-    title: "Market Entry & Cultural Adaptation",
-    description: "Bridging the gap for international brands entering the Dubai and MENA markets through local cultural fluency and strategic logistics.",
+    title: "Legal & Financial Advisory",
+    description: "Contract architecture, tax compliance, KVKK/GDPR data protection, and cross-border payment management. Commission-only model — no upfront fees, no hidden costs.",
     image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2070&auto=format&fit=crop",
-    features: ["Dubai & MENA Entry", "Cultural Fluency", "Strategic Logistics"],
+    features: ["Contract Architecture", "Tax Compliance", "KVKK/GDPR"],
   },
 ]
 
 const PROCESS = [
   {
     step: "01",
-    title: "Brief & Discovery",
-    description: "Audience, category, and competitive analysis delivered within 48 hours.",
+    title: "Onboarding & Eligibility Review",
+    description: "Profile reviewed within 1–5 business days. Eligibility confirmed against regional TrendFam requirements.",
   },
   {
     step: "02",
-    title: "Strategy Workshop",
-    description: "A focused session to align positioning, channel mix, narrative, and KPI framework.",
+    title: "Contract & Agreement",
+    description: "1-year partnership contract signed. Commission rates, payment schedule, and compliance rules clearly defined for both parties.",
   },
   {
     step: "03",
-    title: "Creative Sprint",
-    description: "Two-week production cycle including scripts, storyboards, filming, and edits.",
+    title: "Program Activation",
+    description: "Affiliate links activated, Influencer Center access granted, agency campaign channel onboarded.",
   },
   {
     step: "04",
-    title: "Launch & Optimization",
-    description: "A/B testing, live bidding, and weekly insight reporting across active campaigns.",
+    title: "Active Management & Optimization",
+    description: "Real-time performance tracking, bonus mission alerts, campaign updates via dedicated channel, and 1-on-1 advisory.",
   },
   {
     step: "05",
-    title: "Measurement & Scale",
-    description: "Quarterly performance reviews with roadmap refinements for sustained growth.",
+    title: "Reporting & Payment",
+    description: "Monthly commission reports with transparent breakdowns. 30-day payment cycle. Direct IBAN or local account transfer. No upfront fees — commission only.",
   },
 ]
 
@@ -89,7 +89,7 @@ export default function ServicesClientPage() {
             Not just growth,<br />transformation.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/60 md:text-xl">
-            We integrate strategy, creative production, performance media, and analytics under one roof for global-first brand expansion.
+            From affiliate program management to creative production and legal advisory — iMediaff Global delivers end-to-end solutions for brands and creators across Turkey, CEE, Gulf, and Azerbaijan.
           </p>
         </motion.div>
       </section>

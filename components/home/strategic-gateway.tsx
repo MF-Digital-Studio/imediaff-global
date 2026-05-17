@@ -10,11 +10,11 @@ const REGIONS = [
     city: "Istanbul",
     role: "Headquarters",
     description:
-      "Strategic hub and high-fidelity production center connecting Europe and Asia. The creative core where every global campaign originates.",
+      "Creative strategy, legal advisory, and high-fidelity production hub. Home to our Turkey operations with 5,000+ influencer partners in the Trendyol affiliate network.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
         <circle cx="20" cy="20" r="14" stroke="currentColor" strokeWidth="1.2" />
-        <path d="M20 6v28M6 20h28M9 12q5 4 11 2t11-2M9 28q5-4 11-2t11 2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+        <path d="M20 6v28M6 20h28M9 12q5 4 11 2t11-2M9 28q5-4 11-2t11 2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
       </svg>
     ),
     stat: "HQ Since 2019",
@@ -23,28 +23,28 @@ const REGIONS = [
     city: "Dubai",
     role: "Operations",
     description:
-      "The pulse of our MENA network, driving regional influence and elite creator partnerships across the Gulf, Levant, and North Africa.",
+      "Regional headquarters for Gulf and MENA partnerships. Active TrendFam operations across KSA, UAE, and Kuwait — one of Trendyol's top 3 authorized global partner agencies.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
-        <path d="M8 30h24M12 30V18l3-3 3 3v-6l2-2 2 2v-4l2-2 2 2V30M11 22h2M11 26h2M22 18h2M22 22h2M22 26h2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8 30h24M12 30V18l3-3 3 3v-6l2-2 2 2v-4l2-2 2 2V30M11 22h2M11 26h2M22 18h2M22 22h2M22 26h2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     stat: "Primary Market",
   },
   {
-    city: "Wyoming",
-    role: "Global Anchor",
+    city: "CEE & Azerbaijan",
+    role: "Growth Markets",
     description:
-      "Our international corporate anchor, ensuring global standards, legal compliance, and seamless access to Western markets and partnerships.",
+      "Active since October 2024 across Romania, Poland, Bulgaria, Greece, and Azerbaijan — our fastest-growing affiliate markets. Performance-based TrendFam operations.",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10" aria-hidden>
-        <rect x="8" y="14" width="24" height="14" rx="2" stroke="currentColor" strokeWidth="1.2"/>
-        <path d="M14 14V10a6 6 0 0112 0v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-        <circle cx="20" cy="21" r="2" stroke="currentColor" strokeWidth="1.2"/>
-        <path d="M20 23v3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+        <rect x="8" y="14" width="24" height="14" rx="2" stroke="currentColor" strokeWidth="1.2" />
+        <path d="M14 14V10a6 6 0 0112 0v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+        <circle cx="20" cy="21" r="2" stroke="currentColor" strokeWidth="1.2" />
+        <path d="M20 23v3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
       </svg>
     ),
-    stat: "Global Compliance",
+    stat: "Active Since Oct 2024",
   },
 ]
 
@@ -52,7 +52,7 @@ const REGIONS = [
 
 export default function StrategicGateway() {
   const sectionRef = useRef<HTMLElement>(null)
-  const inView     = useInView(sectionRef, { once: true, margin: "-12% 0px" })
+  const inView = useInView(sectionRef, { once: true, margin: "-12% 0px" })
 
   return (
     <section
@@ -60,8 +60,7 @@ export default function StrategicGateway() {
       className="relative bg-white overflow-hidden"
       aria-label="Strategic Gateway"
     >
-      {/* Top rule — flushes the black→white seam */}
-      <div className="w-full h-[2px] bg-gradient-to-br from-[#2563EB] to-[#16A34A]" />
+
 
       <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-24 md:py-32">
 

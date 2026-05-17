@@ -89,7 +89,7 @@ interface LiteParticle {
 
 function LiteParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const rafRef    = useRef<number>(0)
+  const rafRef = useRef<number>(0)
 
   const PALETTE = [
     { dot: "#2563EB", glow: "rgba(37,99,235," },
@@ -122,7 +122,7 @@ function LiteParticleCanvas() {
 
     const dpr = window.devicePixelRatio || 1
     const resize = () => {
-      canvas.width  = canvas.offsetWidth  * dpr
+      canvas.width = canvas.offsetWidth * dpr
       canvas.height = canvas.offsetHeight * dpr
     }
     resize()
@@ -164,7 +164,7 @@ function LiteParticleCanvas() {
         // opacity pulse
         p.opacity += p.opDir * p.opSpeed
         if (p.opacity >= p.opMax) { p.opacity = p.opMax; p.opDir = -1 }
-        if (p.opacity <= p.opMin) { p.opacity = p.opMin; p.opDir =  1 }
+        if (p.opacity <= p.opMin) { p.opacity = p.opMin; p.opDir = 1 }
 
         const pal = PALETTE[i % 3]
 
@@ -245,12 +245,12 @@ function CapabilityCard({
         onMouseEnter={e => {
           const el = e.currentTarget as HTMLDivElement
           el.style.background = "rgba(255,255,255,0.055)"
-          el.style.boxShadow  = `0 0 60px ${cap.glowHover}, inset 0 0 30px rgba(255,255,255,0.02)`
+          el.style.boxShadow = `0 0 60px ${cap.glowHover}, inset 0 0 30px rgba(255,255,255,0.02)`
         }}
         onMouseLeave={e => {
           const el = e.currentTarget as HTMLDivElement
           el.style.background = "rgba(255,255,255,0.03)"
-          el.style.boxShadow  = "none"
+          el.style.boxShadow = "none"
         }}
       >
         {/* Index + Icon row */}
@@ -289,7 +289,7 @@ function CapabilityCard({
 
 export default function GlobalCapabilities() {
   const sectionRef = useRef<HTMLElement>(null)
-  const inView     = useInView(sectionRef, { once: true, margin: "-12% 0px" })
+  const inView = useInView(sectionRef, { once: true, margin: "-12% 0px" })
 
   return (
     <section
@@ -297,8 +297,7 @@ export default function GlobalCapabilities() {
       className="relative overflow-hidden bg-black"
       aria-label="Global Capabilities"
     >
-      {/* White → Black gradient seam at top */}
-      <div className="w-full h-[2px] bg-gradient-to-br from-[#2563EB] to-[#16A34A]" />
+
 
       {/* Living Ocean particles — continuity layer */}
       <LiteParticleCanvas />

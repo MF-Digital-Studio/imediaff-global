@@ -122,41 +122,41 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 4 — Why Trendyol? */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 border-border bg-[#ffffff] border-t border-[#e5e7eb] relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.02)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
           viewport={{ once: true, margin: "-100px" }} 
           transition={{ duration: 0.7 }} 
-          className="mx-auto max-w-[1600px] px-6 md:px-10"
+          className="mx-auto max-w-[1600px] px-6 md:px-10 animate-fade-in"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Why Trendyol?</h2>
-            <p className="text-xl text-muted-foreground">What Trendyol Offers</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Why Trendyol?</h2>
+            <p className="text-xl text-[#4b5563]">What Trendyol Offers</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden group">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <ShoppingBag className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">Millions of Products</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Millions of Products</h3>
+              <p className="text-[#4b5563] text-sm leading-relaxed">
                 Share products across every category — electronics, cosmetics, fashion, groceries and more.
               </p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden group">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <TrendingUp className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">High Conversion Rate</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">High Conversion Rate</h3>
+              <p className="text-[#4b5563] text-sm leading-relaxed">
                 As Turkey's most trusted and most-downloaded platform, your followers are highly likely to purchase through your links.
               </p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden group">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <BarChart className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">Advanced Tracking Panel</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Advanced Tracking Panel</h3>
+              <p className="text-[#4b5563] text-sm leading-relaxed">
                 Monitor clicks, sales, and accumulated commissions in real time through a dedicated influencer panel.
               </p>
             </div>
@@ -165,7 +165,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 5 — Your Commission Tier */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -174,35 +174,35 @@ export default function TurkeyPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Your Commission Tier</h2>
-            <p className="text-xl text-muted-foreground">Influencers are categorised into 4 performance segments. Commission rates vary by segment.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Your Commission Tier</h2>
+            <p className="text-xl text-[#4b5563]">Influencers are categorised into 4 performance segments. Commission rates vary by segment.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-2xl flex flex-col justify-center">
-              <div className="text-2xl mb-4 font-bold flex items-center gap-2">🥇 Platinum</div>
-              <p className="text-muted-foreground">Highest performance tier. Highest commission rates.</p>
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-2xl flex flex-col justify-center">
+              <div className="text-2xl mb-4 font-bold flex items-center gap-2 text-[#111827]">🥇 Platinum</div>
+              <p className="text-[#4b5563]">Highest performance tier. Highest commission rates.</p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-2xl flex flex-col justify-center">
-              <div className="text-2xl mb-4 font-bold flex items-center gap-2">🥈 Gold</div>
-              <p className="text-muted-foreground">High sales volume. Strong commission rates.</p>
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-2xl flex flex-col justify-center">
+              <div className="text-2xl mb-4 font-bold flex items-center gap-2 text-[#111827]">🥈 Gold</div>
+              <p className="text-[#4b5563]">High sales volume. Strong commission rates.</p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-2xl flex flex-col justify-center">
-              <div className="text-2xl mb-4 font-bold flex items-center gap-2">🥉 Silver</div>
-              <p className="text-muted-foreground">Mid-level, consistent sales.</p>
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-2xl flex flex-col justify-center">
+              <div className="text-2xl mb-4 font-bold flex items-center gap-2 text-[#111827]">🥉 Silver</div>
+              <p className="text-[#4b5563]">Mid-level, consistent sales.</p>
             </div>
-            <div className="border border-[#16A34A]/30 bg-[#16A34A]/5 p-8 rounded-2xl flex flex-col justify-center relative overflow-hidden">
+            <div className="border border-[#16A34A] bg-[#f0fdf4] text-[#16A34A] p-8 rounded-2xl flex flex-col justify-center relative overflow-hidden shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#16A34A]/10 blur-2xl rounded-full" />
               <div className="text-2xl mb-4 font-bold flex items-center gap-2 text-[#16A34A]">🌱 Starter</div>
-              <p className="text-muted-foreground text-sm mb-3">Entry segment for new joiners. Welcome rates apply for the first month:</p>
-              <ul className="space-y-1 text-sm text-[#16A34A]">
+              <p className="text-[#15803d] text-sm mb-3">Entry segment for new joiners. Welcome rates apply for the first month:</p>
+              <ul className="space-y-1 text-sm text-[#16A34A] font-semibold">
                 <li>• 10% in-link across all categories</li>
                 <li>• 2% for electronics</li>
               </ul>
             </div>
           </div>
-          <div className="p-6 border border-[#2563EB]/30 bg-blue-500/5 rounded-xl flex items-start gap-4">
+          <div className="p-6 border border-[#bfdbfe] bg-[#eff6ff] rounded-xl flex items-start gap-4 shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <AlertCircle className="w-6 h-6 text-[#2563EB] shrink-0" />
-            <p className="text-[#2563EB] text-sm md:text-base">
+            <p className="text-[#2563EB] text-sm md:text-base font-medium">
               After the first month, influencers are placed into Platinum, Gold, or Silver based on revenue and visitor performance. Specific rates for each segment are shared personally via the Influencer Panel.
             </p>
           </div>
@@ -210,7 +210,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 6 — In-Link vs Out-Link Sales */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -219,56 +219,56 @@ export default function TurkeyPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">In-Link vs Out-Link Sales</h2>
-            <p className="text-xl text-muted-foreground">Understanding the difference in tracking and commissions.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">In-Link vs Out-Link Sales</h2>
+            <p className="text-xl text-[#4b5563]">Understanding the difference in tracking and commissions.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* In-link */}
-            <div className="border border-[#2563EB]/30 bg-gradient-to-b from-[#2563EB]/5 to-transparent p-8 md:p-10 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/10 blur-3xl rounded-full" />
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2563EB]/20 text-[#2563EB] text-sm font-semibold mb-6">
+            <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
                 <LinkIcon className="w-4 h-4" /> Direct Sales
               </div>
-              <h3 className="text-3xl font-display font-bold mb-4">In-Link</h3>
-              <p className="text-lg text-[#2563EB] mb-6">
+              <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">In-Link</h3>
+              <p className="text-lg text-[#2563EB] mb-6 font-medium">
                 When a follower purchases the exact product from your shared link, you earn the full segment commission rate.
               </p>
             </div>
 
             {/* Out-link */}
-            <div className="border border-[#2563EB]/30 bg-gradient-to-b from-[#2563EB]/5 to-transparent p-8 md:p-10 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/10 blur-3xl rounded-full" />
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2563EB]/20 text-[#2563EB] text-sm font-semibold mb-6">
+            <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
                 <ExternalLink className="w-4 h-4" /> Cross Sales
               </div>
-              <h3 className="text-3xl font-display font-bold mb-4">Out-Link</h3>
-              <p className="text-lg text-[#2563EB] mb-6">
+              <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">Out-Link</h3>
+              <p className="text-lg text-[#2563EB] mb-6 font-medium">
                 When a follower clicks your link but purchases a different product, commission rates may vary depending on your segment.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
-              <Clock className="w-8 h-8 text-muted-foreground" />
+            <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
+              <Clock className="w-8 h-8 text-[#4b5563]" />
               <div>
-                <p className="text-sm text-muted-foreground">Cookie duration</p>
-                <p className="text-xl font-bold">24 hours</p>
+                <p className="text-sm text-[#4b5563]">Cookie duration</p>
+                <p className="text-xl font-bold text-[#111827]">24 hours</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
-              <TrendingUp className="w-8 h-8 text-muted-foreground" />
+            <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
+              <TrendingUp className="w-8 h-8 text-[#4b5563]" />
               <div>
-                <p className="text-sm text-muted-foreground">Daily earning limit</p>
-                <p className="text-xl font-bold">₺150,000</p>
+                <p className="text-sm text-[#4b5563]">Daily earning limit</p>
+                <p className="text-xl font-bold text-[#111827]">₺150,000</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
-              <Euro className="w-8 h-8 text-muted-foreground" />
+            <div className="flex items-center gap-4 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-5 rounded-2xl">
+              <Euro className="w-8 h-8 text-[#4b5563]" />
               <div>
-                <p className="text-sm text-muted-foreground">Min monthly payout</p>
-                <p className="text-xl font-bold">₺1,000 <span className="text-sm font-normal text-muted-foreground">rolls over</span></p>
+                <p className="text-sm text-[#4b5563]">Min monthly payout</p>
+                <p className="text-xl font-bold text-[#111827]">₺1,000 <span className="text-sm font-normal text-[#4b5563]">rolls over</span></p>
               </div>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 7 — How Your Earnings Are Calculated */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -285,33 +285,33 @@ export default function TurkeyPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">How Your Earnings Are Calculated</h2>
-            <p className="text-xl text-muted-foreground">Transparent breakdown of your net income.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How Your Earnings Are Calculated</h2>
+            <p className="text-xl text-[#4b5563]">Transparent breakdown of your net income.</p>
           </div>
 
-          <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-10 rounded-3xl max-w-4xl mb-8">
-            <h3 className="text-2xl font-bold mb-8">Scenario: ₺10,000 total commission earned in a month</h3>
+          <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-10 rounded-3xl max-w-4xl mb-8">
+            <h3 className="text-2xl font-bold mb-8 text-[#111827]">Scenario: ₺10,000 total commission earned in a month</h3>
             <div className="space-y-4 text-lg">
-              <div className="flex justify-between items-center py-3 border-b border-white/5">
-                <span className="text-foreground/80">Total Earnings:</span>
-                <span className="font-bold">₺10,000</span>
+              <div className="flex justify-between items-center py-3 border-b border-[#e5e7eb]">
+                <span className="text-[#374151]">Total Earnings:</span>
+                <span className="font-bold text-[#111827]">₺10,000</span>
               </div>
-              <div className="flex justify-between items-center py-3 border-b border-white/5">
-                <span className="text-muted-foreground">Agency Fee (15%):</span>
-                <span className="text-red-400 font-medium">-₺1,500</span>
+              <div className="flex justify-between items-center py-3 border-b border-[#e5e7eb]">
+                <span className="text-[#4b5563]">Agency Fee (15%):</span>
+                <span className="text-red-600 font-medium">-₺1,500</span>
               </div>
-              <div className="flex justify-between items-center py-3 border-b border-white/5">
-                <span className="text-muted-foreground">Legal Withholding Tax (15%):</span>
-                <span className="text-red-400 font-medium">-₺1,500</span>
+              <div className="flex justify-between items-center py-3 border-b border-[#e5e7eb]">
+                <span className="text-[#4b5563]">Legal Withholding Tax (15%):</span>
+                <span className="text-red-600 font-medium">-₺1,500</span>
               </div>
               <div className="flex justify-between items-center py-4 mt-2">
-                <span className="text-2xl font-bold text-white">Net Payment to You:</span>
+                <span className="text-2xl font-bold text-[#111827]">Net Payment to You:</span>
                 <span className="text-3xl font-display font-bold text-[#16A34A]">₺7,000</span>
               </div>
             </div>
           </div>
 
-          <div className="p-6 border border-[#2563EB]/30 bg-[#2563EB]/5 rounded-xl flex items-start gap-4">
+          <div className="p-6 border border-[#bfdbfe] bg-[#eff6ff] rounded-xl flex items-start gap-4 shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <ShieldAlert className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
             <p className="text-[#2563EB] text-sm md:text-base font-medium">
               No upfront fees. No membership costs. The agency only takes its service fee when you earn. If you make no sales, you owe nothing.
@@ -321,7 +321,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 8 — How to Share Links Effectively */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -330,30 +330,30 @@ export default function TurkeyPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">How to Share Links Effectively</h2>
-            <p className="text-xl text-muted-foreground">Successful affiliate influencers don't just share links — they tell a story around them.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How to Share Links Effectively</h2>
+            <p className="text-xl text-[#4b5563]">Successful affiliate influencers don't just share links — they tell a story around them.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <LinkIcon className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">Single Product Link</h3>
-              <p className="text-muted-foreground text-sm">
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Single Product Link</h3>
+              <p className="text-[#4b5563] text-sm">
                 Ideal for promoting a specific product you personally use and strongly recommend.
               </p>
             </div>
-            <div className="border border-[#2563EB]/30 bg-gradient-to-b from-[#2563EB]/10 to-transparent p-8 rounded-3xl relative">
+            <div className="border border-[#2563EB] bg-[#f0f4ff] shadow-[0_4px_12px_rgba(37,99,235,0.1)] p-8 rounded-3xl relative">
               <div className="absolute top-4 right-4 bg-[#2563EB] text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Most Effective</div>
               <Layers className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3 text-white">Collection Link</h3>
-              <p className="text-foreground/80 text-sm">
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Collection Link</h3>
+              <p className="text-[#374151] text-sm leading-relaxed">
                 Create themed lists — 'My Kitchen Favourites', 'Winter Outfits', 'Baby Essentials'. Followers who enter a collection tend to browse and purchase multiple items.
               </p>
             </div>
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
               <Building2 className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-xl font-bold mb-3">Store Link</h3>
-              <p className="text-muted-foreground text-sm">
+              <h3 className="text-xl font-bold mb-3 text-[#111827]">Store Link</h3>
+              <p className="text-[#4b5563] text-sm">
                 During brand discount periods, share a direct store link to earn commission across all their products.
               </p>
             </div>
@@ -362,7 +362,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 9 — Your Partnership Agreement */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+      <section className="py-24 border-border bg-[#ffffff] border-b border-[#e5e7eb] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -371,31 +371,31 @@ export default function TurkeyPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Your Partnership Agreement</h2>
-            <p className="text-xl text-muted-foreground">A 1-year contract that protects your rights — not restricts them.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Your Partnership Agreement</h2>
+            <p className="text-xl text-[#4b5563]">A 1-year contract that protects your rights — not restricts them.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/40 border border-white/10 p-10 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-10 rounded-3xl">
               <FileLock2 className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Contract Scope</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
+              <h3 className="text-2xl font-bold mb-4 text-[#111827]">Contract Scope</h3>
+              <p className="text-[#4b5563] leading-relaxed mb-4 text-sm md:text-base">
                 This contract covers Trendyol Affiliate work only. Your personal brand deals and other projects remain completely outside its scope. 
               </p>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-sm font-semibold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#ffffff] border border-[#e5e7eb] rounded-full text-sm font-semibold text-[#374151]">
                 Duration: 1 year from signing date.
               </div>
             </div>
             
-            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/40 border border-white/10 p-10 rounded-3xl">
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-10 rounded-3xl">
               <Coins className="w-10 h-10 text-[#2563EB] mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Financial Terms</h3>
-              <ul className="space-y-3 text-muted-foreground leading-relaxed mb-4">
-                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Agency service fee: 15% of total commission earned.</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Mandatory withholding tax: 15% (deducted by law).</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Net payment sent to your IBAN after all deductions.</li>
+              <h3 className="text-2xl font-bold mb-4 text-[#111827]">Financial Terms</h3>
+              <ul className="space-y-3 text-[#4b5563] leading-relaxed mb-4 text-sm md:text-base">
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" /> <span>Agency service fee: 15% of total commission earned.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" /> <span>Mandatory withholding tax: 15% (deducted by law).</span></li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0" /> <span>Net payment sent to your IBAN after all deductions.</span></li>
               </ul>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-sm font-semibold text-[#2563EB]">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#eff6ff] border border-[#bfdbfe] rounded-full text-sm font-semibold text-[#2563EB]">
                 No earnings = no deductions. Ever.
               </div>
             </div>
@@ -452,8 +452,8 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 11 — Your iMediaff Support System */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 border-border bg-[#ffffff] border-t border-b border-[#e5e7eb] relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.02)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -462,37 +462,37 @@ export default function TurkeyPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Your iMediaff Support System</h2>
-            <p className="text-xl text-muted-foreground">What iMediaff Supports You With</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Your iMediaff Support System</h2>
+            <p className="text-xl text-[#4b5563]">What iMediaff Supports You With</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl">
+            <div className="flex items-start gap-4 p-6 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] rounded-2xl">
               <Headphones className="w-8 h-8 text-[#2563EB] shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">One-on-one consultancy</h4>
-                <p className="text-sm text-muted-foreground">Analysis of why links aren't being clicked and which products suit your audience.</p>
+                <h4 className="font-bold mb-1 text-[#111827]">One-on-one consultancy</h4>
+                <p className="text-sm text-[#4b5563]">Analysis of why links aren't being clicked and which products suit your audience.</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl">
+            <div className="flex items-start gap-4 p-6 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] rounded-2xl">
               <MessageCircle className="w-8 h-8 text-[#2563EB] shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">Daily WhatsApp channel</h4>
-                <p className="text-sm text-muted-foreground">Receive daily campaigns, announcements, and training.</p>
+                <h4 className="font-bold mb-1 text-[#111827]">Daily WhatsApp channel</h4>
+                <p className="text-sm text-[#4b5563]">Receive daily campaigns, announcements, and training.</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl">
+            <div className="flex items-start gap-4 p-6 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] rounded-2xl">
               <Building2 className="w-8 h-8 text-[#2563EB] shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">PR collaborations</h4>
-                <p className="text-sm text-muted-foreground">Partnerships with corporate brands (Cosmetics, Tech, Fashion).</p>
+                <h4 className="font-bold mb-1 text-[#111827]">PR collaborations</h4>
+                <p className="text-sm text-[#4b5563]">Partnerships with corporate brands (Cosmetics, Tech, Fashion).</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl">
+            <div className="flex items-start gap-4 p-6 bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] rounded-2xl">
               <Scale className="w-8 h-8 text-[#2563EB] shrink-0" />
               <div>
-                <h4 className="font-bold mb-1">Legal and financial advisory</h4>
-                <p className="text-sm text-muted-foreground">Full infrastructure for safe and compliant operation.</p>
+                <h4 className="font-bold mb-1 text-[#111827]">Legal and financial advisory</h4>
+                <p className="text-sm text-[#4b5563]">Full infrastructure for safe and compliant operation.</p>
               </div>
             </div>
           </div>

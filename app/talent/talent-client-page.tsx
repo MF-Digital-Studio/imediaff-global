@@ -34,8 +34,7 @@ export default function TalentClientPage() {
       </section>
 
       {/* 2. SELECT YOUR REGION SECTION */}
-      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 border-border bg-[#ffffff] border-t border-[#e5e7eb] border-b border-[#e5e7eb] relative">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -44,63 +43,80 @@ export default function TalentClientPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Select Your Region</h2>
-            <p className="text-xl text-muted-foreground">Choose your target market to view specific program details and requirements.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Select Your Region</h2>
+            <p className="text-xl text-[#374151] font-medium">Choose your target market to view specific program details and requirements.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 — CEE Region */}
-            <Link href="/talent/cee" className="group flex flex-col bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl hover:bg-white/10 hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
+            <Link href="/talent/cee" className="group flex flex-col bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl hover:bg-[#f3f4f6] hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
-              <div className="text-3xl mb-4">🇷🇴 🇵🇱 🇧🇬 🇬🇷</div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-[#2563EB] transition-colors">CEE Region</h3>
-              <p className="text-sm text-foreground/70 mb-4 font-medium">Romania, Poland, Bulgaria, Greece</p>
-              <p className="text-muted-foreground text-sm flex-grow mb-8 leading-relaxed">
+              <div className="flex flex-wrap gap-1.5 mb-4 z-10">
+                <span className="px-2.5 py-0.5 text-xs font-bold bg-[#2563EB]/10 text-[#2563EB] rounded-full">CEE</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">RO</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">PL</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">BG</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">GR</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#111827] group-hover:text-[#2563EB] transition-colors">CEE Region</h3>
+              <p className="text-sm text-[#374151] mb-4 font-semibold">Romania, Poland, Bulgaria, Greece</p>
+              <p className="text-[#4b5563] text-sm flex-grow mb-8 leading-relaxed">
                 Commission-based influencer program via TrendFam for creators in Central & Eastern Europe.
               </p>
-              <div className="flex items-center text-sm font-bold text-white group-hover:text-[#2563EB] transition-colors mt-auto">
+              <div className="flex items-center text-sm font-bold text-[#2563EB] group-hover:text-[#1d4ed8] transition-colors mt-auto">
                 View Program <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>
 
             {/* Card 2 — Gulf Region */}
-            <Link href="/talent/gulf" className="group flex flex-col bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl hover:bg-white/10 hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
+            <Link href="/talent/gulf" className="group flex flex-col bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl hover:bg-[#f3f4f6] hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
-              <div className="text-3xl mb-4">🇸🇦 🇦🇪 🇰🇼</div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-[#2563EB] transition-colors">Gulf Region</h3>
-              <p className="text-sm text-foreground/70 mb-4 font-medium">KSA, UAE, Kuwait</p>
-              <p className="text-muted-foreground text-sm flex-grow mb-8 leading-relaxed">
+              <div className="flex flex-wrap gap-1.5 mb-4 z-10">
+                <span className="px-2.5 py-0.5 text-xs font-bold bg-[#2563EB]/10 text-[#2563EB] rounded-full">MENA</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">SA</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">AE</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">KW</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#111827] group-hover:text-[#2563EB] transition-colors">Gulf Region</h3>
+              <p className="text-sm text-[#374151] mb-4 font-semibold">KSA, UAE, Kuwait</p>
+              <p className="text-[#4b5563] text-sm flex-grow mb-8 leading-relaxed">
                 TrendFam Gulf — earn through link and code commissions across 6 countries in the MENA region.
               </p>
-              <div className="flex items-center text-sm font-bold text-white group-hover:text-[#2563EB] transition-colors mt-auto">
+              <div className="flex items-center text-sm font-bold text-[#2563EB] group-hover:text-[#1d4ed8] transition-colors mt-auto">
                 View Program <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>
 
             {/* Card 3 — Turkey */}
-            <Link href="/talent/turkey" className="group flex flex-col bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl hover:bg-white/10 hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
+            <Link href="/talent/turkey" className="group flex flex-col bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl hover:bg-[#f3f4f6] hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
-              <div className="text-3xl mb-4">🇹🇷</div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-[#2563EB] transition-colors">Turkey</h3>
-              <p className="text-sm text-foreground/70 mb-4 font-medium">Turkey</p>
-              <p className="text-muted-foreground text-sm flex-grow mb-8 leading-relaxed">
+              <div className="flex flex-wrap gap-1.5 mb-4 z-10">
+                <span className="px-2.5 py-0.5 text-xs font-bold bg-[#16A34A]/10 text-[#16A34A] rounded-full">Turkey</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">TR</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#111827] group-hover:text-[#2563EB] transition-colors">Turkey</h3>
+              <p className="text-sm text-[#374151] mb-4 font-semibold">Turkey</p>
+              <p className="text-[#4b5563] text-sm flex-grow mb-8 leading-relaxed">
                 iMediaff Türkiye — professional affiliate partnership with Trendyol's largest market.
               </p>
-              <div className="flex items-center text-sm font-bold text-white group-hover:text-[#2563EB] transition-colors mt-auto">
+              <div className="flex items-center text-sm font-bold text-[#2563EB] group-hover:text-[#1d4ed8] transition-colors mt-auto">
                 View Program <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>
 
             {/* Card 4 — Azerbaijan */}
-            <Link href="/talent/azerbaijan" className="group flex flex-col bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl hover:bg-white/10 hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
-              <div className="text-3xl mb-4">🇦🇿</div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-[#2563EB] transition-colors">Azerbaijan</h3>
-              <p className="text-sm text-foreground/70 mb-4 font-medium">Azerbaijan</p>
-              <p className="text-muted-foreground text-sm flex-grow mb-8 leading-relaxed">
+            <Link href="/talent/azerbaijan" className="group flex flex-col bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl hover:bg-[#f3f4f6] hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
+              <div className="flex flex-wrap gap-1.5 mb-4 z-10">
+                <span className="px-2.5 py-0.5 text-xs font-bold bg-[#2563EB]/10 text-[#2563EB] rounded-full">Azerbaijan</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">AZ</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-2 text-[#111827] group-hover:text-[#2563EB] transition-colors">Azerbaijan</h3>
+              <p className="text-sm text-[#374151] mb-4 font-semibold">Azerbaijan</p>
+              <p className="text-[#4b5563] text-sm flex-grow mb-8 leading-relaxed">
                 Trendyol Affiliate Program for content creators based in Azerbaijan.
               </p>
-              <div className="flex items-center text-sm font-bold text-white group-hover:text-[#2563EB] transition-colors mt-auto">
+              <div className="flex items-center text-sm font-bold text-[#2563EB] group-hover:text-[#1d4ed8] transition-colors mt-auto">
                 View Program <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>

@@ -9,19 +9,19 @@ import { Target, Zap, ShieldCheck } from "lucide-react"
 const PILLARS = [
   {
     title: "Strategic Precision",
-    description: "Targeting the right influence, not just the highest reach. We optimize for conversion, not just impressions.",
+    description: "We match brands with the right influencers — not just the largest audiences. Every partnership is built around performance metrics, audience fit, and commission-based accountability across 4 active regions.",
     icon: <Target className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(37,99,235,0.15)",
   },
   {
     title: "Operational Speed",
-    description: "Rapid market entry and campaign deployment across the Dubai and MENA landscape.",
+    description: "From application to first commission in days. Our TrendFam partnership infrastructure and streamlined onboarding means creators start earning fast — and brands see results faster.",
     icon: <Zap className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(255,138,30,0.15)",
   },
   {
     title: "Radical Transparency",
-    description: "Real-time, data-backed reporting and absolute compliance for every global move.",
+    description: "Every influencer works under a clear 1-year contract. Every commission is tracked in real time via Influencer Center. Every payment is documented. No upfront fees, ever.",
     icon: <ShieldCheck className="w-6 h-6 text-black" strokeWidth={1.5} />,
     glowColor: "rgba(255,189,30,0.15)",
   },

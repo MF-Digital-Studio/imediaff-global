@@ -95,6 +95,10 @@ export default function ScrollHero() {
             </span>
           </h1>
 
+          <p className="mt-6 max-w-2xl mx-auto text-sm md:text-base text-white/50 leading-relaxed font-medium text-balance pointer-events-auto">
+            A Dubai-headquartered influencer and affiliate marketing agency — one of Trendyol&apos;s top 3 global partner agencies, operating across MENA, CEE, Gulf, Turkey, and Azerbaijan.
+          </p>
+
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto">
             <Link
               href="/contact"

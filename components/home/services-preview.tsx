@@ -5,12 +5,12 @@ import { motion } from "motion/react"
 import { Sparkles, Target, Users, LineChart, Globe2, LayoutDashboard } from "lucide-react"
 
 const SERVICES = [
-  { icon: Users, title: "Creator Strategy", desc: "Engineering high-conversion creator roadmaps that align with your brand’s global DNA." },
-  { icon: Globe2, title: "Market Entry", desc: "Your strategic gateway to the Dubai and MENA markets, ensuring cultural fluency and rapid scaling." },
-  { icon: Target, title: "Performance Ads", desc: "Data-led ad buying and precision targeting across major social platforms for maximum ROI." },
-  { icon: LayoutDashboard, title: "Campaign Management", desc: "End-to-end execution of multi-platform campaigns with transparent, real-time reporting." },
-  { icon: Sparkles, title: "Creative Production", desc: "High-fidelity digital content production built for speed and regional resonance." },
-  { icon: LineChart, title: "Analytics & Insights", desc: "Real-time dashboards and comprehensive performance reporting to track global growth." },
+  { icon: Users, title: "Affiliate Marketing Management", desc: "End-to-end TrendFam affiliate program management across CEE, Gulf, Turkey, and Azerbaijan. Onboarding, tracking, and payments." },
+  { icon: Globe2, title: "Influencer Partnerships", desc: "Structured matchmaking between brands and vetted influencers through 1-year performance contracts." },
+  { icon: Target, title: "Campaign Production", desc: "High-fidelity content and advertising production for brands scaling across MENA and beyond." },
+  { icon: LayoutDashboard, title: "Market Entry", desc: "Strategic entry into MENA, CEE, and Gulf markets with cultural fluency and operational infrastructure." },
+  { icon: Sparkles, title: "Legal & Financial Advisory", desc: "Contract architecture, tax compliance (KVKK/GDPR), and cross-border payment management." },
+  { icon: LineChart, title: "Creator Consultancy", desc: "1-on-1 advisory, webinars, campaign channel access, and performance analytics to maximize creator earnings." },
 ]
 
 export default function ServicesPreview() {
