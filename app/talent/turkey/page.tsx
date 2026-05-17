@@ -15,7 +15,7 @@ export default function TurkeyPage() {
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* SECTION 1 — Hero */}
-      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-b border-border">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-[#000000] border-b border-[#1a1a1a]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#2563EB]/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#2563EB]/5 blur-[100px] rounded-full pointer-events-none" />
         
@@ -51,7 +51,7 @@ export default function TurkeyPage() {
 
 
       {/* SECTION 2 — About iMediaff Turkey */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -89,7 +89,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 3 — Application Requirements */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -122,7 +122,8 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 4 — Why Trendyol? */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -135,7 +136,7 @@ export default function TurkeyPage() {
             <p className="text-xl text-muted-foreground">What Trendyol Offers</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl relative overflow-hidden group">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <ShoppingBag className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Millions of Products</h3>
@@ -143,7 +144,7 @@ export default function TurkeyPage() {
                 Share products across every category — electronics, cosmetics, fashion, groceries and more.
               </p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl relative overflow-hidden group">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <TrendingUp className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">High Conversion Rate</h3>
@@ -151,7 +152,7 @@ export default function TurkeyPage() {
                 As Turkey's most trusted and most-downloaded platform, your followers are highly likely to purchase through your links.
               </p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl relative overflow-hidden group">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <BarChart className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Advanced Tracking Panel</h3>
@@ -164,7 +165,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 5 — Your Commission Tier */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -177,15 +178,15 @@ export default function TurkeyPage() {
             <p className="text-xl text-muted-foreground">Influencers are categorised into 4 performance segments. Commission rates vary by segment.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-2xl flex flex-col justify-center">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-2xl flex flex-col justify-center">
               <div className="text-2xl mb-4 font-bold flex items-center gap-2">🥇 Platinum</div>
               <p className="text-muted-foreground">Highest performance tier. Highest commission rates.</p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-2xl flex flex-col justify-center">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-2xl flex flex-col justify-center">
               <div className="text-2xl mb-4 font-bold flex items-center gap-2">🥈 Gold</div>
               <p className="text-muted-foreground">High sales volume. Strong commission rates.</p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-2xl flex flex-col justify-center">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-2xl flex flex-col justify-center">
               <div className="text-2xl mb-4 font-bold flex items-center gap-2">🥉 Silver</div>
               <p className="text-muted-foreground">Mid-level, consistent sales.</p>
             </div>
@@ -199,9 +200,9 @@ export default function TurkeyPage() {
               </ul>
             </div>
           </div>
-          <div className="p-6 border border-blue-500/30 bg-blue-500/5 rounded-xl flex items-start gap-4">
-            <AlertCircle className="w-6 h-6 text-blue-400 shrink-0" />
-            <p className="text-blue-100 text-sm md:text-base">
+          <div className="p-6 border border-[#2563EB]/30 bg-blue-500/5 rounded-xl flex items-start gap-4">
+            <AlertCircle className="w-6 h-6 text-[#2563EB] shrink-0" />
+            <p className="text-[#2563EB] text-sm md:text-base">
               After the first month, influencers are placed into Platinum, Gold, or Silver based on revenue and visitor performance. Specific rates for each segment are shared personally via the Influencer Panel.
             </p>
           </div>
@@ -209,7 +210,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 6 — In-Link vs Out-Link Sales */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -230,7 +231,7 @@ export default function TurkeyPage() {
                 <LinkIcon className="w-4 h-4" /> Direct Sales
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">In-Link</h3>
-              <p className="text-lg text-foreground/80 mb-6">
+              <p className="text-lg text-[#2563EB] mb-6">
                 When a follower purchases the exact product from your shared link, you earn the full segment commission rate.
               </p>
             </div>
@@ -242,28 +243,28 @@ export default function TurkeyPage() {
                 <ExternalLink className="w-4 h-4" /> Cross Sales
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">Out-Link</h3>
-              <p className="text-lg text-foreground/80 mb-6">
+              <p className="text-lg text-[#2563EB] mb-6">
                 When a follower clicks your link but purchases a different product, commission rates may vary depending on your segment.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex items-center gap-4 bg-zinc-900/50 border border-border p-5 rounded-2xl">
+            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
               <Clock className="w-8 h-8 text-muted-foreground" />
               <div>
                 <p className="text-sm text-muted-foreground">Cookie duration</p>
                 <p className="text-xl font-bold">24 hours</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-zinc-900/50 border border-border p-5 rounded-2xl">
+            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
               <TrendingUp className="w-8 h-8 text-muted-foreground" />
               <div>
                 <p className="text-sm text-muted-foreground">Daily earning limit</p>
                 <p className="text-xl font-bold">₺150,000</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-zinc-900/50 border border-border p-5 rounded-2xl">
+            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
               <Euro className="w-8 h-8 text-muted-foreground" />
               <div>
                 <p className="text-sm text-muted-foreground">Min monthly payout</p>
@@ -275,7 +276,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 7 — How Your Earnings Are Calculated */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -288,7 +289,7 @@ export default function TurkeyPage() {
             <p className="text-xl text-muted-foreground">Transparent breakdown of your net income.</p>
           </div>
 
-          <div className="border border-white/10 bg-white/5 p-10 rounded-3xl max-w-4xl mb-8">
+          <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-10 rounded-3xl max-w-4xl mb-8">
             <h3 className="text-2xl font-bold mb-8">Scenario: ₺10,000 total commission earned in a month</h3>
             <div className="space-y-4 text-lg">
               <div className="flex justify-between items-center py-3 border-b border-white/5">
@@ -320,7 +321,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 8 — How to Share Links Effectively */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -334,7 +335,7 @@ export default function TurkeyPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <LinkIcon className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Single Product Link</h3>
               <p className="text-muted-foreground text-sm">
@@ -349,7 +350,7 @@ export default function TurkeyPage() {
                 Create themed lists — 'My Kitchen Favourites', 'Winter Outfits', 'Baby Essentials'. Followers who enter a collection tend to browse and purchase multiple items.
               </p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <Building2 className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Store Link</h3>
               <p className="text-muted-foreground text-sm">
@@ -361,7 +362,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 9 — Your Partnership Agreement */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -375,8 +376,8 @@ export default function TurkeyPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl">
-              <FileLock2 className="w-10 h-10 text-white mb-6" />
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/40 border border-white/10 p-10 rounded-3xl">
+              <FileLock2 className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-2xl font-bold mb-4">Contract Scope</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 This contract covers Trendyol Affiliate work only. Your personal brand deals and other projects remain completely outside its scope. 
@@ -386,13 +387,13 @@ export default function TurkeyPage() {
               </div>
             </div>
             
-            <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl">
-              <Coins className="w-10 h-10 text-white mb-6" />
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/40 border border-white/10 p-10 rounded-3xl">
+              <Coins className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-2xl font-bold mb-4">Financial Terms</h3>
               <ul className="space-y-3 text-muted-foreground leading-relaxed mb-4">
-                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" /> Agency service fee: 15% of total commission earned.</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" /> Mandatory withholding tax: 15% (deducted by law).</li>
-                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" /> Net payment sent to your IBAN after all deductions.</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Agency service fee: 15% of total commission earned.</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Mandatory withholding tax: 15% (deducted by law).</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Net payment sent to your IBAN after all deductions.</li>
               </ul>
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-sm font-semibold text-[#2563EB]">
                 No earnings = no deductions. Ever.
@@ -403,7 +404,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 10 — The Only Rules That Matter */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -451,7 +452,8 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 11 — Your iMediaff Support System */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -487,7 +489,7 @@ export default function TurkeyPage() {
               </div>
             </div>
             <div className="flex items-start gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl">
-              <Scale className="w-8 h-8 text-blue-400 shrink-0" />
+              <Scale className="w-8 h-8 text-[#2563EB] shrink-0" />
               <div>
                 <h4 className="font-bold mb-1">Legal and financial advisory</h4>
                 <p className="text-sm text-muted-foreground">Full infrastructure for safe and compliant operation.</p>
@@ -498,7 +500,7 @@ export default function TurkeyPage() {
       </section>
 
       {/* SECTION 12 — Your Data is Safe */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -506,7 +508,7 @@ export default function TurkeyPage() {
           transition={{ duration: 0.7 }} 
           className="mx-auto max-w-[1600px] px-6 md:px-10 flex flex-col items-center text-center"
         >
-          <ShieldCheck className="w-16 h-16 text-[#16A34A] mb-6" />
+          <ShieldCheck className="w-16 h-16 text-[#2563EB] mb-6" />
           <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-6">Your Data is Safe</h2>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
             All personal, contact, and earnings data shared with iMediaff is protected under KVKK (Turkish Personal Data Protection Law). Your information is used solely for legal reporting purposes (tax, Trendyol reporting) and is never shared with third parties.
@@ -516,7 +518,7 @@ export default function TurkeyPage() {
 
 
       {/* CTA SECTION */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-32 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563EB]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 

@@ -15,7 +15,7 @@ export default function CeePage() {
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-b border-border">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-[#000000] border-b border-[#1a1a1a]">
         {/* Glow Effects */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#2563EB]/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#2563EB]/5 blur-[100px] rounded-full pointer-events-none" />
@@ -51,7 +51,8 @@ export default function CeePage() {
       </section>
 
 {/* 2. ABOUT THE PROGRAM */}
-          <section className="py-24 border-b border-border relative overflow-hidden">
+          <section className="py-24 relative overflow-hidden bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -72,7 +73,7 @@ export default function CeePage() {
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 to-[#2563EB]/20 blur-3xl rounded-full" />
-            <div className="relative border border-white/10 bg-white/5 backdrop-blur-xl p-10 rounded-3xl overflow-hidden">
+            <div className="relative bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden">
               <div className="grid grid-cols-2 gap-6">
                 {[
                   { icon: TrendingUp, label: "Performance Based" },
@@ -92,7 +93,7 @@ export default function CeePage() {
       </section>
 
       {/* 3. ELIGIBILITY */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-[#111111] border-y border-[#1f1f1f]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -112,7 +113,7 @@ export default function CeePage() {
               { icon: Globe, title: "CEE Region", desc: "Account registered in Romania, Poland, Bulgaria, or Greece" },
               { icon: Building2, title: "Agency Partner", desc: "Must apply through an authorized agency" }
             ].map((req, i) => (
-              <div key={i} className="border border-white/10 bg-white/5 p-8 rounded-2xl">
+              <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
                   <req.icon className="w-6 h-6 text-[#2563EB]" />
                 </div>
@@ -132,7 +133,7 @@ export default function CeePage() {
       </section>
 
       {/* 4. HOW IT WORKS */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#111111] border-y border-[#1f1f1f]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -156,7 +157,7 @@ export default function CeePage() {
               { step: "04", title: "Access", desc: "Approved influencers gain access to Influencer Center in the Trendyol app." }
             ].map((step, i) => (
               <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full border-4 border-background bg-zinc-900 flex items-center justify-center text-2xl font-display font-bold text-white mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
+                <div className="w-20 h-20 rounded-full border-4 border-background bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
@@ -168,7 +169,7 @@ export default function CeePage() {
       </section>
 
       {/* 4.5. CREATING & SHARING LINKS */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -210,7 +211,8 @@ export default function CeePage() {
       </section>
 
       {/* 5. EARNINGS MODEL */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -219,7 +221,7 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">How You Earn</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> Earn</h2>
             <p className="text-xl text-muted-foreground">Understanding the commission models and tracking windows.</p>
           </div>
 
@@ -231,7 +233,7 @@ export default function CeePage() {
                 <LinkIcon className="w-4 h-4" /> 100% Commission Rate
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">In-link</h3>
-              <p className="text-lg text-foreground/80 mb-6">
+              <p className="text-lg text-[#2563EB] mb-6">
                 When your follower purchases a product directly from your curated collection link, this is counted as an in-link transaction.
               </p>
               <div className="bg-black/40 border border-white/5 p-5 rounded-xl">
@@ -248,7 +250,7 @@ export default function CeePage() {
                 <ExternalLink className="w-4 h-4" /> 50% Commission Rate
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">Out-link</h3>
-              <p className="text-lg text-foreground/80 mb-6">
+              <p className="text-lg text-[#2563EB] mb-6">
                 When your follower clicks your link but purchases a different product on Trendyol, this is counted as an out-link transaction.
               </p>
               <div className="bg-black/40 border border-white/5 p-5 rounded-xl">
@@ -260,21 +262,21 @@ export default function CeePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex items-center gap-4 bg-zinc-900/50 border border-border p-5 rounded-2xl">
+            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
               <Clock className="w-8 h-8 text-muted-foreground" />
               <div>
                 <p className="text-sm text-muted-foreground">In-link tracking window</p>
                 <p className="text-xl font-bold">24 hours</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-zinc-900/50 border border-border p-5 rounded-2xl">
+            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
               <Clock className="w-8 h-8 text-muted-foreground" />
               <div>
                 <p className="text-sm text-muted-foreground">Out-link tracking window</p>
                 <p className="text-xl font-bold">12 hours</p>
               </div>
             </div>
-            <div className="flex items-center gap-4 bg-zinc-900/50 border border-border p-5 rounded-2xl">
+            <div className="flex items-center gap-4 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/50 border border-border p-5 rounded-2xl">
               <Euro className="w-8 h-8 text-muted-foreground" />
               <div>
                 <p className="text-sm text-muted-foreground">Maximum earning</p>
@@ -286,7 +288,7 @@ export default function CeePage() {
       </section>
 
       {/* 6. BONUS & INCENTIVES */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -295,63 +297,63 @@ export default function CeePage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Bonus Opportunities</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> Opportunities</h2>
             <p className="text-xl text-muted-foreground">Unlock extra earnings and rewards beyond standard commissions.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <Gift className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-2xl font-bold mb-4">Welcome Bonus</h3>
               <p className="text-muted-foreground mb-4">Jumpstart your journey with our sign-up incentives.</p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
                   <span><strong>€100</strong> in coins upon joining</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
                   <span><strong>€100</strong> voucher after your first post</span>
                 </li>
               </ul>
             </div>
 
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <Users className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-2xl font-bold mb-4">Referral Bonus</h3>
               <p className="text-muted-foreground mb-4">Earn for every influencer you refer to the program based on their follower count:</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                    <tr>
+                  <thead className="bg-[#2563EB] text-white">
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                       <th className="px-4 py-3 rounded-tl-lg">Followers</th>
                       <th className="px-4 py-3 rounded-tr-lg">Bonus</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">1,000,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€500</td></tr>
-                    <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">500,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€300</td></tr>
-                    <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">100,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€150</td></tr>
-                    <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">50,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€50</td></tr>
-                    <tr><td className="px-4 py-3 font-medium rounded-bl-lg">10,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold rounded-br-lg">€25</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">1,000,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€500</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">500,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€300</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">100,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€150</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">50,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold">€50</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium rounded-bl-lg">10,000+</td><td className="px-4 py-3 text-[#2563EB] font-bold rounded-br-lg">€25</td></tr>
                   </tbody>
                 </table>
               </div>
             </div>
 
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <Award className="w-10 h-10 text-[#2563EB] mb-4" />
               <h3 className="text-xl font-bold mb-2">Performance Rewards</h3>
               <p className="text-muted-foreground text-sm">Exclusive incentives unlocked as you grow and hit performance milestones within TrendFam.</p>
             </div>
 
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <Tags className="w-10 h-10 text-[#2563EB] mb-4" />
               <h3 className="text-xl font-bold mb-2">Brand Bonus Campaigns</h3>
               <p className="text-muted-foreground text-sm">Sellers on Trendyol occasionally run extra bonus campaigns to boost product promotion.</p>
             </div>
 
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl md:col-span-2">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl md:col-span-2">
               <div className="flex items-start md:items-center gap-6 flex-col md:flex-row">
                 <Coins className="w-12 h-12 text-[#2563EB] shrink-0" />
                 <div>
@@ -369,7 +371,7 @@ export default function CeePage() {
       </section>
 
       {/* 6.5. DISCOUNT CODES */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -409,7 +411,7 @@ export default function CeePage() {
       </section>
 
       {/* 7. CONTENT GUIDELINES */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -458,7 +460,7 @@ export default function CeePage() {
       </section>
 
       {/* 7.5. FAIR PLAY POLICY */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -515,7 +517,7 @@ export default function CeePage() {
       </section>
 
       {/* 8. PARTNERSHIP & PAYMENT */}
-      <section className="py-24 border-b border-border relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
         {/* Glow Effects */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-[#2563EB]/5 blur-[120px] rounded-full" />
@@ -536,7 +538,7 @@ export default function CeePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl">
-              <FileText className="w-10 h-10 text-white mb-6" />
+              <FileText className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-2xl font-bold mb-4">1-Year Contracts</h3>
               <p className="text-muted-foreground leading-relaxed">
                 We work with influencers on 1-year contracts as part of the Trendyol Partner Agency Program. This structure is designed to protect both parties and ensure long-term, stable collaboration.
@@ -544,7 +546,7 @@ export default function CeePage() {
             </div>
             
             <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl">
-              <CalendarDays className="w-10 h-10 text-white mb-6" />
+              <CalendarDays className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-2xl font-bold mb-4">Payment Cycle</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Payments are made by Trendyol to the agency on a 30-day cycle. For example, December earnings are transferred in the first week of February — directly to your IBAN account in Euros.
@@ -555,7 +557,7 @@ export default function CeePage() {
       </section>
 
       {/* 9. CTA SECTION */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-32 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563EB]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 

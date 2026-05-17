@@ -15,7 +15,7 @@ export default function GulfPage() {
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-b border-border">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-[#000000] border-b border-[#1a1a1a]">
         {/* Glow Effects */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#2563EB]/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#2563EB]/5 blur-[100px] rounded-full pointer-events-none" />
@@ -51,7 +51,7 @@ export default function GulfPage() {
       </section>
 
 {/* GULF SECTION 1 — The TrendFam Program */}
-          <section className="py-24 border-b border-border relative overflow-hidden">
+          <section className="py-24 relative overflow-hidden bg-[#111111] border-y border-[#1f1f1f]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -72,7 +72,7 @@ export default function GulfPage() {
               </div>
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/20 to-[#2563EB]/20 blur-3xl rounded-full" />
-                <div className="relative border border-white/10 bg-white/5 backdrop-blur-xl p-10 rounded-3xl overflow-hidden text-center">
+                <div className="relative bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] backdrop-blur-xl p-10 rounded-3xl overflow-hidden text-center">
                   <h3 className="text-xl font-bold mb-6 text-foreground/80 uppercase tracking-widest text-sm">Operating Regions</h3>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                     <div className="flex flex-col items-center p-4 bg-black/20 rounded-2xl min-w-[120px]">
@@ -94,7 +94,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 2 — Eligibility Requirements */}
-          <section className="py-24 bg-white/[0.02] border-b border-border">
+          <section className="py-24 border-border bg-[#111111] border-y border-[#1f1f1f]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -113,7 +113,7 @@ export default function GulfPage() {
                   { icon: Globe, title: "Gulf Region", desc: "Residency in UAE, KSA, or Kuwait" },
                   { icon: Building2, title: "Agency Partner", desc: "Must apply through an authorized agency partner" }
                 ].map((req, i) => (
-                  <div key={i} className="border border-white/10 bg-white/5 p-8 rounded-2xl">
+                  <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">
                     <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
                       <req.icon className="w-6 h-6 text-[#2563EB]" />
                     </div>
@@ -138,7 +138,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 3 — How to Get Started */}
-          <section className="py-24 border-b border-border">
+          <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -162,7 +162,7 @@ export default function GulfPage() {
                   { step: "04", title: "Access", desc: "Approved influencers gain access to the Influencer Center in the Trendyol app." }
                 ].map((step, i) => (
                   <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full border-4 border-background bg-zinc-900 flex items-center justify-center text-2xl font-display font-bold text-white mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
+                    <div className="w-20 h-20 rounded-full border-4 border-background bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
                       {step.step}
                     </div>
                     <h3 className="text-xl font-bold mb-3">{step.title}</h3>
@@ -174,7 +174,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 4 — How You Earn */}
-          <section className="py-24 bg-white/[0.02] border-b border-border">
+          <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -183,7 +183,7 @@ export default function GulfPage() {
               className="mx-auto max-w-[1600px] px-6 md:px-10"
             >
               <div className="max-w-3xl mb-16">
-                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">How You Earn</h2>
+                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> Earn</h2>
                 <p className="text-xl text-muted-foreground">Understanding the commission models and tracking windows.</p>
               </div>
 
@@ -236,7 +236,7 @@ export default function GulfPage() {
                 </div>
               </div>
 
-              <div className="p-6 border border-white/10 bg-white/5 rounded-xl">
+              <div className="p-6 bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] rounded-xl">
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   <strong className="text-white">Important:</strong> Commissions are calculated from net revenue after product discounts. A 12% tax is automatically deducted on all orders. For credit card returns, 18% is deducted; for cash-on-delivery returns, 50% is deducted. If an influencer has more than 50% cash-on-delivery return rate, Trendyol reserves the right to deduct additional earnings.
                 </p>
@@ -245,7 +245,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 5 — Personal Influencer Codes */}
-          <section className="py-24 border-b border-border">
+          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -260,8 +260,8 @@ export default function GulfPage() {
 
               <div className="overflow-x-auto mb-8 border border-white/10 rounded-2xl">
                 <table className="w-full text-sm text-left">
-                  <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                    <tr>
+                  <thead className="bg-[#2563EB] text-white">
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                       <th className="px-6 py-4">Shopper Type</th>
                       <th className="px-6 py-4">Discount</th>
                       <th className="px-6 py-4">Max Discount</th>
@@ -269,9 +269,9 @@ export default function GulfPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">First-time shopper</td><td className="px-6 py-4 text-[#2563EB] font-bold">20% (one-time)</td><td className="px-6 py-4">$20</td><td className="px-6 py-4">$20</td></tr>
-                    <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">Second purchase</td><td className="px-6 py-4 text-[#2563EB] font-bold">10%</td><td className="px-6 py-4">$1</td><td className="px-6 py-4">$40</td></tr>
-                    <tr><td className="px-6 py-4 font-medium text-white">Returning buyers</td><td className="px-6 py-4 text-[#2563EB] font-bold">5%</td><td className="px-6 py-4">1 SAR</td><td className="px-6 py-4">$40</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">First-time shopper</td><td className="px-6 py-4 text-[#2563EB] font-bold">20% (one-time)</td><td className="px-6 py-4">$20</td><td className="px-6 py-4">$20</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">Second purchase</td><td className="px-6 py-4 text-[#2563EB] font-bold">10%</td><td className="px-6 py-4">$1</td><td className="px-6 py-4">$40</td></tr>
+                    <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">Returning buyers</td><td className="px-6 py-4 text-[#2563EB] font-bold">5%</td><td className="px-6 py-4">1 SAR</td><td className="px-6 py-4">$40</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -290,7 +290,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 6 — Creating & Sharing Your Links */}
-          <section className="py-24 bg-white/[0.02] border-b border-border">
+          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -332,7 +332,8 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 7 — Your Influencer Center */}
-          <section className="py-24 border-b border-border">
+          <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -366,7 +367,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 8 — Your Rank & Segment */}
-          <section className="py-24 bg-white/[0.02] border-b border-border">
+          <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -375,7 +376,7 @@ export default function GulfPage() {
               className="mx-auto max-w-[1600px] px-6 md:px-10"
             >
               <div className="max-w-3xl mb-16">
-                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Your Rank & Segment</h2>
+                <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Your Rank</span> & Segment</h2>
                 <p className="text-xl text-muted-foreground">Top performers earn monthly coin bonuses. Track your ranking and level up.</p>
               </div>
 
@@ -391,17 +392,17 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6">Segment Requirements</h3>
                   <div className="overflow-hidden border border-white/10 rounded-2xl">
                     <table className="w-full text-sm text-left">
-                      <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                        <tr>
+                      <thead className="bg-[#2563EB] text-white">
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                           <th className="px-6 py-4">Segment</th>
                           <th className="px-6 py-4">Requirement</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-bold text-white">Platinum</td><td className="px-6 py-4">Net revenue &gt; $15K and Visitors &gt; 15K last month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-bold text-[#FFD700]">Gold</td><td className="px-6 py-4">Net revenue &gt; $2K and Visitors &gt; 2K last month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-bold text-zinc-300">Silver</td><td className="px-6 py-4">Did not reach Platinum or Gold thresholds</td></tr>
-                        <tr><td className="px-6 py-4 font-bold text-[#16A34A]">Starter</td><td className="px-6 py-4">Less than 30 days in TrendFam</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-bold text-white">Platinum</td><td className="px-6 py-4">Net revenue &gt; $15K and Visitors &gt; 15K last month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-bold text-[#FFD700]">Gold</td><td className="px-6 py-4">Net revenue &gt; $2K and Visitors &gt; 2K last month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-bold text-zinc-300">Silver</td><td className="px-6 py-4">Did not reach Platinum or Gold thresholds</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-bold text-[#16A34A]">Starter</td><td className="px-6 py-4">Less than 30 days in TrendFam</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -411,21 +412,21 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6">Monthly Ranking Coin Bonuses</h3>
                   <div className="overflow-hidden border border-white/10 rounded-2xl mb-4">
                     <table className="w-full text-sm text-left">
-                      <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                        <tr>
+                      <thead className="bg-[#2563EB] text-white">
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                           <th className="px-4 py-4">Ranking among all influencers</th>
                           <th className="px-4 py-4">Coin Bonus (USD)</th>
                           <th className="px-4 py-4">Week that coin will be applied</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">1–10</td><td className="px-4 py-3 text-[#2563EB] font-bold">$1,500</td><td className="px-4 py-3 text-muted-foreground">First week of month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">11–20</td><td className="px-4 py-3 text-[#2563EB] font-bold">$1,000</td><td className="px-4 py-3 text-muted-foreground">First week of month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">21–50</td><td className="px-4 py-3 text-[#2563EB] font-bold">$500</td><td className="px-4 py-3 text-muted-foreground">First week of month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">51–125</td><td className="px-4 py-3 text-[#2563EB] font-bold">$250</td><td className="px-4 py-3 text-muted-foreground">Second week of month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">126–250</td><td className="px-4 py-3 text-[#2563EB] font-bold">$100</td><td className="px-4 py-3 text-muted-foreground">Second week of month</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-4 py-3 font-medium">251–500</td><td className="px-4 py-3 text-[#2563EB] font-bold">$75</td><td className="px-4 py-3 text-muted-foreground">Third week of month</td></tr>
-                        <tr><td className="px-4 py-3 font-medium">501–1000</td><td className="px-4 py-3 text-[#2563EB] font-bold">$50</td><td className="px-4 py-3 text-muted-foreground">Third week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">1–10</td><td className="px-4 py-3 text-[#2563EB] font-bold">$1,500</td><td className="px-4 py-3 text-muted-foreground">First week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">11–20</td><td className="px-4 py-3 text-[#2563EB] font-bold">$1,000</td><td className="px-4 py-3 text-muted-foreground">First week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">21–50</td><td className="px-4 py-3 text-[#2563EB] font-bold">$500</td><td className="px-4 py-3 text-muted-foreground">First week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">51–125</td><td className="px-4 py-3 text-[#2563EB] font-bold">$250</td><td className="px-4 py-3 text-muted-foreground">Second week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">126–250</td><td className="px-4 py-3 text-[#2563EB] font-bold">$100</td><td className="px-4 py-3 text-muted-foreground">Second week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">251–500</td><td className="px-4 py-3 text-[#2563EB] font-bold">$75</td><td className="px-4 py-3 text-muted-foreground">Third week of month</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-4 py-3 font-medium">501–1000</td><td className="px-4 py-3 text-[#2563EB] font-bold">$50</td><td className="px-4 py-3 text-muted-foreground">Third week of month</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -439,7 +440,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 9 — How Coins Work */}
-          <section className="py-24 border-b border-border">
+          <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -453,33 +454,33 @@ export default function GulfPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div className="border border-white/10 bg-white/5 p-8 rounded-3xl relative overflow-hidden">
+                <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/10 blur-2xl rounded-full" />
                   <Coins className="w-10 h-10 text-[#2563EB] mb-4" />
                   <h3 className="text-2xl font-bold mb-4">Reward Coins</h3>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
                       <span>Earned from in-app engagement tools, spin wheels, and similar activities.</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
                       <span>Can cover up to <strong>15–20%</strong> of your order value.</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="border border-white/10 bg-white/5 p-8 rounded-3xl relative overflow-hidden">
+                <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/10 blur-2xl rounded-full" />
                   <RefreshCw className="w-10 h-10 text-[#2563EB] mb-4" />
                   <h3 className="text-2xl font-bold mb-4">Refund Coins</h3>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
                       <span>Earned from bonuses, monthly rewards, referrals, first-time shares, and order refunds.</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
                       <span>Can cover <strong>100%</strong> of your order value.</span>
                     </li>
                   </ul>
@@ -491,19 +492,19 @@ export default function GulfPage() {
                   <h3 className="text-2xl font-bold mb-6">First Time Share Coins</h3>
                   <div className="overflow-hidden border border-white/10 rounded-2xl mb-4">
                     <table className="w-full text-sm text-left">
-                      <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                        <tr>
+                      <thead className="bg-[#2563EB] text-white">
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                           <th className="px-6 py-4">Followers</th>
                           <th className="px-6 py-4">Coin Reward</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium">Hidden Follower</td><td className="px-6 py-4 text-[#2563EB] font-bold">$50</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium">10K–49K</td><td className="px-6 py-4 text-[#2563EB] font-bold">$50</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium">50K–99K</td><td className="px-6 py-4 text-[#2563EB] font-bold">$100</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium">100K+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$150</td></tr>
-                        <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium">500K+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$200</td></tr>
-                        <tr><td className="px-6 py-4 font-medium">1M+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$300</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium">Hidden Follower</td><td className="px-6 py-4 text-[#2563EB] font-bold">$50</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium">10K–49K</td><td className="px-6 py-4 text-[#2563EB] font-bold">$50</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium">50K–99K</td><td className="px-6 py-4 text-[#2563EB] font-bold">$100</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium">100K+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$150</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium">500K+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$200</td></tr>
+                        <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium">1M+</td><td className="px-6 py-4 text-[#2563EB] font-bold">$300</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -519,7 +520,7 @@ export default function GulfPage() {
                     <li className="flex items-start gap-3"><Clock className="w-5 h-5 text-[#2563EB] shrink-0" /> Coins expire 30 days after being awarded</li>
                     <li className="flex items-start gap-3"><Ban className="w-5 h-5 text-red-400 shrink-0" /> Coins are not redeemable for cash</li>
                     <li className="flex items-start gap-3"><AlertTriangle className="w-5 h-5 text-[#2563EB] shrink-0" /> Shopping from another influencer&apos;s link using coins will not generate commission for that influencer</li>
-                    <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" /> Coin earnings are separate from commission payments</li>
+                    <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-[#16A34A]" /> Coin earnings are separate from commission payments</li>
                   </ul>
                 </div>
               </div>
@@ -527,7 +528,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 10 — Brand Offers */}
-          <section className="py-24 bg-white/[0.02] border-b border-border">
+          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -587,10 +588,10 @@ export default function GulfPage() {
                   </p>
                 </div>
                 
-                <div className="border-l-4 border-blue-500 bg-blue-500/10 p-6 rounded-r-xl">
+                <div className="border-l-4 border-[#2563EB] bg-[#2563EB]/10 p-6 rounded-r-xl">
                   <div className="flex items-center gap-3 mb-2">
-                    <TrendingUp className="w-5 h-5 text-blue-400" />
-                    <h4 className="font-bold text-blue-400">Reporting Note</h4>
+                    <TrendingUp className="w-5 h-5 text-[#2563EB]" />
+                    <h4 className="font-bold text-[#2563EB]">Reporting Note</h4>
                   </div>
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     Track brand offer performance in the Reports section under the &apos;Brand Collaborations&apos; tab. Filter up to 7 days after the sharing date to see total offer performance.
@@ -601,7 +602,7 @@ export default function GulfPage() {
           </section>
 
           {/* GULF SECTION 11 — Fair Play Policy */}
-          <section className="py-24 border-b border-border">
+          <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
             <motion.div 
               initial={{ opacity: 0, y: 24 }} 
               whileInView={{ opacity: 1, y: 0 }} 
@@ -663,7 +664,7 @@ export default function GulfPage() {
           </section>
 
       {/* 9. CTA SECTION */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-32 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563EB]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 

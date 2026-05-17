@@ -15,7 +15,7 @@ export default function AzerbaijanPage() {
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* SECTION 1 — Hero */}
-      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-b border-border">
+      <section className="relative pt-32 md:pt-48 pb-20 md:pb-32 overflow-hidden border-border bg-[#000000] border-b border-[#1a1a1a]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#2563EB]/10 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#2563EB]/5 blur-[100px] rounded-full pointer-events-none" />
         
@@ -51,7 +51,8 @@ export default function AzerbaijanPage() {
 
 
       {/* SECTION 2 — Who Can Apply? */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -89,7 +90,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 3 — How You Earn */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -98,24 +99,24 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">How You Earn</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> Earn</h2>
             <p className="text-xl text-muted-foreground">Commission Rates per Segment.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <div className="border border-white/10 bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-6 rounded-2xl flex flex-col items-center text-center">
               <span className="text-2xl mb-2">🥇</span>
               <h4 className="font-bold mb-2">Platinum</h4>
               <div className="text-2xl font-bold text-[#2563EB]">40%</div>
               <p className="text-xs text-muted-foreground mt-1">In-Link</p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-6 rounded-2xl flex flex-col items-center text-center">
               <span className="text-2xl mb-2">🥈</span>
               <h4 className="font-bold mb-2">Gold</h4>
               <div className="text-2xl font-bold text-[#2563EB]">30%</div>
               <p className="text-xs text-muted-foreground mt-1">In-Link</p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-6 rounded-2xl flex flex-col items-center text-center">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-6 rounded-2xl flex flex-col items-center text-center">
               <span className="text-2xl mb-2">🥉</span>
               <h4 className="font-bold mb-2">Silver</h4>
               <div className="text-2xl font-bold text-zinc-300">20%</div>
@@ -130,19 +131,19 @@ export default function AzerbaijanPage() {
           </div>
 
           <h3 className="text-2xl font-bold mb-6">Special Rate Rules</h3>
-          <div className="bg-zinc-900/40 border border-white/10 p-8 rounded-3xl">
+          <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)]/40 border border-white/10 p-8 rounded-3xl">
             <ul className="space-y-4">
               <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> Out-of-collection products: 15% commission</li>
               <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> Electronics: 5% commission (same for in-link and out-link)</li>
               <li className="flex items-center gap-3"><Ban className="text-red-400 w-5 h-5" /> Mobile phones and gold products: 0% commission</li>
-              <li className="flex items-center gap-3"><AlertTriangle className="text-blue-400 w-5 h-5" /> Maximum earning per order: $30 (excess is deducted from order)</li>
+              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> Maximum earning per order: $30 (excess is deducted from order)</li>
             </ul>
           </div>
         </motion.div>
       </section>
 
       {/* SECTION 4 — Payments & Fees */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -156,14 +157,14 @@ export default function AzerbaijanPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <Percent className="w-10 h-10 text-[#2563EB] mb-4" />
               <h3 className="text-2xl font-bold mb-4">Agency Split</h3>
               <p className="text-muted-foreground leading-relaxed">
                 60% of total earnings go to you. The remaining 40% covers all government taxes and agency commission — no additional fees.
               </p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <CalendarDays className="w-10 h-10 text-[#2563EB] mb-4" />
               <h3 className="text-2xl font-bold mb-4">Payment Timeline</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -174,16 +175,16 @@ export default function AzerbaijanPage() {
 
           <div className="overflow-x-auto border border-white/10 rounded-2xl mb-8 max-w-3xl">
             <table className="w-full text-sm text-left">
-              <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                <tr>
+              <thead className="bg-[#2563EB] text-white">
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                   <th className="px-6 py-4">Month Earned</th>
                   <th className="px-6 py-4">Payment Received</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">March</td><td className="px-6 py-4 text-muted-foreground">Second week of May</td></tr>
-                <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">April</td><td className="px-6 py-4 text-muted-foreground">Second week of June</td></tr>
-                <tr><td className="px-6 py-4 font-medium text-white">May</td><td className="px-6 py-4 text-muted-foreground">Second week of July</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">March</td><td className="px-6 py-4 text-muted-foreground">Second week of May</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">April</td><td className="px-6 py-4 text-muted-foreground">Second week of June</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">May</td><td className="px-6 py-4 text-muted-foreground">Second week of July</td></tr>
               </tbody>
             </table>
           </div>
@@ -197,7 +198,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 5 — How to Track Your Performance */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -220,7 +221,7 @@ export default function AzerbaijanPage() {
               { step: "04", text: "Check 'Link Revenue' to see which collections perform best" }
             ].map((step, i) => (
               <div key={i} className="relative z-10 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full border-4 border-background bg-zinc-900 flex items-center justify-center text-2xl font-display font-bold text-white mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
+                <div className="w-20 h-20 rounded-full border-4 border-background bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] flex items-center justify-center text-2xl font-display font-bold text-[#2563EB] mb-6 shadow-[0_0_30px_rgba(255,45,141,0.1)]">
                   {step.step}
                 </div>
                 <p className="text-foreground/90 font-medium max-w-[200px]">{step.text}</p>
@@ -228,9 +229,9 @@ export default function AzerbaijanPage() {
             ))}
           </div>
 
-          <div className="p-6 border border-blue-500/30 bg-blue-500/5 rounded-xl flex items-start gap-4">
-            <RefreshCw className="w-6 h-6 text-blue-400 shrink-0 mt-0.5" />
-            <p className="text-blue-100 text-sm md:text-base">
+          <div className="p-6 border border-[#2563EB]/30 bg-blue-500/5 rounded-xl flex items-start gap-4">
+            <RefreshCw className="w-6 h-6 text-[#2563EB] shrink-0 mt-0.5" />
+            <p className="text-[#2563EB] text-sm md:text-base">
               Troubleshooting note: If Influencer Center is not visible: update the app, log out and back in. If the issue persists, delete and reinstall the app.
             </p>
           </div>
@@ -238,7 +239,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 6 — Monthly Coupon Rewards */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -253,18 +254,18 @@ export default function AzerbaijanPage() {
 
           <div className="overflow-x-auto border border-white/10 rounded-2xl mb-6 max-w-3xl">
             <table className="w-full text-sm text-left">
-              <thead className="text-xs uppercase bg-black/40 text-muted-foreground">
-                <tr>
+              <thead className="bg-[#2563EB] text-white">
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]">
                   <th className="px-6 py-4">Ranking</th>
                   <th className="px-6 py-4">Coupon (AZN)</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">1–50</td><td className="px-6 py-4 font-bold text-[#2563EB]">125 AZN</td></tr>
-                <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">51–150</td><td className="px-6 py-4 font-bold text-[#2563EB]">100 AZN</td></tr>
-                <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">151–250</td><td className="px-6 py-4 font-bold text-[#2563EB]">75 AZN</td></tr>
-                <tr className="border-b border-white/5"><td className="px-6 py-4 font-medium text-white">251–500</td><td className="px-6 py-4 font-bold text-[#2563EB]">50 AZN</td></tr>
-                <tr><td className="px-6 py-4 font-medium text-white">501–750</td><td className="px-6 py-4 font-bold text-[#2563EB]">35 AZN</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">1–50</td><td className="px-6 py-4 font-bold text-[#2563EB]">125 AZN</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">51–150</td><td className="px-6 py-4 font-bold text-[#2563EB]">100 AZN</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">151–250</td><td className="px-6 py-4 font-bold text-[#2563EB]">75 AZN</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">251–500</td><td className="px-6 py-4 font-bold text-[#2563EB]">50 AZN</td></tr>
+                <tr className="border-b border-[#1e2d4a] odd:bg-[#080d1a] even:bg-[#0d1526] text-[#e5e7eb]"><td className="px-6 py-4 font-medium text-white">501–750</td><td className="px-6 py-4 font-bold text-[#2563EB]">35 AZN</td></tr>
               </tbody>
             </table>
           </div>
@@ -275,7 +276,8 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 7 — Types of Links You Can Create */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.06)_0%,transparent_70%)] pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -288,7 +290,7 @@ export default function AzerbaijanPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <LinkIcon className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Single Product Link</h3>
               <p className="text-muted-foreground text-sm">Share one specific item</p>
@@ -299,7 +301,7 @@ export default function AzerbaijanPage() {
               <h3 className="text-xl font-bold mb-3 text-white">Collection Link</h3>
               <p className="text-foreground/80 text-sm">Group products into a themed collection</p>
             </div>
-            <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
+            <div className="bg-[#0d1526] border border-[#1e2d4a] shadow-[0_4px_24px_rgba(37,99,235,0.08)] p-8 rounded-3xl">
               <ShoppingCart className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Brand Commission Model</h3>
               <p className="text-muted-foreground text-sm">Pre-built brand collections — just copy and share the link</p>
@@ -316,7 +318,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 8 — Where to Share Your Links */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -340,7 +342,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 9 — What is Link Breakage? */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -350,7 +352,7 @@ export default function AzerbaijanPage() {
         >
           <div className="max-w-3xl mb-12">
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">What is Link Breakage?</h2>
-            <p className="text-xl text-muted-foreground mb-6">
+            <p className="text-xl text-[#2563EB] mb-6">
               Link breakage occurs when purchases made through your link do not generate commission. This can happen when:
             </p>
           </div>
@@ -370,7 +372,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 10 — Fair Play Policy */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -411,7 +413,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 11 — Bonus Opportunities */}
-      <section className="py-24 bg-white/[0.02] border-b border-border">
+      <section className="py-24 border-border bg-gradient-to-b from-[#0a0f1e] to-[#0d0d0d] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -420,7 +422,7 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-12">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Bonus Opportunities</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> Opportunities</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Trendyol offers extra earning opportunities for high-performing influencers. Gold and Platinum segment influencers are prioritised for bonus targeting.
             </p>
@@ -449,7 +451,7 @@ export default function AzerbaijanPage() {
       </section>
 
       {/* SECTION 12 — Things to Keep Your Agency Informed About */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 border-border bg-[#000000] border-b border-[#1a1a1a]">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -465,19 +467,19 @@ export default function AzerbaijanPage() {
           <div className="bg-zinc-900/40 border border-white/10 p-10 rounded-3xl max-w-4xl">
             <ul className="space-y-6 text-lg text-foreground/90">
               <li className="flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-[#16A34A] shrink-0 mt-1" />
                 <span>Always notify the agency if you change your Instagram username — this affects Trendyol tracking</span>
               </li>
               <li className="flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-[#16A34A] shrink-0 mt-1" />
                 <span>Keep your payment card active between the 1st–15th of each month</span>
               </li>
               <li className="flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-[#16A34A] shrink-0 mt-1" />
                 <span>Request a card update form between the 15th–30th if you need to change payment details</span>
               </li>
               <li className="flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-[#16A34A] shrink-0 mt-1" />
                 <span>Check spam/promotions folders regularly — Trendyol responses may take up to 30 business days</span>
               </li>
             </ul>
@@ -487,7 +489,7 @@ export default function AzerbaijanPage() {
 
 
       {/* CTA SECTION */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-32 relative overflow-hidden bg-[#000000] border-b border-[#1a1a1a]">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#2563EB]/10 pointer-events-none" />
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
