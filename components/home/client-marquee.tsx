@@ -1,4 +1,5 @@
 const CLIENTS = [
+  "TRENDYOL",
   "MERCEDES",
   "EMAAR",
   "L'OREAL",

@@ -8,37 +8,37 @@ const DETAILED_SERVICES = [
   {
     title: "Affiliate Marketing Management",
     description: "Full-service TrendFam affiliate program management — influencer onboarding, link creation, commission tracking, and payment processing. We are one of Trendyol's top 3 authorized partner agencies globally.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
+    image: "/services/service-01.jpg",
     features: ["TrendFam Partner", "4 Regions", "Commission Tracking"],
   },
   {
     title: "Influencer & Brand Partnerships",
     description: "Strategic matchmaking between brands and vetted influencers. Every partnership operates under a structured 1-year contract with clear KPIs, transparent reporting, and protected rights for both parties.",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2064&auto=format&fit=crop",
+    image: "/services/service-02.jpg",
     features: ["5,000+ Influencers", "1-Year Contracts", "Performance-Based"],
   },
   {
     title: "Creator Consultancy & Growth",
     description: "One-on-one guidance for influencers — from link strategy and content optimization to audience analytics and earnings maximization. Regular webinars and active campaign channels keep creators ahead.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+    image: "/services/service-06.jpg",
     features: ["1-on-1 Advisory", "Webinars", "WhatsApp Channel"],
   },
   {
     title: "Campaign Production & Content",
     description: "High-fidelity content creation and advertising production for brands seeking regional relevance. From concept to delivery, every asset is built to perform across social platforms.",
-    image: "https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?q=80&w=2071&auto=format&fit=crop",
+    image: "/services/service-03.jpg",
     features: ["Set Production", "Social Formats", "Regional Adaptation"],
   },
   {
     title: "Market Entry & Regional Expansion",
     description: "Strategic entry into MENA, CEE, Gulf, and Azerbaijan markets. Cultural fluency, local network access, and full operational infrastructure for confident regional scaling.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    image: "/services/service-04.jpg",
     features: ["MENA", "CEE", "Gulf & Azerbaijan"],
   },
   {
     title: "Legal & Financial Advisory",
     description: "Contract architecture, tax compliance, KVKK/GDPR data protection, and cross-border payment management. Commission-only model — no upfront fees, no hidden costs.",
-    image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2070&auto=format&fit=crop",
+    image: "/services/service-05.jpg",
     features: ["Contract Architecture", "Tax Compliance", "KVKK/GDPR"],
   },
 ]
@@ -115,8 +115,20 @@ export default function ServicesClientPage() {
           <div className="flex flex-col gap-24 md:gap-40">
             {DETAILED_SERVICES.map((service, i) => {
               const isEven = i % 2 === 0
+              const serviceIds = [
+                "affiliate-marketing-management",
+                "influencer-brand-partnerships",
+                "creator-consultancy-growth",
+                "campaign-production-content",
+                "market-entry-regional-expansion",
+                "legal-financial-advisory"
+              ]
               return (
-                <div key={service.title} className={`relative flex flex-col items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                <div 
+                  id={serviceIds[i]}
+                  key={service.title} 
+                  className={`relative flex flex-col items-center ${isEven ? "md:flex-row" : "md:flex-row-reverse"} scroll-mt-28`}
+                >
                   
                   {/* Image Side */}
                   <motion.div 

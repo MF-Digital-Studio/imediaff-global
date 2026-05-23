@@ -126,60 +126,85 @@ export default function StrategicGateway() {
 
         {/* ── REGION CARDS ──────────────────────────────────────────────── */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {REGIONS.map((region, i) => (
-            <motion.article
-              key={region.city}
-              initial={{ opacity: 0, y: 36 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{
-                duration: 0.7,
-                delay: 0.2 + i * 0.12,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className="group relative flex flex-col p-8 md:p-10 bg-white rounded-2xl border border-black/[0.07] transition-all duration-500 hover:-translate-y-1.5"
-              style={{ boxShadow: "0 2px 20px -8px rgba(0,0,0,0)" }}
-              onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 24px 48px -16px rgba(0,0,0,0.08)"
-              }}
-              onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 20px -8px rgba(0,0,0,0)"
-              }}
-            >
-              {/* Gradient top line — reveals on hover */}
-              <div className="absolute top-0 inset-x-0 h-[2px] rounded-t-2xl bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          {REGIONS.map((region, i) => {
+            const cityImages = [
+              "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2070&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2070&auto=format&fit=crop"
+            ]
+            const cityAlts = [
+              "Istanbul city skyline",
+              "Dubai skyline at dusk",
+              "Central and Eastern Europe city landscape"
+            ]
 
-              {/* Icon */}
-              <div className="mb-7 text-black/25 group-hover:text-black transition-colors duration-400">
-                {region.icon}
-              </div>
+            return (
+              <motion.article
+                key={region.city}
+                initial={{ opacity: 0, y: 36 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.2 + i * 0.12,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="group relative flex flex-col bg-white rounded-2xl border border-black/[0.07] overflow-hidden transition-all duration-500 hover:-translate-y-1.5"
+                style={{ boxShadow: "0 2px 20px -8px rgba(0,0,0,0)" }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.boxShadow = "0 24px 48px -16px rgba(0,0,0,0.08)"
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 20px -8px rgba(0,0,0,0)"
+                }}
+              >
+                {/* Gradient top line — reveals on hover */}
+                <div className="absolute top-0 inset-x-0 h-[2px] rounded-t-2xl bg-gradient-to-br from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
 
-              {/* City + Role */}
-              <div className="mb-5">
-                <h3 className="font-sans text-2xl font-bold text-black tracking-tight leading-none mb-1">
-                  {region.city}
-                </h3>
-                <p className="text-[10px] font-mono uppercase tracking-[0.35em] text-black/35">
-                  {region.role}
-                </p>
-              </div>
+                {/* Top Image */}
+                <div className="w-full h-[200px] relative overflow-hidden">
+                  <img 
+                    src={cityImages[i]} 
+                    alt={cityAlts[i]} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                  />
+                </div>
 
-              {/* Description */}
-              <p className="text-black/55 leading-relaxed text-[0.93rem] font-medium flex-1">
-                {region.description}
-              </p>
+                {/* Padded Content Area */}
+                <div className="p-8 md:p-10 flex flex-col flex-grow">
+                  {/* Icon */}
+                  <div className="mb-7 text-black/25 group-hover:text-black transition-colors duration-400">
+                    {region.icon}
+                  </div>
 
-              {/* Footer stat badge */}
-              <div className="mt-8 flex items-center gap-2">
-                <span
-                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                  style={{ background: "linear-gradient(90deg, #2563EB 0%, #2563EB 100%)" }}
-                />
-                <span className="text-[11px] font-mono uppercase tracking-[0.3em] text-black/35">
-                  {region.stat}
-                </span>
-              </div>
-            </motion.article>
-          ))}
+                  {/* City + Role */}
+                  <div className="mb-5">
+                    <h3 className="font-sans text-2xl font-bold text-black tracking-tight leading-none mb-1">
+                      {region.city}
+                    </h3>
+                    <p className="text-[10px] font-mono uppercase tracking-[0.35em] text-black/35">
+                      {region.role}
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-black/55 leading-relaxed text-[0.93rem] font-medium flex-1">
+                    {region.description}
+                  </p>
+
+                  {/* Footer stat badge */}
+                  <div className="mt-8 flex items-center gap-2">
+                    <span
+                      className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                      style={{ background: "linear-gradient(90deg, #2563EB 0%, #2563EB 100%)" }}
+                    />
+                    <span className="text-[11px] font-mono uppercase tracking-[0.3em] text-black/35">
+                      {region.stat}
+                    </span>
+                  </div>
+                </div>
+              </motion.article>
+            )
+          })}
         </div>
 
       </div>

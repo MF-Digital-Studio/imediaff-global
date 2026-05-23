@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { motion, useInView } from "motion/react"
 import { Target, Zap, ShieldCheck } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 
@@ -57,52 +58,84 @@ export default function GlobalValue() {
           </motion.p>
         </div>
 
-        {/* Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {PILLARS.map((pillar, i) => (
-            <motion.div
-              key={pillar.title}
-              initial={{ opacity: 0, y: 40 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="group relative flex flex-col p-8 md:p-10 rounded-2xl bg-black/[0.02] border border-black/10 transition-all duration-500 hover:bg-white hover:-translate-y-2"
-              style={{
-                boxShadow: "0 0 0 rgba(0,0,0,0)",
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLDivElement;
-                el.style.boxShadow = `0 20px 40px -10px ${pillar.glowColor}`;
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLDivElement;
-                el.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
-              }}
-            >
-              {/* Sunset Gradient Border using Mask on Hover */}
-              <div
-                className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        {/* Pillars List */}
+        <div className="flex flex-col gap-12 md:gap-16">
+          {PILLARS.map((pillar, i) => {
+            const isImageLeft = i % 2 === 0
+            const imageUrls = [
+              "/architects/strategic-precision.jpg",
+              "/architects/operational-speed.jpg",
+              "/architects/radical-transparency.jpg"
+            ]
+            const imageAlts = [
+              "Strategic influencer-brand matching and performance analytics",
+              "Influencer creating content with TrendFam affiliate links",
+              "Transparent contract signing and commission tracking"
+            ]
+
+            return (
+              <motion.div
+                key={pillar.title}
+                initial={{ opacity: 0, y: 40 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.8, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
+                className="group relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center p-6 md:p-10 rounded-2xl bg-black/[0.02] border border-black/10 transition-all duration-500 hover:bg-white"
                 style={{
-                  background: "linear-gradient(135deg, #2563EB, #16A34A)",
-                  padding: "1px",
-                  WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
+                  boxShadow: "0 0 0 rgba(0,0,0,0)",
                 }}
-              />
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLDivElement;
+                  el.style.boxShadow = `0 20px 40px -10px ${pillar.glowColor}`;
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLDivElement;
+                  el.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
+                }}
+              >
+                {/* Sunset Gradient Border using Mask on Hover */}
+                <div
+                  className="absolute inset-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background: "linear-gradient(135deg, #2563EB, #16A34A)",
+                    padding: "1px",
+                    WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                    WebkitMaskComposite: "xor",
+                    maskComposite: "exclude",
+                  }}
+                />
 
-              <div className="mb-8 w-14 h-14 rounded-full bg-black/[0.04] flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                {pillar.icon}
-              </div>
+                {/* Image Side */}
+                <div className={cn(
+                  "w-full h-full relative aspect-[16/9] md:aspect-[4/3] overflow-hidden rounded-xl",
+                  isImageLeft ? "order-1" : "order-1 md:order-2"
+                )}>
+                  <img
+                    src={imageUrls[i]}
+                    alt={imageAlts[i]}
+                    className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
 
-              <h3 className="font-sans text-2xl font-bold text-black mb-4 tracking-tight">
-                {pillar.title}
-              </h3>
+                {/* Text Side */}
+                <div className={cn(
+                  "flex flex-col justify-center",
+                  isImageLeft ? "order-2" : "order-2 md:order-1"
+                )}>
+                  <div className="mb-6 w-14 h-14 rounded-full bg-black/[0.04] flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    {pillar.icon}
+                  </div>
 
-              <p className="text-black/60 text-[0.95rem] leading-relaxed font-medium">
-                {pillar.description}
-              </p>
-            </motion.div>
-          ))}
+                  <h3 className="font-sans text-2xl md:text-3xl font-bold text-black mb-4 tracking-tight">
+                    {pillar.title}
+                  </h3>
+
+                  <p className="text-black/60 text-[0.95rem] md:text-base leading-relaxed font-medium">
+                    {pillar.description}
+                  </p>
+                </div>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>

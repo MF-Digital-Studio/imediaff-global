@@ -92,53 +92,81 @@ export default function RegionsGrid() {
 
         {/* Region Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
-          {REGIONS.map((region, i) => (
-            <motion.div
-              key={region.title}
-              initial={{ opacity: 0, y: 36 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.1 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <Link
-                href={region.href}
-                className="group relative flex flex-col h-full p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-white/20 transition-all duration-500 hover:-translate-y-1.5 overflow-hidden"
+          {REGIONS.map((region, i) => {
+            const bgImages = [
+              "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=2071&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2070&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2070&auto=format&fit=crop",
+              "/baku-flame-towers.png"
+            ]
+            const bgAlts = [
+              "Turkey landscape",
+              "Gulf region architectural skyline",
+              "Central Eastern Europe scenic view",
+              "Baku Flame Towers architectural rendering"
+            ]
+
+            return (
+              <motion.div
+                key={region.title}
+                initial={{ opacity: 0, y: 36 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, delay: 0.1 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               >
-                {/* Subtle gradient glow on hover */}
-                <div
-                  className="absolute top-0 right-0 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-                  style={{ background: region.accentColor }}
-                />
-                {/* Top accent line on hover */}
-                <div
-                  className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                />
+                <Link
+                  href={region.href}
+                  className="group relative flex flex-col h-full p-8 md:p-10 rounded-2xl bg-white/[0.03] border border-white/[0.07] hover:border-white/20 transition-all duration-500 hover:-translate-y-1.5 overflow-hidden"
+                >
+                  {/* Subtle gradient glow on hover */}
+                  <div
+                    className="absolute top-0 right-0 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10"
+                    style={{ background: region.accentColor }}
+                  />
+                  {/* Top accent line on hover */}
+                  <div
+                    className="absolute top-0 inset-x-0 h-[1.5px] rounded-t-2xl bg-gradient-to-r from-[#2563EB] to-[#16A34A] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
+                  />
 
-                {/* Emoji */}
-                <div className="text-2xl mb-5 relative z-10">{region.emoji}</div>
+                  {/* Background Image with Dark Overlay */}
+                  <div className="absolute inset-0 z-0 pointer-events-none">
+                    <img 
+                      src={bgImages[i]} 
+                      alt={bgAlts[i]} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                    />
+                    <div 
+                      className="absolute inset-0"
+                      style={{ backgroundColor: 'rgba(0,0,0,0.75)' }}
+                    />
+                  </div>
 
-                {/* Title + Tag */}
-                <div className="mb-4 relative z-10">
-                  <h3 className="font-sans text-2xl font-bold text-white tracking-tight mb-1 group-hover:text-white transition-colors">
-                    {region.title}
-                  </h3>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
-                    {region.tag}
+                  {/* Emoji */}
+                  <div className="text-2xl mb-5 relative z-10">{region.emoji}</div>
+
+                  {/* Title + Tag */}
+                  <div className="mb-4 relative z-10">
+                    <h3 className="font-sans text-2xl font-bold text-white tracking-tight mb-1 group-hover:text-white transition-colors">
+                      {region.title}
+                    </h3>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                      {region.tag}
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-sm text-white/50 leading-relaxed font-medium flex-1 relative z-10">
+                    {region.desc}
                   </p>
-                </div>
 
-                {/* Description */}
-                <p className="text-sm text-white/50 leading-relaxed font-medium flex-1 relative z-10">
-                  {region.desc}
-                </p>
-
-                {/* CTA */}
-                <div className="mt-8 flex items-center gap-2 text-sm font-semibold text-white/40 group-hover:text-white transition-colors duration-300 relative z-10">
-                  View program
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+                  {/* CTA */}
+                  <div className="mt-8 flex items-center gap-2 text-sm font-semibold text-white/40 group-hover:text-white transition-colors duration-300 relative z-10">
+                    View program
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </Link>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
