@@ -1,6 +1,7 @@
 import ScrollHero from "@/components/home/scroll-hero"
 import AuthorityMetrics from "@/components/home/authority-metrics"
 import RegionsGrid from "@/components/home/regions-grid"
+import AffiliatePreview from "@/components/home/affiliate-preview"
 import GlobalValue from "@/components/home/global-value"
 import StrategicGateway from "@/components/home/strategic-gateway"
 import ClientMarquee from "@/components/home/client-marquee"
@@ -15,6 +16,7 @@ export default function HomePage() {
       <ScrollHero />
       <AuthorityMetrics />
       <RegionsGrid />
+      <AffiliatePreview />
       <ClientMarquee />
       <GlobalValue />
       <StrategicGateway />
