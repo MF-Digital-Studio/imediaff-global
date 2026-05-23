@@ -39,7 +39,7 @@ export default function SiteNav() {
   const [scrolled, setScrolled] = useState(false)
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null)
 
-  const isLightNav = !scrolled && pathname === "/"
+  const isLightNav = !scrolled && (pathname === "/" || pathname === "/affiliate-programs")
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)

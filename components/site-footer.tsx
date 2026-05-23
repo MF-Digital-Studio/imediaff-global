@@ -22,10 +22,10 @@ const FOOTER_LINKS = {
     { label: "Request Proposal", href: "/contact" },
   ],
   Headquarters: [
-    { 
-      label: "Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul", 
+    {
+      label: "Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul",
       href: "/contact",
-      isAddress: true 
+      isAddress: true
     }
   ],
 }
@@ -57,8 +57,8 @@ export default function SiteFooter() {
             <ul className="mt-6 flex flex-col gap-4">
               {items.map((item) => (
                 <li key={item.label}>
-                  <Link 
-                    href={item.href} 
+                  <Link
+                    href={item.href}
                     className={`text-sm text-white/60 hover:text-white transition-colors ${item.isAddress ? "font-mono text-xs leading-loose" : "font-sans"}`}
                   >
                     {item.label}
@@ -75,7 +75,7 @@ export default function SiteFooter() {
           <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">© {new Date().getFullYear()} imediaff Global. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors">KVKK / Privacy Policy</Link>
-            <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">Powered by MF Digital Studio</p>
+            <p className="font-mono font-bold text-[10px] uppercase tracking-widest text-white/40">Powered by MF Digital Studio</p>
           </div>
           <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">Dubai / Riyadh / London / Istanbul</p>
         </div>

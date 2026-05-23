@@ -120,18 +120,25 @@ export default function ServicesPreview() {
                     </div>
 
                     {/* Title & Description: white/light gray */}
-                    <div className="space-y-2 text-left">
-                      <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] text-white">
+                    <div className="text-left flex flex-col justify-end w-full">
+                      <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] text-white transform transition-transform duration-500 group-hover:-translate-y-1">
                         {service.title}
                       </h3>
-                      <p className="text-sm font-medium leading-relaxed text-white/70">
-                        {service.desc}
-                      </p>
-                    </div>
-
-                    {/* Accent Color link */}
-                    <div className="mt-2 inline-flex items-center gap-1 text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                      Learn more <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                      
+                      <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-out">
+                        <div className="overflow-hidden">
+                          <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 flex flex-col gap-3 pt-3">
+                            <p className="text-sm font-medium leading-relaxed text-white/70">
+                              {service.desc}
+                            </p>
+                            
+                            {/* Accent Color link */}
+                            <div className="inline-flex items-center gap-1 text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
+                              Learn more <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </Link>
