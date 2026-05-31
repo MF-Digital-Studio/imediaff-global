@@ -126,7 +126,7 @@ const CASE_STUDIES = [
     sector: "Global Expansion",
     title: "Transforming Market Presence through Algorithmic Dominance.",
     strategy: "Aggressive TikTok and Reels strategy focused on high-frequency, platform-native content.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop",
+    image: "/trendyol-showcase.png",
     kpis: [
       { prefix: "+", to: 450, suffix: "%", label: "Follower Growth" },
       { to: 35, suffix: "M+", label: "Video Views" },
