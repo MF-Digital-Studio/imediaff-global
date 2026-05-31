@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { GOOGLE_FORMS } from "@/lib/constants"
 import { motion } from "motion/react"
 import { useState } from "react"
 import {
@@ -61,17 +62,10 @@ export default function AffiliateProgramsPage() {
 
             <motion.div {...fadeUp(0.15)} className="flex flex-col sm:flex-row items-center gap-4">
               <Link
-                href="/talent"
+                href="/contact"
                 className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-white transition-all hover:scale-105 bg-gradient-to-br from-[#FFA101] to-[#C8B2F8] shadow-[0_4px_14px_0_rgba(255,161,1,0.25)] hover:shadow-[0_6px_20px_rgba(255,161,1,0.4)] w-full sm:w-auto font-bold"
               >
-                Join as a Creator
-                <span aria-hidden className="transition-transform group-hover:translate-x-1 ml-2">→</span>
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full border-2 border-black/20 hover:border-black bg-transparent px-8 py-4 font-semibold text-black transition-all hover:bg-black hover:text-white w-full sm:w-auto font-bold"
-              >
-                Partner as a Brand
+                Join the Affiliate Program ↗
               </Link>
             </motion.div>
           </div>
@@ -337,6 +331,16 @@ export default function AffiliateProgramsPage() {
               </Link>
             </motion.div>
           </div>
+          <div className="mt-14 flex justify-center">
+            <a
+              href={GOOGLE_FORMS.trendyolAffiliate}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#FFA101] hover:bg-black hover:text-white transition-all hover:scale-105 shadow-xl font-bold"
+            >
+              Apply for Trendyol Affiliate Access ↗
+            </a>
+          </div>
         </div>
       </section>
 
@@ -509,13 +513,14 @@ export default function AffiliateProgramsPage() {
           </div>
 
           <div className="mt-14 flex justify-center">
-            <Link
-              href="/contact"
+            <a
+              href={GOOGLE_FORMS.affiliate}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#C8B2F8] hover:bg-black hover:text-white transition-all hover:scale-105 shadow-xl font-bold"
             >
-              Apply for Noon Program
-              <span aria-hidden className="transition-transform group-hover:translate-x-1 ml-2">→</span>
-            </Link>
+              Apply for Affiliate Access ↗
+            </a>
           </div>
         </div>
       </section>
@@ -711,16 +716,10 @@ export default function AffiliateProgramsPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
             <Link
-              href="/talent"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-black px-10 py-5 text-base font-bold text-white transition-all hover:scale-105 shadow-xl w-full sm:w-auto"
             >
-              Apply as Creator
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full border-2 border-white/20 bg-transparent px-10 py-5 text-base font-bold text-white transition-all hover:bg-white hover:text-black w-full sm:w-auto"
-            >
-              Partner as Brand →
+              Join the Affiliate Program ↗
             </Link>
           </div>
         </motion.div>

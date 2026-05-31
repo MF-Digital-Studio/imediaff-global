@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "motion/react"
+import { GOOGLE_FORMS } from "@/lib/constants"
 
 // ── Fade-in variant ───────────────────────────────────────────────────────
 const fadeUp = (delay = 0) => ({
@@ -308,6 +309,88 @@ export default function ContactClientPage() {
                     </span>
                   </button>
                 </form>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION: CHOOSE THE RIGHT FORM (Black) ───────────────────────── */}
+      <section className="bg-black text-white py-24 border-t border-white/10 relative overflow-hidden">
+        <div className="pointer-events-none absolute right-0 top-0 w-[400px] h-[400px] bg-gradient-to-bl from-[#16A34A]/5 to-transparent blur-[100px] rounded-full translate-x-1/3 -translate-y-1/3" />
+        
+        <div className="mx-auto max-w-[1600px] px-6 md:px-10 relative z-10">
+          <motion.div {...fadeUp()} className="text-center max-w-3xl mx-auto mb-16">
+            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#16A34A] mb-4">/ Streamlined Intake</p>
+            <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold tracking-[-0.03em] leading-[1.05] mb-6">
+              Choose the right form <br /> for your request.
+            </h2>
+            <p className="text-base md:text-lg text-white/60 leading-relaxed font-sans">
+              Select a specialized channel below to fast-track your submission directly to the relevant department.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+            {/* Creators Card */}
+            <motion.div 
+              {...fadeUp(0.2)}
+              className="group relative border border-white/10 rounded-[2rem] p-8 md:p-10 bg-white/5 backdrop-blur-md flex flex-col justify-between hover:border-[#16A34A]/50 transition-all duration-300 hover:scale-[1.02]"
+            >
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#16A34A]/10 flex items-center justify-center text-[#16A34A] mb-8 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-display text-2xl font-bold tracking-tight mb-4">For Creators</h3>
+                <p className="text-white/60 font-sans text-sm leading-relaxed mb-8">
+                  Apply to join our elite global influencer network and work with major international brands.
+                </p>
+              </div>
+              <a 
+                href={GOOGLE_FORMS.creator}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-3 font-mono text-xs uppercase tracking-widest text-white hover:bg-white hover:text-black transition-colors w-full text-center"
+              >
+                Creator Application ↗
+              </a>
+            </motion.div>
+
+            {/* Affiliates Card */}
+            <motion.div 
+              {...fadeUp(0.3)}
+              className="group relative border border-white/10 rounded-[2rem] p-8 md:p-10 bg-white/5 backdrop-blur-md flex flex-col justify-between hover:border-purple-500/50 transition-all duration-300 hover:scale-[1.02]"
+            >
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-8 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-display text-2xl font-bold tracking-tight mb-4">For Affiliates</h3>
+                <p className="text-white/60 font-sans text-sm leading-relaxed mb-8">
+                  Join our high-paying affiliate program and earn substantial commissions promoting industry leaders.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 w-full">
+                <a 
+                  href={GOOGLE_FORMS.trendyolAffiliate}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-3 font-mono text-[10px] md:text-xs uppercase tracking-widest text-white hover:bg-white hover:text-black transition-colors w-full text-center font-bold"
+                >
+                  TRENDYOL AFFILIATE FORM ↗
+                </a>
+                <a 
+                  href={GOOGLE_FORMS.noonAffiliate}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-3 font-mono text-[10px] md:text-xs uppercase tracking-widest text-white hover:bg-white hover:text-black transition-colors w-full text-center font-bold"
+                >
+                  NOON AFFILIATE FORM ↗
+                </a>
               </div>
             </motion.div>
           </div>

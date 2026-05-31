@@ -3,6 +3,7 @@
 
 import { motion } from "motion/react"
 import Link from "next/link"
+import { GOOGLE_FORMS } from "@/lib/constants"
 import { 
   CheckCircle2, TrendingUp, Users, Globe, Building2, 
   ShieldAlert, AlertTriangle, ShieldCheck, Link as LinkIcon,
@@ -43,9 +44,14 @@ export default function CeePage() {
             We are a global agency headquartered in Dubai, connecting brands and influencers through performance-driven partnerships. We manage affiliate and influencer marketing processes professionally from end-to-end.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link href="/contact" className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-8 font-semibold text-black transition-transform hover:scale-105 active:scale-95">
-              Apply Now
-            </Link>
+            <a 
+              href={GOOGLE_FORMS.creator} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex h-14 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-8 font-semibold text-black transition-transform hover:scale-105 active:scale-95"
+            >
+              Apply as a Creator ↗
+            </a>
           </div>
         </motion.div>
       </section>
@@ -568,10 +574,14 @@ export default function CeePage() {
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             Apply through iMediaff Global — an authorized Trendyol partner agency.
           </p>
-          <Link href="/contact" className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]">
-            Apply Now
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Link>
+          <a 
+            href={GOOGLE_FORMS.creator} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]"
+          >
+            Join the Creator Network ↗
+          </a>
         </motion.div>
       </section>
     </main>
