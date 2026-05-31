@@ -345,7 +345,7 @@ export default function ContactClientPage() {
                 </div>
                 <h3 className="font-display text-2xl font-bold tracking-tight mb-4">For Creators</h3>
                 <p className="text-white/60 font-sans text-sm leading-relaxed mb-8">
-                  Apply to join our elite global influencer network and work with major international brands.
+                  Apply to join our creator network and collaborate with regional and international brand opportunities.
                 </p>
               </div>
               <a 
@@ -354,7 +354,7 @@ export default function ContactClientPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-white/10 px-6 py-3 font-mono text-xs uppercase tracking-widest text-white hover:bg-white hover:text-black transition-colors w-full text-center"
               >
-                Creator Application ↗
+                CREATOR APPLICATION ↗
               </a>
             </motion.div>
 
@@ -371,7 +371,7 @@ export default function ContactClientPage() {
                 </div>
                 <h3 className="font-display text-2xl font-bold tracking-tight mb-4">For Affiliates</h3>
                 <p className="text-white/60 font-sans text-sm leading-relaxed mb-8">
-                  Join our high-paying affiliate program and earn substantial commissions promoting industry leaders.
+                  Select the relevant affiliate program and submit your application through the appropriate channel.
                 </p>
               </div>
               <div className="flex flex-col gap-3 w-full">
