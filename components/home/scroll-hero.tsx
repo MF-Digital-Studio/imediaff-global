@@ -81,10 +81,10 @@ export default function ScrollHero() {
 
             {/* Minimalist World Map Silhouette with Soft Elliptical Edges */}
             <div
-              className="absolute inset-0 opacity-[0.06] flex items-center justify-center"
+              className="absolute inset-0 opacity-[0.12] flex items-center justify-center"
               style={{
-                maskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 100%)',
-                WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, black 30%, transparent 100%)'
+                maskImage: 'radial-gradient(ellipse 75% 65% at 50% 50%, black 40%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 75% 65% at 50% 50%, black 40%, transparent 100%)'
               }}
             >
               <img
@@ -92,14 +92,14 @@ export default function ScrollHero() {
                 alt="World Map Silhouette"
                 className="w-full h-auto max-h-[80vh] object-contain"
                 style={{
-                  filter: 'invert(27%) sepia(91%) saturate(2258%) hue-rotate(216deg) brightness(96%) contrast(97%)',
+                  filter: 'invert(27%) sepia(91%) saturate(2258%) hue-rotate(216deg) brightness(105%) contrast(115%) drop-shadow(0 0 20px rgba(37, 99, 235, 0.2))',
                 }}
                 draggable={false}
               />
             </div>
 
-            {/* Ambient Neutral Glow (B&W Theme) */}
-            <div className="absolute inset-0 rounded-full bg-white blur-[150px] opacity-[0.03]" />
+            {/* Premium Ambient Accent Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-gradient-to-r from-blue-500/20 to-emerald-500/20 blur-[130px] opacity-[0.10] pointer-events-none" />
 
             {/* Central Anchor: iMediaff Logo */}
             <div className="relative z-50 flex flex-col items-center justify-center pointer-events-auto">

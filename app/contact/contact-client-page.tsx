@@ -50,13 +50,69 @@ export default function ContactClientPage() {
     message: "",
     region: "",
     budget: "",
+    botfield: "", // Honeypot spam prevention
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState<string | null>(null)
+  const [submitError, setSubmitError] = useState<string | null>(null)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Integrate with Resend or backend API here
-    console.log("Form submitted:", formState)
-    alert("Brief submitted successfully.")
+    setIsSubmitting(true)
+    setSubmitSuccess(null)
+    setSubmitError(null)
+
+    // Basic Validation
+    if (
+      !formState.name.trim() ||
+      !formState.phone.trim() ||
+      !formState.email.trim() ||
+      !formState.subject.trim() ||
+      !formState.message.trim() ||
+      !formState.region ||
+      !formState.budget
+    ) {
+      setSubmitError("Please fill in all required fields.")
+      setIsSubmitting(false)
+      return
+    }
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to submit brief. Please try again.")
+      }
+
+      setSubmitSuccess("Your brief has been submitted successfully! Our strategy team will review it and get in touch shortly.")
+      setFormState({
+        name: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+        region: "",
+        budget: "",
+        botfield: "",
+      })
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setSubmitError(err.message)
+      } else {
+        setSubmitError("An unexpected error occurred. Please try again.")
+      }
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -216,16 +272,39 @@ export default function ContactClientPage() {
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                     />
+                  </div>                  {/* Honeypot Spam Prevention */}
+                  <div className="hidden" aria-hidden="true">
+                    <label htmlFor="botfield">Do not fill this out if you are a human:</label>
+                    <input 
+                      id="botfield" 
+                      type="text" 
+                      tabIndex={-1} 
+                      value={formState.botfield}
+                      onChange={(e) => setFormState({ ...formState, botfield: e.target.value })}
+                    />
                   </div>
+
+                  {submitSuccess && (
+                    <div className="bg-[#16A34A]/10 border border-[#16A34A]/20 text-[#4ADE80] p-4 rounded-2xl font-sans text-sm leading-relaxed transition-all">
+                      {submitSuccess}
+                    </div>
+                  )}
+
+                  {submitError && (
+                    <div className="bg-[#DC2626]/10 border border-[#DC2626]/20 text-[#F87171] p-4 rounded-2xl font-sans text-sm leading-relaxed transition-all">
+                      {submitError}
+                    </div>
+                  )}
 
                   <button 
                     type="submit"
-                    className="group relative mt-4 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-5 font-mono text-sm font-bold uppercase tracking-widest text-white transition-transform hover:scale-[1.02]"
+                    disabled={isSubmitting}
+                    className="group relative mt-4 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-5 font-mono text-sm font-bold uppercase tracking-widest text-white transition-transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                   >
                     <span className="absolute inset-0 bg-gradient-to-br from-[#2563EB] to-[#16A34A]" />
                     <span className="relative z-10 flex items-center gap-3">
-                      Submit Brief
-                      <span className="block transition-transform duration-300 group-hover:translate-x-1">→</span>
+                      {isSubmitting ? "Submitting Brief..." : "Submit Brief"}
+                      {!isSubmitting && <span className="block transition-transform duration-300 group-hover:translate-x-1">→</span>}
                     </span>
                   </button>
                 </form>
