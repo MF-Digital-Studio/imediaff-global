@@ -7,5 +7,5 @@ export const GOOGLE_FORMS = {
   creator: "https://forms.gle/732Dod5JMnADcN4m9",
   affiliate: "PASTE_AFFILIATE_FORM_URL_HERE",
   trendyolAffiliate: "https://forms.gle/7fWZUKW2v2BbXbDfA",
-  noonAffiliate: "PASTE_NOON_FORM_URL_HERE",
+  noonAffiliate: "https://forms.gle/DX6gZSJ5JwwaZjNMA",
 } as const;

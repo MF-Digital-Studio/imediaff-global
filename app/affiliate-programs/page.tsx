@@ -514,7 +514,7 @@ export default function AffiliateProgramsPage() {
 
           <div className="mt-14 flex justify-center">
             <a
-              href={GOOGLE_FORMS.affiliate}
+              href={GOOGLE_FORMS.noonAffiliate}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#C8B2F8] hover:bg-black hover:text-white transition-all hover:scale-105 shadow-xl font-bold"
