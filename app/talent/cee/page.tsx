@@ -1,6 +1,6 @@
-
 "use client"
 
+import { useState } from "react"
 import { motion } from "motion/react"
 import Link from "next/link"
 import { GOOGLE_FORMS } from "@/lib/constants"
@@ -13,6 +13,38 @@ import {
 } from "lucide-react"
 
 export default function CeePage() {
+  const [activeTab, setActiveTab] = useState<'romania' | 'bulgaria' | 'greece'>('romania')
+
+  const countryData = {
+    romania: {
+      name: "Romania 🇷🇴",
+      copy: "Romania operates with a differentiated commission model: Inlink commissions may reach 100%, while Outlink commissions may reach 50%. A maximum earning cap of 100 € may apply.",
+      inlinkRate: "100%",
+      outlinkRate: "50%",
+      maxEarning: "€100",
+      inlinkExample: "You share an Adidas sneaker collection. Your follower clicks your link and buys an Adidas sneaker → In-link.",
+      outlinkExample: "You share an Adidas sneaker link. Your follower clicks it but buys a Puma sneaker instead → Out-link."
+    },
+    bulgaria: {
+      name: "Bulgaria 🇧🇬",
+      copy: "Bulgaria operates with a unified Inlink and Outlink commission model of 75%. A maximum earning cap of 150 € may apply.",
+      inlinkRate: "75%",
+      outlinkRate: "75%",
+      maxEarning: "€150",
+      inlinkExample: "You share a curated collection link. Your follower clicks your link and buys a product from it → In-link.",
+      outlinkExample: "You share a product link. Your follower clicks it but buys a different product instead → Out-link."
+    },
+    greece: {
+      name: "Greece 🇬🇷",
+      copy: "Greece operates with a unified Inlink and Outlink commission model of 75%. A maximum earning cap of 150 € may apply.",
+      inlinkRate: "75%",
+      outlinkRate: "75%",
+      maxEarning: "€150",
+      inlinkExample: "You share a curated collection link. Your follower clicks your link and buys a product from it → In-link.",
+      outlinkExample: "You share a product link. Your follower clicks it but buys a different product instead → Out-link."
+    }
+  }
+
   return (
     <main className="bg-background text-foreground min-h-screen">
       {/* 1. HERO SECTION */}
@@ -224,17 +256,51 @@ export default function CeePage() {
           transition={{ duration: 0.7 }} 
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-3xl mb-12">
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">How You</span> <span className="text-[#0a0a0a]">Earn</span></h2>
-            <p className="text-xl text-[#4b5563]">Understanding the commission models and tracking windows.</p>
+            <p className="text-xl text-[#4b5563]">Select a country to view specific commission models and earning details.</p>
           </div>
+
+          {/* Interactive Country Selector Tabs */}
+          <div className="flex flex-wrap gap-3 mb-10">
+            {(Object.keys(countryData) as Array<keyof typeof countryData>).map((countryKey) => {
+              const country = countryData[countryKey];
+              const isActive = activeTab === countryKey;
+              return (
+                <button
+                  key={countryKey}
+                  onClick={() => setActiveTab(countryKey)}
+                  className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
+                    isActive
+                      ? "bg-[#2563EB] text-white shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:scale-102"
+                      : "bg-[#f3f4f6] text-[#4b5563] hover:bg-[#e5e7eb] hover:text-[#111827]"
+                  }`}
+                >
+                  {country.name}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Country Description Copy */}
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="mb-8 p-6 bg-[#f9fafb] border border-[#e5e7eb] rounded-2xl shadow-[0_1px_4px_rgba(0,0,0,0.04)]"
+          >
+            <p className="text-[#374151] font-medium leading-relaxed">
+              {countryData[activeTab].copy}
+            </p>
+          </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* In-link */}
             <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
-                <LinkIcon className="w-4 h-4" /> 100% Commission Rate
+                <LinkIcon className="w-4 h-4" /> {countryData[activeTab].inlinkRate} Commission Rate
               </div>
               <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">In-link</h3>
               <p className="text-lg text-[#4b5563] mb-6">
@@ -242,7 +308,7 @@ export default function CeePage() {
               </p>
               <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl">
                 <p className="text-sm text-[#4b5563]">
-                  <strong className="text-[#111827]">Example:</strong> You share an Adidas sneaker collection. Your follower clicks your link and buys an Adidas sneaker → <span className="text-[#2563EB] font-semibold">In-link</span>.
+                  <strong className="text-[#111827]">Example:</strong> {countryData[activeTab].inlinkExample}
                 </p>
               </div>
             </div>
@@ -251,7 +317,7 @@ export default function CeePage() {
             <div className="border border-[#e5e7eb] bg-[#f9fafb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 md:p-10 rounded-3xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#eff6ff] border border-[#bfdbfe] text-[#2563EB] text-sm font-semibold mb-6">
-                <ExternalLink className="w-4 h-4" /> 50% Commission Rate
+                <ExternalLink className="w-4 h-4" /> {countryData[activeTab].outlinkRate} Commission Rate
               </div>
               <h3 className="text-3xl font-display font-bold mb-4 text-[#111827]">Out-link</h3>
               <p className="text-lg text-[#4b5563] mb-6">
@@ -259,7 +325,7 @@ export default function CeePage() {
               </p>
               <div className="bg-[#ffffff] border border-[#e5e7eb] p-5 rounded-xl">
                 <p className="text-sm text-[#4b5563]">
-                  <strong className="text-[#111827]">Example:</strong> You share an Adidas sneaker link. Your follower clicks it but buys a Puma sneaker instead → <span className="text-[#2563EB] font-semibold">Out-link</span>.
+                  <strong className="text-[#111827]">Example:</strong> {countryData[activeTab].outlinkExample}
                 </p>
               </div>
             </div>
@@ -284,7 +350,7 @@ export default function CeePage() {
               <Euro className="w-8 h-8 text-[#2563EB]" />
               <div>
                 <p className="text-sm text-[#4b5563]">Maximum earning</p>
-                <p className="text-xl font-bold text-[#2563EB]">€100 <span className="text-sm font-normal text-[#4b5563]">/ transaction</span></p>
+                <p className="text-xl font-bold text-[#2563EB]">{countryData[activeTab].maxEarning} <span className="text-sm font-normal text-[#4b5563]">/ transaction</span></p>
               </div>
             </div>
           </div>
@@ -302,7 +368,7 @@ export default function CeePage() {
         >
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6"><span className="text-transparent bg-[linear-gradient(135deg,#2563EB,#16A34A)] bg-clip-text">Bonus</span> <span className="text-[#0a0a0a]">Opportunities</span></h2>
-            <p className="text-xl text-[#4b5563]">Unlock extra earnings and rewards beyond standard commissions.</p>
+            <p className="text-xl text-[#4b5563]">Explore additional program benefits based on eligibility criteria and campaign rules.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -311,13 +377,13 @@ export default function CeePage() {
               <h3 className="text-2xl font-bold mb-4 text-[#111827]">Welcome Bonus</h3>
               <p className="text-[#4b5563] mb-4">Jumpstart your journey with our sign-up incentives.</p>
               <ul className="space-y-3">
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
-                  <span className="text-[#374151]"><strong className="text-[#111827]">€100</strong> in coins upon joining</span>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0 mt-0.5" />
+                  <span className="text-[#374151]">New members receive 100 coins.</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#16A34A]" />
-                  <span className="text-[#374151]"><strong className="text-[#111827]">€100</strong> voucher after your first post</span>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#16A34A] shrink-0 mt-0.5" />
+                  <span className="text-[#374151]">Creators who share content within their first 14 days and generate 20 clicks may also qualify for an additional voucher worth 100 €.</span>
                 </li>
               </ul>
             </div>
@@ -400,7 +466,7 @@ export default function CeePage() {
               <User className="w-10 h-10 text-[#2563EB] mb-6" />
               <h3 className="text-xl font-bold mb-3">Personalised Code</h3>
               <p className="text-muted-foreground text-sm">
-                Influencers with a large reach and high monthly click volume may receive an Instagram-exclusive personalised discount code from Trendyol.
+                Influencers with a large reach and high monthly click volume may receive an Instagram-exclusive personalised discount code from Trendyol (excluding Romania).
               </p>
             </div>
             <div className="border border-white/10 bg-white/5 p-8 rounded-3xl">
@@ -410,6 +476,20 @@ export default function CeePage() {
                 During high-traffic shopping periods such as Black Friday or 11.11, extra discount codes are activated to maximise your earning potential.
               </p>
             </div>
+          </div>
+
+          {/* Romania-Specific Code & Campaign System */}
+          <div className="mt-10 p-8 border border-white/10 bg-white/5 rounded-3xl relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#2563EB]/5 blur-3xl rounded-full" />
+            <h3 className="text-2xl font-display font-bold text-white mb-4 flex items-center gap-3">
+              <Tags className="w-6 h-6 text-[#2563EB]" /> Romania Code & Campaign Model
+            </h3>
+            <p className="text-muted-foreground text-base leading-relaxed mb-4">
+              Romania does not currently use personalized influencer codes. Instead, monthly campaign codes and brand-specific codes are shared regularly.
+            </p>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              During brand bonus periods, creators may receive sales commissions and may also qualify for additional Trendyol bonuses if they exceed defined click targets.
+            </p>
           </div>
         </motion.div>
       </section>
@@ -570,7 +650,7 @@ export default function CeePage() {
           transition={{ duration: 0.7 }} 
           className="mx-auto max-w-4xl px-6 md:px-10 text-center relative z-10"
         >
-          <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Start Earning?</h2>
+          <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Apply?</h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             Apply through iMediaff Global — an authorized Trendyol partner agency.
           </p>

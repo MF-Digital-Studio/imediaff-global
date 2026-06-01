@@ -309,7 +309,7 @@ export default function AffiliateProgramsPage() {
 
                 <div className="space-y-4 border-t border-white/20 pt-6 mb-10">
                   {[
-                    "Segment-based commissions (Platinum 40% / Gold 30% / Silver 20% / Starter 30%)",
+                    "Segment-based commission structure",
                     "Monthly AZN coupon rewards by ranking",
                     "In-link & out-link commission structure",
                     "Full agency financial & operational management"
@@ -657,9 +657,9 @@ export default function AffiliateProgramsPage() {
                 </tr>
                 <tr className="bg-transparent hover:bg-white/[0.03] transition-colors">
                   <td className="p-6 font-semibold text-white">Max Commission</td>
-                  <td className="p-6">100% in-link</td>
+                  <td className="p-6">100% in-link (RO) / 75% (BG & GR)</td>
                   <td className="p-6">150% new buyer</td>
-                  <td className="p-6">40% Platinum</td>
+                  <td className="p-6">Segment-based</td>
                   <td className="p-6">Varies by product</td>
                 </tr>
                 <tr className="bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
@@ -709,7 +709,7 @@ export default function AffiliateProgramsPage() {
             / Global Standard
           </p>
           <h2 className="font-display text-[clamp(2.5rem,5.5vw,5.5rem)] font-bold tracking-[-0.03em] text-white mb-6 text-balance">
-            Ready to Start <br /> Earning Globally?
+            Ready to Apply <br /> Globally?
           </h2>
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
             Apply through iMediaff Global — your authorized gateway to TrendFam and Noon affiliate programs across MENA, CEE, Gulf, and Azerbaijan.
