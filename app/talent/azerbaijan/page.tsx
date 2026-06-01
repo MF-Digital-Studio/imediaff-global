@@ -140,7 +140,7 @@ export default function AzerbaijanPage() {
               <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Out-of-collection products: Adjusted category rules apply</span></li>
               <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Electronics: Category-specific rules apply</span></li>
               <li className="flex items-center gap-3"><Ban className="text-red-500 w-5 h-5" /> <span>Mobile phones and gold products: Excluded from commission eligibility</span></li>
-              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> <span>Maximum earning per order: Earning caps per transaction may apply ($30 limit)</span></li>
+              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> <span>Order-level limits: Earning caps per transaction may apply depending on program rules.</span></li>
             </ul>
           </div>
         </motion.div>
@@ -429,7 +429,7 @@ export default function AzerbaijanPage() {
           <div className="max-w-3xl mb-12">
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Additional Program Opportunities</h2>
             <p className="text-xl text-[#4b5563] leading-relaxed">
-              Trendyol offers additional program opportunities to support high-performing creators. Gold and Platinum segment creators are prioritized for optimization support.
+              Trendyol may offer additional program opportunities to support eligible creators based on campaign rules, performance criteria, and current program conditions.
             </p>
           </div>
 
