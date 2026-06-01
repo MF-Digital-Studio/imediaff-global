@@ -95,7 +95,7 @@ export default function AzerbaijanPage() {
         </motion.div>
       </section>
 
-      {/* SECTION 3 — How You Earn */}
+      {/* SECTION 3 — How Commissions Work */}
       <section className="py-24 border-border bg-[#ffffff] relative overflow-hidden">
         <motion.div 
           initial={{ opacity: 0, y: 24 }} 
@@ -105,44 +105,42 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-16">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How You Earn</h2>
-            <p className="text-xl text-[#4b5563]">Commission Rates per Segment.</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How Commissions Work</h2>
+            <p className="text-xl text-[#4b5563] leading-relaxed">
+              Commission rates may vary depending on influencer segment, campaign conditions, product category, and current program rules. Approved creators receive the relevant commission details during the onboarding process and through official program communication channels.
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
-              <span className="text-2xl mb-2">🥇</span>
-              <h4 className="font-bold mb-2 text-[#111827]">Platinum</h4>
-              <div className="text-2xl font-bold text-[#2563EB]">40%</div>
-              <p className="text-xs text-[#4b5563] mt-1">In-Link</p>
+              <Award className="w-8 h-8 text-[#2563EB] mb-4 shrink-0" />
+              <h4 className="font-bold mb-2 text-[#111827]">Segment-Based Structure</h4>
+              <p className="text-sm text-[#4b5563]">Commission rates depend on your creator tier and performance segment.</p>
             </div>
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
-              <span className="text-2xl mb-2">🥈</span>
-              <h4 className="font-bold mb-2 text-[#111827]">Gold</h4>
-              <div className="text-2xl font-bold text-[#2563EB]">30%</div>
-              <p className="text-xs text-[#4b5563] mt-1">In-Link</p>
+              <ShoppingBag className="w-8 h-8 text-[#2563EB] mb-4 shrink-0" />
+              <h4 className="font-bold mb-2 text-[#111827]">Category Rules Apply</h4>
+              <p className="text-sm text-[#4b5563]">Different rates may apply depending on product categories and campaign rules.</p>
             </div>
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
-              <span className="text-2xl mb-2">🥉</span>
-              <h4 className="font-bold mb-2 text-[#111827]">Silver</h4>
-              <div className="text-2xl font-bold text-[#374151]">20%</div>
-              <p className="text-xs text-[#4b5563] mt-1">In-Link</p>
+              <ShieldCheck className="w-8 h-8 text-[#2563EB] mb-4 shrink-0" />
+              <h4 className="font-bold mb-2 text-[#111827]">Onboarding Clarity</h4>
+              <p className="text-sm text-[#4b5563]">Final, specific commission rates are shared clearly during onboarding.</p>
             </div>
-            <div className="border border-[#16A34A] bg-[#f0fdf4] p-6 rounded-2xl flex flex-col items-center text-center shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
-              <span className="text-2xl mb-2">🌱</span>
-              <h4 className="font-bold mb-2 text-[#16A34A]">Starter</h4>
-              <div className="text-2xl font-bold text-[#16A34A]">30%</div>
-              <p className="text-xs text-[#15803d] mt-1 font-semibold">In-Link</p>
+            <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-6 rounded-2xl flex flex-col items-center text-center">
+              <RefreshCw className="w-8 h-8 text-[#2563EB] mb-4 shrink-0" />
+              <h4 className="font-bold mb-2 text-[#111827]">Program Updates</h4>
+              <p className="text-sm text-[#4b5563]">Program terms and commission structures may be updated periodically.</p>
             </div>
           </div>
 
           <h3 className="text-2xl font-bold mb-6 text-[#111827]">Special Rate Rules</h3>
           <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
             <ul className="space-y-4 text-[#374151] font-medium">
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Out-of-collection products: 15% commission</span></li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Electronics: 5% commission (same for in-link and out-link)</span></li>
-              <li className="flex items-center gap-3"><Ban className="text-red-500 w-5 h-5" /> <span>Mobile phones and gold products: 0% commission</span></li>
-              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> <span>Maximum earning per order: $30 (excess is deducted from order)</span></li>
+              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Out-of-collection products: Adjusted category rules apply</span></li>
+              <li className="flex items-center gap-3"><CheckCircle2 className="text-[#2563EB] w-5 h-5" /> <span>Electronics: Category-specific rules apply</span></li>
+              <li className="flex items-center gap-3"><Ban className="text-red-500 w-5 h-5" /> <span>Mobile phones and gold products: Excluded from commission eligibility</span></li>
+              <li className="flex items-center gap-3"><AlertTriangle className="text-[#2563EB] w-5 h-5" /> <span>Maximum earning per order: Earning caps per transaction may apply ($30 limit)</span></li>
             </ul>
           </div>
         </motion.div>
@@ -167,7 +165,7 @@ export default function AzerbaijanPage() {
               <Percent className="w-10 h-10 text-[#2563EB] mb-4" />
               <h3 className="text-2xl font-bold mb-4 text-[#111827]">Agency Split</h3>
               <p className="text-[#4b5563] leading-relaxed">
-                60% of total earnings go to you. The remaining 40% covers all government taxes and agency commission — no additional fees.
+                60% of the calculated commissions are distributed to you. The remaining 40% covers all government taxes and agency commission — no additional fees.
               </p>
             </div>
             <div className="bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl">
@@ -183,7 +181,7 @@ export default function AzerbaijanPage() {
             <table className="w-full text-sm text-left">
               <thead className="bg-[#2563EB] text-white">
                 <tr className="text-white">
-                  <th className="px-6 py-4">Month Earned</th>
+                  <th className="px-6 py-4">Invoicing Month</th>
                   <th className="px-6 py-4">Payment Received</th>
                 </tr>
               </thead>
@@ -197,7 +195,7 @@ export default function AzerbaijanPage() {
 
           <div className="border-l-4 border-[#2563EB] bg-[#eff6ff] border border-y border-r border-[#bfdbfe]/50 p-6 rounded-r-xl max-w-3xl shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <p className="text-[#2563EB] text-sm md:text-base font-medium">
-              Important: Payments are calculated based on the TL exchange rate of the invoicing month, then converted to Manat. Do not calculate earnings by converting USD directly to Manat. A 1.5% bank processing fee is also deducted.
+              Important: Payments are sent in USD. The amount appears on your payment card in Manat, and an approximate 1.5% bank processing fee may be applied by the bank.
             </p>
           </div>
         </motion.div>
@@ -214,7 +212,7 @@ export default function AzerbaijanPage() {
         >
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">How to Track Your Performance</h2>
-            <p className="text-xl text-[#4b5563]">Tracking Your Earnings</p>
+            <p className="text-xl text-[#4b5563]">Tracking Your Performance</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative mb-12">
@@ -223,7 +221,7 @@ export default function AzerbaijanPage() {
             {[
               { step: "01", text: "Log in to your Trendyol account" },
               { step: "02", text: "Go to Influencer Center → Reports → Overall Results" },
-              { step: "03", text: "View total earnings, link performance, and purchased items" },
+              { step: "03", text: "View total performance metrics, link traffic, and purchased items" },
               { step: "04", text: "Check 'Link Revenue' to see which collections perform best" }
             ].map((step, i) => (
               <div key={i} className="relative z-10 flex flex-col items-center text-center">
@@ -255,7 +253,9 @@ export default function AzerbaijanPage() {
         >
           <div className="max-w-3xl mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">Monthly Coupon Rewards</h2>
-            <p className="text-xl text-muted-foreground">Coupons are distributed based on your revenue ranking among all influencers each month.</p>
+            <p className="text-xl text-muted-foreground">
+              Monthly coupon rewards are evaluated through two separate ranking views: Umumi Reyting and Segment Reytingi. To become eligible for coupon rewards, creators must be ranked within the top 750 in the Umumi Reyting.
+            </p>
           </div>
 
           <div className="overflow-x-auto border border-white/10 rounded-2xl mb-6 max-w-3xl">
@@ -276,7 +276,7 @@ export default function AzerbaijanPage() {
             </table>
           </div>
           <p className="text-sm text-muted-foreground max-w-3xl">
-            Note: Track your ranking throughout the month and increase your shares to climb higher and earn more.
+            Creators should track their Umumi Reyting throughout the month. Segment Reytingi may provide additional performance context, but coupon eligibility depends on being within the top 750 in the Umumi Reyting.
           </p>
         </motion.div>
       </section>
@@ -427,9 +427,9 @@ export default function AzerbaijanPage() {
           className="mx-auto max-w-[1600px] px-6 md:px-10"
         >
           <div className="max-w-3xl mb-12">
-            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Bonus Opportunities</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#0a0a0a]">Additional Program Opportunities</h2>
             <p className="text-xl text-[#4b5563] leading-relaxed">
-              Trendyol offers extra earning opportunities for high-performing influencers. Gold and Platinum segment influencers are prioritised for bonus targeting.
+              Trendyol offers additional program opportunities to support high-performing creators. Gold and Platinum segment creators are prioritized for optimization support.
             </p>
           </div>
 
@@ -449,7 +449,7 @@ export default function AzerbaijanPage() {
 
           <div className="p-6 border border-[#bfdbfe] bg-[#eff6ff] rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.04)]">
             <p className="text-[#2563EB] text-sm md:text-base font-semibold text-center">
-              Note: Successfully completing all assigned missions earns you an additional bonus on top of your regular commission.
+              Note: Successfully completing assigned program milestones may unlock additional program benefits, depending on campaign rules.
             </p>
           </div>
         </motion.div>
@@ -503,7 +503,7 @@ export default function AzerbaijanPage() {
           transition={{ duration: 0.7 }} 
           className="mx-auto max-w-4xl px-6 md:px-10 text-center relative z-10"
         >
-          <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Start Earning?</h2>
+          <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Apply?</h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             Apply through iMediaff Global — an authorized Trendyol partner agency.
           </p>
