@@ -147,13 +147,17 @@ export async function POST(request: Request) {
     for (const key of fieldKeys) {
       // Check if this key exists in the payload and is not undefined/empty
       if (body[key] !== undefined && body[key] !== null && body[key] !== "") {
+        // Skip duplicate email display for Trendyol since contactEmail is also displayed
+        if (formType === "trendyol" && key === "email") {
+          continue
+        }
         const label = FORM_LABELS[key] || key
         const value = body[key]
 
         tableRowsHtml += `
           <div class="field-group">
             <div class="label">${label}</div>
-            <div class="value">${key === "email" ? `<a href="mailto:${value}">${value}</a>` : value}</div>
+            <div class="value">${key === "email" || key === "trendyolEmail" || key === "contactEmail" ? `<a href="mailto:${value}">${value}</a>` : value}</div>
           </div>
         `
 
@@ -197,15 +201,22 @@ export async function POST(request: Request) {
               <p>${formTypeName}</p>
             </div>
             <div class="content">
+              <div class="field-group">
+                <div class="label">Form Type</div>
+                <div class="value" style="font-weight: bold; color: #2563EB;">${formTypeName}</div>
+              </div>
+
               ${tableRowsHtml}
               
+              ${messageVal ? `
               <div class="field-group">
-                <div class="label">Message / Details</div>
+                <div class="label">${formType === "creator" ? "Is there anything else you would like to mention?" : "Message / Details"}</div>
                 <div class="value message-box">${messageVal}</div>
               </div>
+              ` : ""}
               
               <div class="field-group">
-                <div class="label">Submission Time</div>
+                <div class="label">Submitted At</div>
                 <div class="value">${dateTimeString} (UTC)</div>
               </div>
             </div>
@@ -218,14 +229,12 @@ export async function POST(request: Request) {
     `
 
     const textContent = `
-New Form Submission: ${formTypeName}
+New Form Submission
 --------------------------------------------------
-${textContentFields}
-Submission Time: ${dateTimeString} (UTC)
-
-Message / Details:
+Form Type: ${formTypeName}
+Submitted At: ${dateTimeString} (UTC)
 --------------------------------------------------
-${messageVal}
+${textContentFields}${messageVal ? `${formType === "creator" ? "Is there anything else you would like to mention?" : "Message / Details"}: ${messageVal}\n` : ""}
 --------------------------------------------------
 This inquiry was submitted natively from the imediaff Global website.
     `
