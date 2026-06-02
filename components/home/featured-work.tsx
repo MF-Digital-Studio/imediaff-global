@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -44,10 +44,10 @@ export default function FeaturedWork() {
             </h2>
           </div>
           <Link
-            href="/case-studies"
+            href="/events"
             className="group inline-flex items-center gap-2 border border-foreground/20 px-4 py-2 text-sm font-semibold hover:border-primary hover:text-primary"
           >
-            All case studies
+            All events
             <span aria-hidden className="transition-transform group-hover:translate-x-1">
               →
             </span>

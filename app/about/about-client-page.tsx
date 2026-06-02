@@ -557,10 +557,10 @@ export default function AboutClientPage() {
               Start a Project
             </Link>
             <Link
-              href="/case-studies"
+              href="/events"
               className="inline-flex items-center gap-2 border-2 border-black px-10 py-5 text-base font-bold text-white transition-all hover:bg-black hover:text-white rounded-full"
             >
-              View Case Studies
+              View Events
             </Link>
           </div>
         </motion.div>

@@ -22,7 +22,7 @@ const NAV_ITEMS = [
       { label: "Azerbaijan", href: "/talent/azerbaijan", flags: "🇦🇿" }
     ]
   },
-  { label: "Case Studies", href: "/case-studies" },
+  { label: "Events", href: "/events" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ]

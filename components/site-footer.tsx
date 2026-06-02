@@ -6,7 +6,7 @@ const FOOTER_LINKS = {
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Brands", href: "/brands" },
-    { label: "Case Studies", href: "/case-studies" },
+    { label: "Events", href: "/events" },
     { label: "Blog", href: "/blog" },
   ],
   Capabilities: [
