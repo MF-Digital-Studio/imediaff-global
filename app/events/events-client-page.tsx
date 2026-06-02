@@ -47,15 +47,15 @@ export default function EventsClientPage() {
             className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.02]"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="relative aspect-[4/3] lg:aspect-auto h-full w-full overflow-hidden">
+              <div className="relative aspect-[4/3] lg:aspect-auto h-full w-full overflow-hidden bg-black/20">
                 <Image
                   src={featuredEvent.coverImage}
                   alt={featuredEvent.title}
                   fill
-                  className="object-cover transition-transform duration-[1500ms] group-hover:scale-105"
+                  className="object-cover transition-transform duration-[1500ms] group-hover:scale-105 will-change-transform"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent lg:hidden" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent lg:hidden pointer-events-none" />
               </div>
               <div className="flex flex-col justify-center p-8 md:p-16 lg:p-20 relative z-10 lg:bg-black/40 lg:backdrop-blur-sm">
                 <div className="flex flex-wrap items-center gap-4 mb-6">
@@ -127,15 +127,15 @@ export default function EventsClientPage() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="group relative flex flex-col overflow-hidden rounded-2xl bg-white/[0.03] border border-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
               >
-                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-black/20">
                   <Image
                     src={event.coverImage}
                     alt={event.title}
                     fill
-                    className="object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                    className="object-cover transition-transform duration-[1200ms] group-hover:scale-105 will-change-transform"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full font-mono text-[10px] uppercase tracking-[0.1em] text-white">
                     {event.category}
                   </div>

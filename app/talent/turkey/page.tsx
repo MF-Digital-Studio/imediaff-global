@@ -29,10 +29,6 @@ export default function TurkeyPage() {
                 ← All Regions
              </Link>
           </div>
-          <div className="inline-flex items-center rounded-full border border-border/50 bg-white/5 px-3 py-1 text-sm font-medium text-muted-foreground backdrop-blur-sm mb-8">
-            <span className="flex h-2 w-2 rounded-full bg-[#2563EB] mr-2"></span>
-            Trendyol Partner Agency
-          </div>
           <h1 className="font-display text-[clamp(3.5rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em] max-w-5xl">
             Join the iMediaff <br />
             <span className="bg-gradient-to-r from-[#2563EB] to-[#16A34A] bg-clip-text text-transparent">Talent Network</span>
@@ -531,7 +527,7 @@ export default function TurkeyPage() {
         >
           <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Start Earning?</h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-            Apply through iMediaff Global — an authorized Trendyol partner agency.
+            Apply through iMediaff Global.
           </p>
           <Link 
             href="/contact?type=creator"

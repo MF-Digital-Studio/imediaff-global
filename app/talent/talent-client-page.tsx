@@ -133,7 +133,7 @@ export default function TalentClientPage() {
         >
           <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Start Earning?</h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-            Apply through iMediaff Global — an authorized Trendyol partner agency operating across MENA and Central & Eastern Europe.
+            Apply through iMediaff Global, operating across MENA and Central & Eastern Europe.
           </p>
           <Link 
             href="/contact?type=creator"

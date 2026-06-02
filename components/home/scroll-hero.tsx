@@ -202,7 +202,7 @@ export default function ScrollHero() {
             </Link>
 
             <Link
-              href="/contact?type=creator"
+              href="/talent"
               className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-white"
             >
               I am a Creator
