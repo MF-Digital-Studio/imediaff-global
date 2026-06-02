@@ -173,6 +173,38 @@ export async function POST(request: Request) {
       noon: "Noon Affiliate Application",
     }[formType as "brand" | "creator" | "trendyol" | "noon"]
 
+    const THEMES: Record<
+      "brand" | "creator" | "trendyol" | "noon",
+      {
+        headerBg: string
+        headerTextColor: string
+        accentColor: string
+      }
+    > = {
+      brand: {
+        headerBg: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+        headerTextColor: "#ffffff",
+        accentColor: "#2563EB",
+      },
+      creator: {
+        headerBg: "linear-gradient(135deg, #2563EB 0%, #16A34A 100%)",
+        headerTextColor: "#ffffff",
+        accentColor: "#2563EB",
+      },
+      trendyol: {
+        headerBg: "#ffa101",
+        headerTextColor: "#ffffff",
+        accentColor: "#ffa101",
+      },
+      noon: {
+        headerBg: "#c8b2f8",
+        headerTextColor: "#111827", // Dark text for readability on light purple
+        accentColor: "#7c3aed", // Legible dark purple for highlights/links
+      },
+    }
+
+    const currentTheme = THEMES[formType as "brand" | "creator" | "trendyol" | "noon"] || THEMES.brand
+
     const htmlContent = `
       <!DOCTYPE html>
       <html>
@@ -182,15 +214,16 @@ export async function POST(request: Request) {
           <style>
             body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f9fafb; color: #111827; margin: 0; padding: 20px; }
             .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; border: 1px solid #e5e7eb; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-            .header { background: linear-gradient(135deg, #2563EB 0%, #16A34A 100%); padding: 30px 20px; text-align: center; color: #ffffff; }
-            .header h1 { margin: 0; font-size: 24px; font-weight: bold; letter-spacing: -0.025em; }
-            .header p { margin: 5px 0 0; font-size: 14px; opacity: 0.9; }
+            .header { background: ${currentTheme.headerBg}; padding: 30px 20px; text-align: center; color: ${currentTheme.headerTextColor}; }
+            .header h1 { margin: 0; font-size: 24px; font-weight: bold; letter-spacing: -0.025em; color: ${currentTheme.headerTextColor}; }
+            .header p { margin: 5px 0 0; font-size: 14px; opacity: 0.9; color: ${currentTheme.headerTextColor}; }
             .content { padding: 30px 20px; }
             .field-group { margin-bottom: 20px; border-bottom: 1px solid #f3f4f6; padding-bottom: 15px; }
             .field-group:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
             .label { font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; color: #6b7280; margin-bottom: 5px; }
             .value { font-size: 16px; color: #1f2937; line-height: 1.5; }
-            .message-box { background: #f3f4f6; border-left: 4px solid #2563EB; padding: 15px; border-radius: 4px; font-style: italic; white-space: pre-line; }
+            .value a { color: ${currentTheme.accentColor}; text-decoration: none; font-weight: 500; }
+            .message-box { background: #f3f4f6; border-left: 4px solid ${currentTheme.accentColor}; padding: 15px; border-radius: 4px; font-style: italic; white-space: pre-line; }
             .footer { background-color: #f9fafb; padding: 20px; text-align: center; font-size: 12px; color: #9ca3af; border-top: 1px solid #e5e7eb; }
           </style>
         </head>
@@ -203,7 +236,7 @@ export async function POST(request: Request) {
             <div class="content">
               <div class="field-group">
                 <div class="label">Form Type</div>
-                <div class="value" style="font-weight: bold; color: #2563EB;">${formTypeName}</div>
+                <div class="value" style="font-weight: bold; color: ${currentTheme.accentColor};">${formTypeName}</div>
               </div>
 
               ${tableRowsHtml}
