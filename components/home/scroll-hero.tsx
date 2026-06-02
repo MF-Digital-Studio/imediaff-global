@@ -3,7 +3,6 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { GOOGLE_FORMS } from "@/lib/constants"
 import {
   motion,
   useScroll,
@@ -192,26 +191,22 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, delay: 1.0, ease: easeCustom }}
           >
-            <a
-              href={GOOGLE_FORMS.brand}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact?type=brand"
               className="group relative inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-white transition-all hover:scale-105 bg-gradient-to-br from-[#2563EB] to-[#16A34A] shadow-[0_4px_14px_0_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Start a Project
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </span>
-            </a>
+            </Link>
 
-            <a
-              href={GOOGLE_FORMS.creator}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact?type=creator"
               className="inline-flex items-center justify-center rounded-full border-2 border-[#0F172A] bg-transparent px-8 py-4 font-semibold text-[#0F172A] transition-all hover:bg-[#0F172A] hover:text-white"
             >
               I am a Creator
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 

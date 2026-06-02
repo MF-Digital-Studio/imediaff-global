@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react"
 import Link from "next/link"
-import { GOOGLE_FORMS } from "@/lib/constants"
 import { ArrowRight, Globe, Users, ShoppingBag, TrendingUp } from "lucide-react"
 
 export default function TalentClientPage() {
@@ -139,14 +138,12 @@ export default function TalentClientPage() {
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             Apply through iMediaff Global — an authorized Trendyol partner agency operating across MENA and Central & Eastern Europe.
           </p>
-          <a 
-            href={GOOGLE_FORMS.creator} 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <Link 
+            href="/contact?type=creator"
             className="inline-flex h-16 items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 text-lg font-bold text-black transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.4)]"
           >
             Apply as a Creator ↗
-          </a>
+          </Link>
         </motion.div>
       </section>
     </main>

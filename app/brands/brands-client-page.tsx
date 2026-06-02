@@ -3,7 +3,6 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { GOOGLE_FORMS } from "@/lib/constants"
 import { motion, useScroll, useTransform } from "motion/react"
 
 const METRICS = [
@@ -270,14 +269,12 @@ export default function BrandsClientPage() {
             </div>
           </motion.div>
 
-          <a
-            href={GOOGLE_FORMS.brand}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact?type=brand"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#2563EB] to-[#16A34A] px-10 py-5 text-base font-bold text-white transition-transform hover:scale-105 shadow-xl"
           >
             Submit a Campaign Brief ↗
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -479,14 +476,12 @@ export default function BrandsClientPage() {
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
             Partner with iMediaff Global — one of Trendyol&apos;s top 3 authorized agencies. Access a vetted influencer network, custom brand offer campaigns, and full operational support across Turkey, CEE, Gulf, and Azerbaijan.
           </p>
-          <a
-            href={GOOGLE_FORMS.brand}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact?type=brand"
             className="inline-flex items-center justify-center rounded-full bg-black px-12 py-6 text-lg font-bold text-white transition-transform hover:scale-105 shadow-xl"
           >
             Request a Brand Partnership ↗
-          </a>
+          </Link>
         </motion.div>
       </section>
 

@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import ContactClientPage from "./contact-client-page"
 
 export const metadata = {
@@ -7,5 +8,18 @@ export const metadata = {
 }
 
 export default function ContactPage() {
-  return <ContactClientPage />
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-black text-white flex items-center justify-center font-mono">
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-8 h-8 border-4 border-[#2563EB] border-t-transparent rounded-full animate-spin" />
+            <p className="text-white/60 text-sm tracking-wider uppercase">Loading Form...</p>
+          </div>
+        </div>
+      }
+    >
+      <ContactClientPage />
+    </Suspense>
+  )
 }

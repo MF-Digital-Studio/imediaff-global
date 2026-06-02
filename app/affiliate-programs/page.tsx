@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { GOOGLE_FORMS } from "@/lib/constants"
 import { motion } from "motion/react"
 import { useState } from "react"
 import {
@@ -332,14 +331,12 @@ export default function AffiliateProgramsPage() {
             </motion.div>
           </div>
           <div className="mt-14 flex justify-center">
-            <a
-              href={GOOGLE_FORMS.trendyolAffiliate}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact?type=trendyol"
               className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#FFA101] hover:bg-black hover:text-white transition-all hover:scale-105 shadow-xl font-bold"
             >
               Apply for Trendyol Affiliate Access ↗
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -513,14 +510,12 @@ export default function AffiliateProgramsPage() {
           </div>
 
           <div className="mt-14 flex justify-center">
-            <a
-              href={GOOGLE_FORMS.noonAffiliate}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact?type=noon"
               className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#C8B2F8] hover:bg-black hover:text-white transition-all hover:scale-105 shadow-xl font-bold"
             >
               Apply for Affiliate Access ↗
-            </a>
+            </Link>
           </div>
         </div>
       </section>
