@@ -7,7 +7,7 @@ import StrategicGateway from "@/components/home/strategic-gateway"
 import ClientMarquee from "@/components/home/client-marquee"
 import StickyManifesto from "@/components/home/sticky-manifesto"
 import ServicesPreview from "@/components/home/services-preview"
-import FeaturedWork from "@/components/home/featured-work"
+import FeaturedEvents from "@/components/home/featured-events"
 import CtaStrip from "@/components/home/cta-strip"
 
 export default function HomePage() {
@@ -22,7 +22,7 @@ export default function HomePage() {
       <StrategicGateway />
       <StickyManifesto />
       <ServicesPreview />
-      <FeaturedWork />
+      <FeaturedEvents />
       <CtaStrip />
     </>
   )
