@@ -125,7 +125,7 @@ export default function AffiliateProgramsPage() {
               </div>
               <a
                 href="#trendyol-programs"
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] font-bold text-white hover:text-black transition-colors w-fit"
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] font-bold text-black hover:text-white transition-colors w-fit"
               >
                 View TrendFam Programs
                 <span className="transition-transform duration-300 group-hover:translate-x-1">↓</span>
@@ -135,7 +135,7 @@ export default function AffiliateProgramsPage() {
             {/* Card 2 - Noon */}
             <motion.div
               {...fadeUp(0.2)}
-              className="group relative p-8 md:p-12 bg-[#C8B2F8] border border-white/20 transition-all duration-300 flex flex-col justify-between overflow-hidden"
+              className="group relative p-8 md:p-12 bg-[#FFEF00] border border-white/20 transition-all duration-300 flex flex-col justify-between overflow-hidden text-black"
             >
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
@@ -143,26 +143,26 @@ export default function AffiliateProgramsPage() {
                     <img
                       src="/logos/noon-logo.png"
                       alt="noon"
-                      className="h-6 w-auto object-contain brightness-0 invert"
+                      className="h-6 w-auto object-contain brightness-0"
                     />
-                    <span className="text-white text-lg font-bold">×</span>
+                    <span className="text-black text-lg font-bold">×</span>
                     <img
                       src="/logos/imediaff-global-logo.png"
                       alt="imediaff"
-                      className="h-8 w-auto object-contain rounded"
+                      className="h-8 w-auto object-contain rounded brightness-0"
                     />
                   </div>
-                  <span className="inline-flex bg-white px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-[#C8B2F8] font-bold">
+                  <span className="inline-flex bg-black px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-[#FFEF00] font-bold">
                     MENA Region Partner
                   </span>
                 </div>
-                <p className="text-white leading-relaxed font-sans mb-8">
+                <p className="text-black leading-relaxed font-sans mb-8">
                   Strategic partnership with Noon — one of the largest e-commerce platforms in the GCC and Middle East. We integrate our influencer portfolio directly into the highest purchasing-power consumer markets in UAE, Saudi Arabia, and Egypt.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-10">
                   {["UAE", "KSA", "Egypt"].map((reg) => (
-                    <span key={reg} className="inline-flex items-center gap-1.5 border border-white/30 rounded-lg px-3 py-1.5 text-xs font-semibold text-white">
-                      <span className="w-1 h-1 rounded-full bg-white" />
+                    <span key={reg} className="inline-flex items-center gap-1.5 border border-black/30 rounded-lg px-3 py-1.5 text-xs font-semibold text-black">
+                      <span className="w-1.5 h-1.5 rounded-full bg-black" />
                       {reg}
                     </span>
                   ))}
@@ -170,7 +170,7 @@ export default function AffiliateProgramsPage() {
               </div>
               <a
                 href="#noon-program"
-                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] font-bold text-white hover:text-black transition-colors w-fit"
+                className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] font-bold text-black hover:text-white transition-colors w-fit"
               >
                 View Noon Program
                 <span className="transition-transform duration-300 group-hover:translate-x-1">↓</span>
@@ -408,31 +408,31 @@ export default function AffiliateProgramsPage() {
       </section>
 
       {/* ── SECTION 5: NOON AFFILIATE PROGRAM ── */}
-      <section id="noon-program" className="py-24 md:py-32 bg-[#C8B2F8] text-white relative overflow-hidden">
+      <section id="noon-program" className="py-24 md:py-32 bg-[#FFEF00] text-black relative overflow-hidden">
         <div className="mx-auto max-w-[1600px] px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16 md:mb-24">
 
             {/* Left Col - Text */}
             <motion.div {...fadeUp(0)}>
               <div className="flex items-center gap-6 mb-6">
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/95">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-black/80">
                   / Noon · MENA
                 </p>
                 <img
                   src="/logos/noon-logo.png"
                   alt="noon"
-                  className="w-[120px] h-auto object-contain brightness-0 invert"
+                  className="w-[120px] h-auto object-contain brightness-0"
                 />
               </div>
-              <h2 className="font-display text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[1.02] tracking-[-0.04em] mb-8 text-white text-balance">
+              <h2 className="font-display text-[clamp(2.5rem,5vw,5rem)] font-bold leading-[1.02] tracking-[-0.04em] mb-8 text-black text-balance">
                 The MENA Gateway: <br />
                 Noon Affiliate Program.
               </h2>
-              <div className="h-px w-20 bg-white/40 mb-8" />
-              <p className="text-lg text-white leading-relaxed font-sans mb-6">
+              <div className="h-px w-20 bg-black/30 mb-8" />
+              <p className="text-lg text-black leading-relaxed font-sans mb-6">
                 Through our strategic partnership with Noon, we connect our influencer portfolio directly to consumers across UAE, Saudi Arabia, and Egypt — markets with some of the world's highest e-commerce purchasing power.
               </p>
-              <p className="text-base text-white/90 leading-relaxed font-sans">
+              <p className="text-base text-black/85 leading-relaxed font-sans">
                 We segment Noon's vast product catalogue — Fashion, High-Tech, Cosmetics, Home & Living — according to each creator's niche, ensuring the right product reaches the right audience with maximum conversion impact.
               </p>
             </motion.div>
@@ -440,9 +440,9 @@ export default function AffiliateProgramsPage() {
             {/* Right Col - Visual (Dark card with Noon branding accent) */}
             <motion.div
               {...fadeUp(0.15)}
-              className="relative aspect-[16/10] md:aspect-[4/3] rounded-3xl overflow-hidden border border-white/20 p-8 md:p-12 flex flex-col justify-between"
+              className="relative aspect-[16/10] md:aspect-[4/3] rounded-3xl overflow-hidden border border-black/10 p-8 md:p-12 flex flex-col justify-between"
               style={{
-                background: 'linear-gradient(135deg, rgba(254,240,138,0.03) 0%, rgba(200,178,248,0.08) 100%), #0d0d0d'
+                background: 'linear-gradient(135deg, rgba(254,240,138,0.03) 0%, rgba(0,0,0,0.08) 100%), #0d0d0d'
               }}
             >
               <div className="absolute top-4 right-6 font-mono text-[9px] uppercase tracking-[0.3em] text-white/20">NOON AFFILIATE PRO</div>
@@ -495,15 +495,15 @@ export default function AffiliateProgramsPage() {
               <motion.div
                 key={f.title}
                 {...fadeUp(index * 0.12)}
-                className="group relative rounded-2xl p-8 bg-black/10 backdrop-blur-sm border border-white/20 hover:bg-black/20 transition-all duration-500 flex flex-col justify-between"
+                className="group relative rounded-2xl p-8 bg-black/5 backdrop-blur-sm border border-black/10 hover:bg-black/10 transition-all duration-500 flex flex-col justify-between"
               >
-                <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div>
-                  <div className="mb-6 w-12 h-12 rounded-xl bg-white/10 border border-white/25 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
-                    <f.icon className="w-5 h-5 text-white" strokeWidth={1.5} />
+                  <div className="mb-6 w-12 h-12 rounded-xl bg-black/10 border border-black/15 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                    <f.icon className="w-5 h-5 text-black" strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-3 tracking-tight">{f.title}</h3>
-                  <p className="text-sm leading-relaxed text-white/80">{f.desc}</p>
+                  <h3 className="font-display text-xl font-bold text-black mb-3 tracking-tight">{f.title}</h3>
+                  <p className="text-sm leading-relaxed text-black/80">{f.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -512,7 +512,7 @@ export default function AffiliateProgramsPage() {
           <div className="mt-14 flex justify-center">
             <Link
               href="/contact?type=noon"
-              className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-white text-[#C8B2F8] hover:bg-black hover:text-white transition-all hover:scale-105 shadow-xl font-bold"
+              className="group inline-flex items-center justify-center rounded-full px-8 py-4 bg-black text-[#FFEF00] hover:bg-white hover:text-black transition-all hover:scale-105 shadow-xl font-bold"
             >
               Apply for Affiliate Access ↗
             </Link>

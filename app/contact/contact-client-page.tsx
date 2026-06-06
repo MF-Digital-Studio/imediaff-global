@@ -22,6 +22,10 @@ const OFFICES = [
     address: "Ayazaga, Vadistanbul Park, Bilisim Vadisi, D:7A Block, Floor: 10, No:38, Sariyer/Istanbul",
   },
   {
+    name: "Dubai Office",
+    address: "Sheikh Mohammed Bin Rashid Boulevard, Downtown Dubai Foundry",
+  },
+  {
     name: "Global Operations (USA)",
     address: "30 N Gould St. Sheridan, WY 82801, United States of America",
   },

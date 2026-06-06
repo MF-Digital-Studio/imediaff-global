@@ -28,8 +28,8 @@ const NAV_ITEMS = [
 ]
 
 const SOCIAL_LINKS = [
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/imediaff/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/imediaff-global" },
   { label: "Twitter", href: "#" },
 ]
 

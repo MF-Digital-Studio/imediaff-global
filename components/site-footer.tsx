@@ -21,9 +21,14 @@ const FOOTER_LINKS = {
     { label: "Dubai, UAE", href: "/contact" },
     { label: "Request Proposal", href: "/contact" },
   ],
-  Headquarters: [
+  Offices: [
     {
-      label: "Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul",
+      label: "Istanbul HQ: Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul",
+      href: "/contact",
+      isAddress: true
+    },
+    {
+      label: "Dubai Office: Sheikh Mohammed Bin Rashid Boulevard, Downtown Dubai Foundry",
       href: "/contact",
       isAddress: true
     }
@@ -31,10 +36,8 @@ const FOOTER_LINKS = {
 }
 
 const SOCIAL = [
-  { label: "Instagram", href: "#" },
-  { label: "TikTok", href: "#" },
-  { label: "YouTube", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/imediaff/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/imediaff-global" },
 ]
 
 export default function SiteFooter() {
@@ -49,10 +52,17 @@ export default function SiteFooter() {
               <a key={s.label} href={s.href} className="inline-flex items-center gap-2 border border-white/20 px-3 py-1.5 text-xs font-mono tracking-widest text-white/60 hover:border-white hover:text-white transition-colors">{s.label}<span aria-hidden>↗</span></a>
             ))}
           </div>
+          <div className="mt-8">
+            <img 
+              src="/iab_logo.svg" 
+              alt="IAB Member" 
+              className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" 
+            />
+          </div>
         </div>
 
         {Object.entries(FOOTER_LINKS).map(([heading, items]) => (
-          <div key={heading} className={heading === "Headquarters" ? "md:col-span-3" : "md:col-span-2"}>
+          <div key={heading} className={heading === "Offices" ? "md:col-span-3" : "md:col-span-2"}>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-white font-bold">/ {heading}</p>
             <ul className="mt-6 flex flex-col gap-4">
               {items.map((item) => (

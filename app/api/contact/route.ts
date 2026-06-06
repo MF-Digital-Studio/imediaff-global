@@ -197,9 +197,9 @@ export async function POST(request: Request) {
         accentColor: "#ffa101",
       },
       noon: {
-        headerBg: "#c8b2f8",
-        headerTextColor: "#111827", // Dark text for readability on light purple
-        accentColor: "#7c3aed", // Legible dark purple for highlights/links
+        headerBg: "#FFEF00",
+        headerTextColor: "#111827", // Dark text for readability on yellow
+        accentColor: "#000000", // Legible black for highlights/links
       },
     }
 

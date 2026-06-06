@@ -57,8 +57,7 @@ export default function AffiliatePreview() {
               <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
                 {[
                   { label: "Regions", value: "4 Regions" },
-                  { label: "Commission cap", value: "150% Max" },
-                  { label: "Agreement", value: "1-Year Contract" }
+                  { label: "Commission cap", value: "150% Max" }
                 ].map((stat, i) => (
                   <div key={i} className="border-l border-white/40 pl-5 py-1">
                     <div className="text-white font-bold text-xl md:text-2xl uppercase tracking-tight">{stat.value}</div>
@@ -80,7 +79,7 @@ export default function AffiliatePreview() {
       </div>
 
       {/* NOON FULL SCREEN */}
-      <div className="w-full min-h-[80vh] flex flex-col justify-center bg-[#C8B2F8] text-white py-24 px-6 md:px-10 lg:px-20 relative overflow-hidden">
+      <div className="w-full min-h-[80vh] flex flex-col justify-center bg-[#FFEF00] text-black py-24 px-6 md:px-10 lg:px-20 relative overflow-hidden">
         <div className="max-w-[1600px] mx-auto w-full relative z-10">
           <motion.div {...fadeUp(0.1)} className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
@@ -90,26 +89,26 @@ export default function AffiliatePreview() {
                   <img
                     src="/logos/noon-logo.png"
                     alt="noon"
-                    className="w-[140px] h-auto object-contain brightness-0 invert"
+                    className="w-[140px] h-auto object-contain brightness-0"
                     style={{ display: noonLogoError ? 'none' : 'block' }}
                     onError={() => setNoonLogoError(true)}
                   />
                   {noonLogoError && (
                     <div className="flex flex-col">
-                      <div className="text-white font-bold text-3xl leading-none tracking-tight">noon</div>
-                      <div className="text-white text-[12px] mt-1 opacity-90 font-semibold tracking-wider">× iMediaff</div>
+                      <div className="text-black font-bold text-3xl leading-none tracking-tight">noon</div>
+                      <div className="text-black text-[12px] mt-1 opacity-90 font-semibold tracking-wider">× iMediaff</div>
                     </div>
                   )}
                 </div>
-                <span className="inline-flex rounded-full bg-white px-4 py-1.5 font-sans text-[10px] uppercase tracking-[0.15em] text-[#C8B2F8] font-bold">
+                <span className="inline-flex rounded-full bg-black px-4 py-1.5 font-sans text-[10px] uppercase tracking-[0.15em] text-[#FFEF00] font-bold">
                   MENA Region Partner
                 </span>
               </div>
 
-              <h3 className="font-sans text-[clamp(2rem,4vw,4rem)] font-bold tracking-tight text-white mb-6 leading-none">
+              <h3 className="font-sans text-[clamp(2rem,4vw,4rem)] font-bold tracking-tight text-black mb-6 leading-none">
                 Noon Affiliate Program
               </h3>
-              <p className="text-white/90 leading-relaxed text-lg md:text-xl font-sans max-w-2xl">
+              <p className="text-black/90 leading-relaxed text-lg md:text-xl font-sans max-w-2xl">
                 Strategic e-commerce partnerships across UAE, Saudi Arabia, and Egypt — with personalised promo codes, advanced analytics, and cross-border payment management.
               </p>
             </div>
@@ -121,16 +120,16 @@ export default function AffiliatePreview() {
                   { label: "Coverage", value: "UAE · KSA · EG" },
                   { label: "Target Segment", value: "GCC Market" }
                 ].map((stat, i) => (
-                  <div key={i} className="border-l border-white/40 pl-5 py-1">
-                    <div className="text-white font-bold text-xl md:text-2xl uppercase tracking-tight">{stat.value}</div>
-                    <div className="text-white/80 text-xs font-mono uppercase tracking-wider mt-2">{stat.label}</div>
+                  <div key={i} className="border-l border-black/40 pl-5 py-1">
+                    <div className="text-black font-bold text-xl md:text-2xl uppercase tracking-tight">{stat.value}</div>
+                    <div className="text-black/80 text-xs font-mono uppercase tracking-wider mt-2">{stat.label}</div>
                   </div>
                 ))}
               </div>
 
               <Link
                 href="/affiliate-programs"
-                className="group inline-flex items-center justify-center rounded-full bg-white text-[#C8B2F8] font-bold hover:bg-black hover:text-white transition-colors duration-300 px-8 py-5 text-sm uppercase tracking-widest w-fit"
+                className="group inline-flex items-center justify-center rounded-full bg-black text-[#FFEF00] font-bold hover:bg-white hover:text-black transition-colors duration-300 px-8 py-5 text-sm uppercase tracking-widest w-fit"
               >
                 Explore Noon Program
                 <span className="transition-transform duration-300 group-hover:translate-x-2 ml-3">→</span>
