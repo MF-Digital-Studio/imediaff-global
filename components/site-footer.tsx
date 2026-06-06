@@ -16,7 +16,7 @@ const FOOTER_LINKS = {
     { label: "Influencer Partnerships", href: "/services" },
   ],
   Contact: [
-    { label: "hello@imediaff.global", href: "mailto:hello@imediaff.global" },
+    { label: "info@imediaff.com", href: "mailto:info@imediaff.com" },
     { label: "+971 4 000 0000", href: "tel:+97140000000" },
     { label: "Dubai, UAE", href: "/contact" },
     { label: "Request Proposal", href: "/contact" },

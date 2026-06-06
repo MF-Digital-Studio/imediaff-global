@@ -324,8 +324,8 @@ export default function ContactClientPage() {
               <div className="flex flex-col gap-10">
                 <div>
                   <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">Direct Email</p>
-                  <a href="mailto:hello@imediaff.global" className="font-display text-2xl md:text-3xl font-bold tracking-tight hover:text-[#2563EB] transition-colors">
-                    hello@imediaff.global
+                  <a href="mailto:info@imediaff.com" className="font-display text-2xl md:text-3xl font-bold tracking-tight hover:text-[#2563EB] transition-colors">
+                    info@imediaff.com
                   </a>
                 </div>
                 
@@ -342,7 +342,7 @@ export default function ContactClientPage() {
 
                 <div className="pt-6">
                   <a 
-                    href="https://wa.me/902166065359" 
+                    href="https://wa.me/971545360453" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
