@@ -116,7 +116,7 @@ export default function ScrollHero() {
             >
               <div className="relative w-48 h-20 md:w-72 md:h-28 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <Image
-                  src="/logo.png"
+                  src="/logo-black.png"
                   alt="iMediaff"
                   fill
                   className="object-contain"

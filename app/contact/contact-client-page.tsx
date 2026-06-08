@@ -114,7 +114,7 @@ export default function ContactClientPage() {
 
     // Validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (formType !== "trendyol" && formType !== "creator") {
+    if (formType !== "trendyol") {
       if (!formState.email.trim() || !emailRegex.test(formState.email)) {
         setSubmitError("Please enter a valid email address.")
         setIsSubmitting(false)
@@ -215,6 +215,7 @@ export default function ContactClientPage() {
       } : formType === "creator" ? {
         name: formState.name,
         surname: formState.surname,
+        email: formState.email,
         phone: formState.phone,
         country: formState.country,
         instagram: formState.instagram,
@@ -336,7 +337,7 @@ export default function ContactClientPage() {
                   </div>
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">Global / MENA Desk</p>
-                    <p className="font-mono text-lg text-white/80">+971 4 000 0000</p>
+                    <p className="font-mono text-lg text-white/80">+971 545 360 453</p>
                   </div>
                 </div>
 
@@ -398,8 +399,8 @@ export default function ContactClientPage() {
                   {/* ── SHARED FIELDS: Name & Email ── */}
                   {formType !== "trendyol" && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      {formType === "creator" ? (
-                        <>
+                      {(formType === "creator" || formType === "noon") ? (
+                        <div className="grid grid-cols-2 gap-4">
                           <div className="flex flex-col gap-2">
                             <label htmlFor="name-input" className={labelClass}>Name</label>
                             <input 
@@ -422,63 +423,34 @@ export default function ContactClientPage() {
                               onChange={(e) => setFormState({ ...formState, surname: e.target.value })}
                             />
                           </div>
-                        </>
+                        </div>
                       ) : (
-                        <>
-                          {formType === "noon" ? (
-                            <div className="grid grid-cols-2 gap-4">
-                              <div className="flex flex-col gap-2">
-                                <label htmlFor="name-input" className={labelClass}>Name</label>
-                                <input 
-                                  id="name-input"
-                                  type="text" 
-                                  required
-                                  className={inputClass}
-                                  value={formState.name}
-                                  onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                                />
-                              </div>
-                              <div className="flex flex-col gap-2">
-                                <label htmlFor="surname-input" className={labelClass}>Surname</label>
-                                <input 
-                                  id="surname-input"
-                                  type="text" 
-                                  required
-                                  className={inputClass}
-                                  value={formState.surname}
-                                  onChange={(e) => setFormState({ ...formState, surname: e.target.value })}
-                                />
-                              </div>
-                            </div>
-                          ) : (
-                            <div className="flex flex-col gap-2">
-                              <label htmlFor="name-input" className={labelClass}>Full Name</label>
-                              <input 
-                                id="name-input"
-                                type="text" 
-                                required
-                                className={inputClass}
-                                value={formState.name}
-                                onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                              />
-                            </div>
-                          )}
-
-                          <div className="flex flex-col gap-2">
-                            <label htmlFor="email-input" className={labelClass}>
-                              {formType === "brand" ? "Business Email" : "Email Address"}
-                            </label>
-                            <input 
-                              id="email-input"
-                              type="email" 
-                              required
-                              className={inputClass}
-                              value={formState.email}
-                              onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                            />
-                          </div>
-                        </>
+                        <div className="flex flex-col gap-2">
+                          <label htmlFor="name-input" className={labelClass}>Full Name</label>
+                          <input 
+                            id="name-input"
+                            type="text" 
+                            required
+                            className={inputClass}
+                            value={formState.name}
+                            onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                          />
+                        </div>
                       )}
+
+                      <div className="flex flex-col gap-2">
+                        <label htmlFor="email-input" className={labelClass}>
+                          {formType === "brand" ? "Business Email" : "Email Address"}
+                        </label>
+                        <input 
+                          id="email-input"
+                          type="email" 
+                          required
+                          className={inputClass}
+                          value={formState.email}
+                          onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        />
+                      </div>
                     </div>
                   )}
 

@@ -56,7 +56,7 @@ export async function POST(request: Request) {
     // 2. Validate required fields based on form type
     const requiredFields: Record<string, string[]> = {
       brand: ["name", "email", "companyName", "website", "region", "serviceInterest", "message"],
-      creator: ["name", "surname", "phone", "country"],
+      creator: ["name", "surname", "email", "phone", "country"],
       trendyol: ["name", "surname", "phone", "country", "trendyolEmail", "contactEmail"],
       noon: ["name", "surname", "gender", "email", "phone"],
     }
@@ -73,14 +73,12 @@ export async function POST(request: Request) {
 
     // Simple email validation
     const email = body.email
-    if (formType !== "creator") {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-      if (!email || !emailRegex.test(email)) {
-        return NextResponse.json(
-          { error: "Please enter a valid email address." },
-          { status: 400 }
-        )
-      }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!email || !emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: "Please enter a valid email address." },
+        { status: 400 }
+      )
     }
 
     // 3. Resend setup and configuration validation

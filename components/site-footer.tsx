@@ -17,7 +17,7 @@ const FOOTER_LINKS = {
   ],
   Contact: [
     { label: "info@imediaff.com", href: "mailto:info@imediaff.com" },
-    { label: "+971 4 000 0000", href: "tel:+97140000000" },
+    { label: "+971 545 360 453", href: "tel:+971545360453" },
     { label: "Dubai, UAE", href: "/contact" },
     { label: "Request Proposal", href: "/contact" },
   ],

@@ -39,7 +39,7 @@ export default function SiteNav() {
   const [scrolled, setScrolled] = useState(false)
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null)
 
-  const isLightNav = !scrolled && (pathname === "/" || pathname === "/affiliate-programs")
+  const isLightNav = !scrolled && !open && (pathname === "/" || pathname === "/affiliate-programs")
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -95,7 +95,14 @@ export default function SiteNav() {
           {/* LEFT: Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="group flex items-center relative z-[60]">
-              <img src="/logo.png" alt="imediaff" className="h-10 w-auto object-contain" />
+              <img 
+                src={isLightNav ? "/logo-black.png" : "/logo-white.png"} 
+                alt="imediaff" 
+                className={cn(
+                  "w-auto object-contain transition-all duration-300",
+                  scrolled ? "h-10" : "h-12 min-[992px]:h-14"
+                )} 
+              />
             </Link>
           </div>
 
