@@ -114,9 +114,9 @@ export default function ScrollHero() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.4, ease: easeCustom }}
             >
-              <div className="relative w-48 h-20 md:w-72 md:h-28 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+              <div className="relative w-64 h-28 md:w-96 md:h-40 flex items-center justify-center drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
                 <Image
-                  src="/logo-black.png"
+                  src="/logo-map.png"
                   alt="iMediaff"
                   fill
                   className="object-contain"
@@ -126,7 +126,7 @@ export default function ScrollHero() {
 
               {/* Radar/Beacon Pulse Effect (Neutral) */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none">
-                <div className="w-56 h-56 md:w-80 md:h-80 rounded-full border border-black/10 animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
+                <div className="w-72 h-72 md:w-[400px] md:h-[400px] rounded-full border border-black/10 animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
               </div>
             </motion.div>
 
