@@ -46,8 +46,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${instrumentSans.variable} ${geistMono.variable} bg-background dark`}>
-      <body className="font-sans antialiased bg-background text-foreground overflow-x-hidden grain">
+    <html lang="en" className={`${instrumentSans.variable} ${geistMono.variable} bg-background dark`} suppressHydrationWarning>
+      <body className="font-sans antialiased bg-background text-foreground overflow-x-hidden grain" suppressHydrationWarning>
         <LenisProvider>
           <SiteNav />
           <main>{children}</main>
