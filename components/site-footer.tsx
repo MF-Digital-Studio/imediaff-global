@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 const FOOTER_LINKS = {
   Explore: [
@@ -53,9 +54,11 @@ export default function SiteFooter() {
             ))}
           </div>
           <div className="mt-8">
-            <img 
+            <Image 
               src="/iab_logo.svg" 
               alt="IAB Member" 
+              width={100}
+              height={40}
               className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity" 
             />
           </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef } from "react"
+import Image from "next/image"
 import { motion, useInView } from "motion/react"
 import { Target, Zap, ShieldCheck } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -109,10 +110,12 @@ export default function GlobalValue() {
                   "w-full h-full relative aspect-[16/9] md:aspect-[4/3] overflow-hidden rounded-xl",
                   isImageLeft ? "order-1" : "order-1 md:order-2"
                 )}>
-                  <img
+                  <Image
                     src={imageUrls[i]}
                     alt={imageAlts[i]}
-                    className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
 

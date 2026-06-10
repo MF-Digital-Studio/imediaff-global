@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
@@ -95,9 +96,11 @@ export default function SiteNav() {
           {/* LEFT: Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="group flex items-center relative z-[60]">
-              <img 
+              <Image 
                 src={isLightNav ? "/logo-black.png" : "/logo-white.png"} 
                 alt="imediaff" 
+                width={164}
+                height={56}
                 className={cn(
                   "w-auto object-contain transition-all duration-300",
                   scrolled ? "h-10" : "h-12 min-[992px]:h-14"

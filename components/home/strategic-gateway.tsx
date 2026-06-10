@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef } from "react"
+import Image from "next/image"
 import { motion, useInView } from "motion/react"
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
@@ -162,10 +163,12 @@ export default function StrategicGateway() {
 
                 {/* Top Image */}
                 <div className="w-full h-[200px] relative overflow-hidden">
-                  <img 
+                  <Image 
                     src={cityImages[i]} 
                     alt={cityAlts[i]} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105" 
                   />
                 </div>
 

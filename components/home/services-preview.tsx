@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "motion/react"
 import { Sparkles, Target, Users, LineChart, Globe2, LayoutDashboard } from "lucide-react"
 
@@ -78,10 +79,12 @@ export default function ServicesPreview() {
                 className="group relative h-[360px] lg:h-[480px] rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 ease-out hover:scale-[1.02] border border-transparent hover:border-white/15 cursor-pointer"
               >
                 {/* Full Card Background Image */}
-                <img 
+                <Image 
                   src={serviceImages[index]} 
                   alt={serviceAlts[index]} 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
                 />
 
                 {/* Default Gradient Overlay (rgba(0,0,0,0.92) at bottom) */}

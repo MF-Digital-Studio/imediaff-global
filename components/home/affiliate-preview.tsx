@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "motion/react"
 import { useState } from "react"
 
@@ -26,9 +27,11 @@ export default function AffiliatePreview() {
             <div className="lg:col-span-7">
               <div className="flex flex-wrap items-center gap-4 mb-8 md:mb-12">
                 <div className="h-20 flex items-center relative">
-                  <img
+                  <Image
                     src="/logos/trendyol-logo.png"
                     alt="trendyol"
+                    width={180}
+                    height={60}
                     className="w-[180px] h-auto object-contain brightness-0 invert"
                     style={{ display: trendyolLogoError ? 'none' : 'block' }}
                     onError={() => setTrendyolLogoError(true)}
@@ -86,9 +89,11 @@ export default function AffiliatePreview() {
             <div className="lg:col-span-7">
               <div className="flex flex-wrap items-center gap-4 mb-8 md:mb-12">
                 <div className="h-20 flex items-center relative">
-                  <img
+                  <Image
                     src="/logos/noon-logo.png"
                     alt="noon"
+                    width={140}
+                    height={46}
                     className="w-[140px] h-auto object-contain brightness-0"
                     style={{ display: noonLogoError ? 'none' : 'block' }}
                     onError={() => setNoonLogoError(true)}
