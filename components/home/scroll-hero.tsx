@@ -96,6 +96,8 @@ export default function ScrollHero() {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
                 alt="World Map Silhouette"
+                width={1400}
+                height={700}
                 className="w-full h-auto max-h-[80vh] object-contain"
                 style={{
                   filter: 'invert(27%) sepia(91%) saturate(2258%) hue-rotate(216deg) brightness(105%) contrast(115%) drop-shadow(0 0 20px rgba(37, 99, 235, 0.2))',
