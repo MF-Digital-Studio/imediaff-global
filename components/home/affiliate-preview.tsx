@@ -52,7 +52,7 @@ export default function AffiliatePreview() {
                 TrendFam by Trendyol
               </h3>
               <p className="text-white/90 leading-relaxed text-lg md:text-xl font-sans max-w-2xl">
-                Access Turkey's largest marketplace affiliate network across CEE, Gulf, and Azerbaijan — with the highest commission rates in the market and full agency support.
+                Access Turkey's largest marketplace affiliate network across Europe, Gulf, and Azerbaijan — with the highest commission rates in the market and full agency support.
               </p>
             </div>
 
@@ -147,3 +147,4 @@ export default function AffiliatePreview() {
     </section>
   )
 }
+

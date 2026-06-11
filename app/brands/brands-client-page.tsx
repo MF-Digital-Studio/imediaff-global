@@ -67,7 +67,7 @@ export default function BrandsClientPage() {
               International <br /> Authority.
             </h1>
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/60 leading-relaxed font-sans">
-              iMediaff Global is one of Trendyol&apos;s top 3 authorized partner agencies worldwide — giving brands direct access to a vetted network of influencers across Turkey, CEE, Gulf, and Azerbaijan. We don&apos;t just run campaigns. We build performance-driven affiliate ecosystems that generate measurable revenue.
+              iMediaff Global is one of Trendyol&apos;s top 3 authorized partner agencies worldwide — giving brands direct access to a vetted network of influencers across Turkey, Europe, Gulf, and Azerbaijan. We don&apos;t just run campaigns. We build performance-driven affiliate ecosystems that generate measurable revenue.
             </p>
           </motion.div>
         </div>
@@ -116,7 +116,7 @@ export default function BrandsClientPage() {
               {
                 num: "01",
                 title: "Direct Influencer Access",
-                desc: "Tap into a vetted network of 5,000+ active influencers across Turkey, CEE, Gulf, and Azerbaijan — all operating under structured 1-year contracts with verified performance data.",
+                desc: "Tap into a vetted network of 5,000+ active influencers across Turkey, Europe, Gulf, and Azerbaijan — all operating under structured 1-year contracts with verified performance data.",
               },
               {
                 num: "02",
@@ -126,7 +126,7 @@ export default function BrandsClientPage() {
               {
                 num: "03",
                 title: "Regional Market Entry",
-                desc: "Whether you're entering MENA, Gulf, CEE, or Azerbaijan — iMediaff provides the cultural fluency, local network, and operational infrastructure to launch and scale with confidence.",
+                desc: "Whether you're entering MENA, Gulf, Europe, or Azerbaijan — iMediaff provides the cultural fluency, local network, and operational infrastructure to launch and scale with confidence.",
               },
             ].map((card, i) => (
               <motion.div
@@ -474,7 +474,7 @@ export default function BrandsClientPage() {
             Ready to Scale Your Brand<br />Across 4 Regions?
           </h2>
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
-            Partner with iMediaff Global — one of Trendyol&apos;s top 3 authorized agencies. Access a vetted influencer network, custom brand offer campaigns, and full operational support across Turkey, CEE, Gulf, and Azerbaijan.
+            Partner with iMediaff Global — one of Trendyol&apos;s top 3 authorized agencies. Access a vetted influencer network, custom brand offer campaigns, and full operational support across Turkey, Europe, Gulf, and Azerbaijan.
           </p>
           <Link
             href="/contact?type=brand"
@@ -488,3 +488,4 @@ export default function BrandsClientPage() {
     </main>
   )
 }
+

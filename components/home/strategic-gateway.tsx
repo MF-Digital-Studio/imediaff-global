@@ -33,7 +33,7 @@ const REGIONS = [
     stat: "Primary Market",
   },
   {
-    city: "CEE & Azerbaijan",
+    city: "Europe & Azerbaijan",
     role: "Growth Markets",
     description:
       "Active since October 2024 across Romania, Poland, Bulgaria, Greece, and Azerbaijan — our fastest-growing affiliate markets. Performance-based TrendFam operations.",
@@ -217,3 +217,4 @@ export default function StrategicGateway() {
     </section>
   )
 }
+

@@ -17,7 +17,7 @@ const NAV_ITEMS = [
     label: "Talent",
     href: "/talent",
     subItems: [
-      { label: "CEE Region", href: "/talent/cee", flags: "🇷🇴 🇵🇱 🇧🇬 🇬🇷" },
+      { label: "Europe Region", href: "/talent/europe", flags: "🇬🇧 🇩🇪 🇳🇱 🇷🇴 🇵🇱 🇧🇬 🇬🇷" },
       { label: "Gulf Region", href: "/talent/gulf", flags: "🇸🇦 🇦🇪 🇰🇼" },
       { label: "Turkey", href: "/talent/turkey", flags: "🇹🇷" },
       { label: "Azerbaijan", href: "/talent/azerbaijan", flags: "🇦🇿" }
@@ -326,3 +326,4 @@ export default function SiteNav() {
     </>
   )
 }
+

@@ -18,13 +18,13 @@ const FOOTER_LINKS = {
   ],
   Contact: [
     { label: "info@imediaff.com", href: "mailto:info@imediaff.com" },
-    { label: "+971 545 360 453", href: "tel:+971545360453" },
+    { label: "+971 50 863 8598", href: "tel:+971508638598" },
     { label: "Dubai, UAE", href: "/contact" },
     { label: "Request Proposal", href: "/contact" },
   ],
   Offices: [
     {
-      label: "Istanbul HQ: Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, 34720 Kadikoy/Istanbul",
+      label: "Istanbul HQ: Fikirtepe Mah. Hizirbey Cad. Fortis Sinanli Yeni Kadikoy, Kadikoy/Istanbul",
       href: "/contact",
       isAddress: true
     },

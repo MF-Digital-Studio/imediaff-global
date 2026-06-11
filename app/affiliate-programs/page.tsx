@@ -115,7 +115,7 @@ export default function AffiliateProgramsPage() {
                   TrendFam is Trendyol's official commission-based influencer program. As one of its top 3 global partner agencies, iMediaff opens the doors of this professional affiliate network — inaccessible to individual applicants — with full corporate backing and operational support.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-10">
-                  {["CEE", "Gulf", "Turkey", "Azerbaijan"].map((reg) => (
+                  {["Europe", "Gulf", "Turkey", "Azerbaijan"].map((reg) => (
                     <span key={reg} className="inline-flex items-center gap-1.5 border border-white/30 rounded-lg px-3 py-1.5 text-xs font-semibold text-white">
                       <span className="w-1 h-1 rounded-full bg-white" />
                       {reg}
@@ -206,7 +206,7 @@ export default function AffiliateProgramsPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            {/* Card A: CEE */}
+            {/* Card A: Europe */}
             <motion.div
               {...fadeUp(0.1)}
               className="group relative rounded-3xl p-8 md:p-10 bg-black/10 backdrop-blur-sm border border-white/20 hover:bg-black/20 transition-all duration-500 flex flex-col justify-between h-full"
@@ -220,7 +220,7 @@ export default function AffiliateProgramsPage() {
                 </div>
                 <p className="font-mono text-[10px] text-white/80 font-bold uppercase tracking-wider mb-6">Active since October 2024</p>
                 <p className="text-white leading-relaxed font-sans mb-8 text-sm">
-                  European-standard integration for high-engagement creators in CEE markets. Individual applications are not accepted — iMediaff provides the authorized agency gateway into this professional network.
+                  European-standard integration for high-engagement creators in Europe markets. Individual applications are not accepted — iMediaff provides the authorized agency gateway into this professional network.
                 </p>
 
                 <div className="space-y-4 border-t border-white/20 pt-6 mb-10">
@@ -239,10 +239,10 @@ export default function AffiliateProgramsPage() {
               </div>
 
               <Link
-                href="/talent/cee"
+                href="/talent/europe"
                 className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.2em] font-bold text-white hover:text-black transition-colors mt-auto"
               >
-                View CEE Program
+                View Europe Program
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </Link>
             </motion.div>
@@ -622,7 +622,7 @@ export default function AffiliateProgramsPage() {
               <thead>
                 <tr className="border-b border-white/[0.08] bg-[#C8B2F8] text-[#0a0a0a]">
                   <th className="p-6 font-display text-base font-bold uppercase tracking-wider">Feature</th>
-                  <th className="p-6 font-display text-base font-bold uppercase tracking-wider">TrendFam CEE</th>
+                  <th className="p-6 font-display text-base font-bold uppercase tracking-wider">TrendFam Europe</th>
                   <th className="p-6 font-display text-base font-bold uppercase tracking-wider">TrendFam Gulf</th>
                   <th className="p-6 font-display text-base font-bold uppercase tracking-wider">TrendFam Azerbaijan</th>
                   <th className="p-6 font-display text-base font-bold uppercase tracking-wider">Noon MENA</th>
@@ -707,7 +707,7 @@ export default function AffiliateProgramsPage() {
             Ready to Apply <br /> Globally?
           </h2>
           <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto mb-10 font-sans">
-            Apply through iMediaff Global — your authorized gateway to TrendFam and Noon affiliate programs across MENA, CEE, Gulf, and Azerbaijan.
+            Apply through iMediaff Global — your authorized gateway to TrendFam and Noon affiliate programs across MENA, Europe, Gulf, and Azerbaijan.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
             <Link
@@ -723,3 +723,4 @@ export default function AffiliateProgramsPage() {
     </main>
   )
 }
+

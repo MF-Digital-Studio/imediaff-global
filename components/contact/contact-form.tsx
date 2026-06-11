@@ -34,7 +34,7 @@ export default function ContactForm() {
 
           <div className="mt-10 space-y-4 border-t border-border pt-8">
             <InfoRow k="Email" v="info@imediaff.com" href="mailto:info@imediaff.com" />
-            <InfoRow k="Phone" v="+971 545 360 453" href="tel:+971545360453" />
+            <InfoRow k="Phone" v="+971 50 863 8598" href="tel:+971508638598" />
             <InfoRow k="Studio" v="Dubai, UAE" />
             <InfoRow k="Creator Applications" v="creators@imediaff.global" href="mailto:creators@imediaff.global" />
           </div>

@@ -27,7 +27,7 @@ const PRESENCE = [
     note: "Regional headquarters for Gulf and MENA partnerships. Active TrendFam operations across KSA, UAE, and Kuwait.",
   },
   {
-    region: "CEE & AZ",
+    region: "Europe & AZ",
     city: "Growth Markets",
     note: "Active since October 2024 across Romania, Poland, Bulgaria, Greece, and Azerbaijan — our fastest-growing affiliate markets.",
   },
@@ -57,7 +57,7 @@ const CAPABILITIES = [
     index: "02",
     title: "Market Entry & Growth",
     description:
-      "Strategic entry into MENA, Gulf, CEE, and Azerbaijani markets with local cultural fluency, network access, and full operational infrastructure.",
+      "Strategic entry into MENA, Gulf, Europe, and Azerbaijani markets with local cultural fluency, network access, and full operational infrastructure.",
   },
   {
     index: "03",
@@ -144,7 +144,7 @@ export default function AboutClientPage() {
             imediaff Global connects brands and creators through a unified strategic model built for market relevance, cultural fluency, and measurable growth.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/40 md:text-lg">
-            As one of Trendyol&apos;s top 3 global partner agencies, we manage affiliate and influencer marketing operations across Turkey, CEE, Gulf, and Azerbaijan — delivering structured, transparent, and performance-based partnerships.
+            As one of Trendyol&apos;s top 3 global partner agencies, we manage affiliate and influencer marketing operations across Turkey, Europe, Gulf, and Azerbaijan — delivering structured, transparent, and performance-based partnerships.
           </p>
         </motion.div>
       </section>
@@ -488,7 +488,7 @@ export default function AboutClientPage() {
                 </p>
                 {p.name === "Trendyol" && (
                   <p className="mt-2 text-xs leading-relaxed text-gray-500">
-                    iMediaff is one of Trendyol&apos;s top 3 authorized global partner agencies — managing TrendFam operations across MENA, CEE, Turkey, and Azerbaijan.
+                    iMediaff is one of Trendyol&apos;s top 3 authorized global partner agencies — managing TrendFam operations across MENA, Europe, Turkey, and Azerbaijan.
                   </p>
                 )}
               </motion.div>
@@ -569,3 +569,4 @@ export default function AboutClientPage() {
     </main>
   )
 }
+

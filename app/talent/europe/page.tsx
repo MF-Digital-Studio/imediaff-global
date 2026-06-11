@@ -11,10 +11,37 @@ import {
   Layers, Share2, Calendar, User, Tag, Network, RefreshCw
 } from "lucide-react"
 
-export default function CeePage() {
-  const [activeTab, setActiveTab] = useState<'romania' | 'bulgaria' | 'greece'>('romania')
+export default function EuropePage() {
+  const [activeTab, setActiveTab] = useState<'uk' | 'germany' | 'netherlands' | 'romania' | 'bulgaria' | 'greece'>('uk')
 
   const countryData = {
+    uk: {
+      name: "UK 🇬🇧",
+      copy: "The UK operates with a unified Inlink and Outlink commission model. A maximum earning cap may apply.",
+      inlinkRate: "75%",
+      outlinkRate: "75%",
+      maxEarning: "€150",
+      inlinkExample: "You share a curated collection link. Your follower clicks your link and buys a product from it → In-link.",
+      outlinkExample: "You share a product link. Your follower clicks it but buys a different product instead → Out-link."
+    },
+    germany: {
+      name: "Germany 🇩🇪",
+      copy: "Germany operates with a unified Inlink and Outlink commission model. A maximum earning cap may apply.",
+      inlinkRate: "75%",
+      outlinkRate: "75%",
+      maxEarning: "€150",
+      inlinkExample: "You share a curated collection link. Your follower clicks your link and buys a product from it → In-link.",
+      outlinkExample: "You share a product link. Your follower clicks it but buys a different product instead → Out-link."
+    },
+    netherlands: {
+      name: "Netherlands 🇳🇱",
+      copy: "The Netherlands operates with a unified Inlink and Outlink commission model. A maximum earning cap may apply.",
+      inlinkRate: "75%",
+      outlinkRate: "75%",
+      maxEarning: "€150",
+      inlinkExample: "You share a curated collection link. Your follower clicks your link and buys a product from it → In-link.",
+      outlinkExample: "You share a product link. Your follower clicks it but buys a different product instead → Out-link."
+    },
     romania: {
       name: "Romania 🇷🇴",
       copy: "Romania operates with a differentiated commission model: Inlink commissions may reach 100%, while Outlink commissions may reach 50%. A maximum earning cap of 100 € may apply.",
@@ -141,7 +168,7 @@ export default function CeePage() {
             {[
               { icon: Users, title: "10,000+ Followers", desc: "Minimum 10k followers on Instagram" },
               { icon: TrendingUp, title: "High Engagement", desc: "Organic and active audience engagement" },
-              { icon: Globe, title: "CEE Region", desc: "Account registered in Romania, Poland, Bulgaria, or Greece" },
+              { icon: Globe, title: "Europe Region", desc: "Account registered in UK, Germany, Netherlands, Romania, Poland, Bulgaria, or Greece" },
               { icon: Building2, title: "Agency Partner", desc: "Must apply through an authorized agency" }
             ].map((req, i) => (
               <div key={i} className="bg-[#1a1a1a] border border-[#2a2a2a] shadow-[0_4px_24px_rgba(0,0,0,0.4)] p-8 rounded-2xl">

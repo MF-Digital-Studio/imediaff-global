@@ -45,20 +45,23 @@ export default function TalentClientPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1 — CEE Region */}
-            <Link href="/talent/cee" className="group flex flex-col bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl hover:bg-[#f3f4f6] hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
+            {/* Card 1 — Europe Region */}
+            <Link href="/talent/europe" className="group flex flex-col bg-[#f9fafb] border border-[#e5e7eb] shadow-[0_1px_4px_rgba(0,0,0,0.06)] p-8 rounded-3xl hover:bg-[#f3f4f6] hover:border-[#2563EB]/50 transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563EB]/5 blur-2xl rounded-full group-hover:bg-[#2563EB]/10 transition-colors" />
               <div className="flex flex-wrap gap-1.5 mb-4 z-10">
-                <span className="px-2.5 py-0.5 text-xs font-bold bg-[#2563EB]/10 text-[#2563EB] rounded-full">CEE</span>
+                <span className="px-2.5 py-0.5 text-xs font-bold bg-[#2563EB]/10 text-[#2563EB] rounded-full">Europe</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">UK</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">DE</span>
+                <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">NL</span>
                 <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">RO</span>
                 <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">PL</span>
                 <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">BG</span>
                 <span className="px-2.5 py-0.5 text-xs font-semibold bg-[#ffffff] border border-[#e5e7eb] text-[#374151] rounded-full shadow-[0_1px_2px_rgba(0,0,0,0.02)]">GR</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-[#111827] group-hover:text-[#2563EB] transition-colors">CEE Region</h3>
-              <p className="text-sm text-[#374151] mb-4 font-semibold">Romania, Poland, Bulgaria, Greece</p>
+              <h3 className="text-2xl font-bold mb-2 text-[#111827] group-hover:text-[#2563EB] transition-colors">Europe</h3>
+              <p className="text-sm text-[#374151] mb-4 font-semibold">UK, Germany, Netherlands, Romania, Poland, Bulgaria, Greece</p>
               <p className="text-[#4b5563] text-sm flex-grow mb-8 leading-relaxed">
-                Commission-based influencer program via TrendFam for creators in Central & Eastern Europe.
+                Commission-based influencer program via TrendFam for creators in Europe.
               </p>
               <div className="flex items-center text-sm font-bold text-[#2563EB] group-hover:text-[#1d4ed8] transition-colors mt-auto">
                 View Program <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -133,7 +136,7 @@ export default function TalentClientPage() {
         >
           <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-8">Ready to Start Earning?</h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-            Apply through iMediaff Global, operating across MENA and Central & Eastern Europe.
+            Apply through iMediaff Global, operating across MENA and Europe.
           </p>
           <Link 
             href="/contact?type=creator"

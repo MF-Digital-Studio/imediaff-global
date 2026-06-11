@@ -27,18 +27,18 @@ const REGIONS = [
     hoverBorder: "#16A34A",
   },
   {
-    emoji: "🇷🇴 🇵🇱 🇧🇬 🇬🇷",
-    title: "CEE",
+    emoji: "🇬🇧 🇩🇪 🇳🇱 🇷🇴 🇵🇱 🇧🇬 🇬🇷",
+    title: "Europe",
     tag: "Active since Oct 2024",
-    desc: "Active since October 2024 across Romania, Poland, Bulgaria, and Greece. Performance-based affiliate program via TrendFam.",
-    href: "/talent/cee",
+    desc: "Active since October 2024 across UK, Germany, Netherlands, Romania, Poland, Bulgaria, and Greece. Performance-based affiliate program via TrendFam.",
+    href: "/talent/europe",
     accentColor: "rgba(37,99,235,0.10)",
     hoverBorder: "#2563EB",
   },
   {
-    emoji: "🇦🇿",
-    title: "Azerbaijan",
-    tag: "Growth Market",
+    emoji: "🇦🇿 🇺🇿 🇰🇿",
+    title: "Azerbaijan, Uzbekistan & Kazakhstan",
+    tag: "Growth Markets",
     desc: "Trendyol affiliate operations with segment-based commission rates and monthly coupon reward system.",
     href: "/talent/azerbaijan",
     accentColor: "rgba(22,163,74,0.08)",
@@ -175,3 +175,4 @@ export default function RegionsGrid() {
     </section>
   )
 }
+

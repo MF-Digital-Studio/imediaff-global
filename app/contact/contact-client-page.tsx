@@ -15,7 +15,7 @@ const fadeUp = (delay = 0) => ({
 const OFFICES = [
   {
     name: "Headquarters (Istanbul)",
-    address: "Fikirtepe Mah. Hizirbey Cad. No:25/C Fortis Sinanli Yeni Kadikoy, G Block, D-Entrance, Floor: 1, D:06, Kadikoy/Istanbul",
+    address: "Fikirtepe Mah. Hizirbey Cad. Fortis Sinanli Yeni Kadikoy, Kadikoy/Istanbul",
   },
   {
     name: "Innovation Hub (Istanbul)",
@@ -337,13 +337,13 @@ export default function ContactClientPage() {
                   </div>
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">Global / MENA Desk</p>
-                    <p className="font-mono text-lg text-white/80">+971 545 360 453</p>
+                    <p className="font-mono text-lg text-white/80">+971 50 863 8598</p>
                   </div>
                 </div>
 
                 <div className="pt-6">
                   <a 
-                    href="https://wa.me/971545360453" 
+                    href="https://wa.me/971508638598" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-6 py-3 font-mono text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors"

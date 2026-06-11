@@ -184,7 +184,7 @@ export default function ScrollHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.0, delay: 0.8, ease: easeCustom }}
           >
-            A Dubai-headquartered influencer and affiliate marketing agency — one of Trendyol&apos;s top 3 global partner agencies, operating across MENA, CEE, Gulf, Turkey, and Azerbaijan.
+            A Dubai-headquartered influencer and affiliate marketing agency — one of Trendyol&apos;s top 3 global partner agencies, operating across MENA, Europe, Gulf, Turkey, and Azerbaijan.
           </motion.p>
 
           <motion.div
@@ -216,3 +216,4 @@ export default function ScrollHero() {
     </motion.section>
   )
 }
+

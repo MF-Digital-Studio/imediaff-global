@@ -31,9 +31,9 @@ const DETAILED_SERVICES = [
   },
   {
     title: "Market Entry & Regional Expansion",
-    description: "Strategic entry into MENA, CEE, Gulf, and Azerbaijan markets. Cultural fluency, local network access, and full operational infrastructure for confident regional scaling.",
+    description: "Strategic entry into MENA, Europe, Gulf, and Azerbaijan markets. Cultural fluency, local network access, and full operational infrastructure for confident regional scaling.",
     image: "/services/service-04.jpg",
-    features: ["MENA", "CEE", "Gulf & Azerbaijan"],
+    features: ["MENA", "Europe", "Gulf & Azerbaijan"],
   },
   {
     title: "Legal & Financial Advisory",
@@ -89,7 +89,7 @@ export default function ServicesClientPage() {
             Not just growth,<br />transformation.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/60 md:text-xl">
-            From affiliate program management to creative production and legal advisory — iMediaff Global delivers end-to-end solutions for brands and creators across Turkey, CEE, Gulf, and Azerbaijan.
+            From affiliate program management to creative production and legal advisory — iMediaff Global delivers end-to-end solutions for brands and creators across Turkey, Europe, Gulf, and Azerbaijan.
           </p>
         </motion.div>
       </section>
@@ -267,3 +267,4 @@ export default function ServicesClientPage() {
     </main>
   )
 }
+
