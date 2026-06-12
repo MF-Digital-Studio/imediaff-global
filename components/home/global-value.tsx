@@ -64,12 +64,12 @@ export default function GlobalValue() {
           {PILLARS.map((pillar, i) => {
             const isImageLeft = i % 2 === 0
             const imageUrls = [
-              "/images/home/architects/strategic-precision.jpg",
+              "/images/home/architects/strategic-precision-v2.jpg",
               "/images/home/architects/operational-speed.jpg",
               "/images/home/architects/radical-transparency.jpg"
             ]
             const imageAlts = [
-              "Strategic team planning and data-led campaign coordination",
+              "Strategic campaign planning and performance review workflow",
               "Mobile-first creator production setup for fast campaign execution",
               "Transparent business agreement and partnership documentation process"
             ]
