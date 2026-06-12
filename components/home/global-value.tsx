@@ -64,14 +64,14 @@ export default function GlobalValue() {
           {PILLARS.map((pillar, i) => {
             const isImageLeft = i % 2 === 0
             const imageUrls = [
-              "/architects/strategic-precision.jpg",
-              "/architects/operational-speed.jpg",
-              "/architects/radical-transparency.jpg"
+              "/images/home/architects/strategic-precision.jpg",
+              "/images/home/architects/operational-speed.jpg",
+              "/images/home/architects/radical-transparency.jpg"
             ]
             const imageAlts = [
-              "Strategic influencer-brand matching and performance analytics",
-              "Influencer creating content with TrendFam affiliate links",
-              "Transparent contract signing and commission tracking"
+              "Strategic team planning and data-led campaign coordination",
+              "Mobile-first creator production setup for fast campaign execution",
+              "Transparent business agreement and partnership documentation process"
             ]
 
             return (
@@ -117,6 +117,7 @@ export default function GlobalValue() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/5 to-transparent pointer-events-none rounded-xl" />
                 </div>
 
                 {/* Text Side */}
