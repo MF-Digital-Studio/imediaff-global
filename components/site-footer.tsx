@@ -87,7 +87,8 @@ export default function SiteFooter() {
         <div className="mx-auto max-w-[1600px] px-6 md:px-10 py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">© {new Date().getFullYear()} imediaff Global. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors">KVKK / Privacy Policy</Link>
+            <Link href="/kvkk" className="font-mono text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors">KVKK</Link>
+            <Link href="#" className="font-mono text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors">Privacy Policy</Link>
             <a href="https://www.mfdigitalstudio.com" target="_blank" rel="noopener noreferrer" className="font-mono font-bold text-[10px] uppercase tracking-widest text-white/40 hover:text-white transition-colors">Designed by MF Digital Studio</a>
           </div>
           <p className="font-mono text-[10px] uppercase tracking-widest text-white/40">Dubai / Riyadh / London / Istanbul</p>

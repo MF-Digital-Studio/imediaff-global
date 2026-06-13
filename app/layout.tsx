@@ -5,6 +5,7 @@ import "./globals.css"
 import SiteNav from "@/components/site-nav"
 import SiteFooter from "@/components/site-footer"
 import LenisProvider from "@/components/providers/LenisProvider"
+import CookieConsent from "@/components/cookie-consent"
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
           <SiteNav />
           <main>{children}</main>
           <SiteFooter />
+          <CookieConsent />
           {process.env.NODE_ENV === "production" && <Analytics />}
         </LenisProvider>
       </body>
