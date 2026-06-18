@@ -333,11 +333,11 @@ export default function ContactClientPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">TR Operations</p>
-                    <p className="font-mono text-lg text-white/80">+90 216 606 53 59</p>
+                    <a href="tel:+902166065359" className="font-mono text-lg text-white/80 hover:text-[#2563EB] transition-colors inline-block">+90 216 606 53 59</a>
                   </div>
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2">Global / MENA Desk</p>
-                    <p className="font-mono text-lg text-white/80">+971 50 863 8598</p>
+                    <a href="tel:+971508638598" className="font-mono text-lg text-white/80 hover:text-[#2563EB] transition-colors inline-block">+971 50 863 8598</a>
                   </div>
                 </div>
 
