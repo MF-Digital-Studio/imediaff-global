@@ -29,10 +29,6 @@ export const metadata: Metadata = {
       "The global hub for influencer power and 360° digital media execution across Dubai and MENA.",
     type: "website",
   },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
-  },
 }
 
 export const viewport = {
