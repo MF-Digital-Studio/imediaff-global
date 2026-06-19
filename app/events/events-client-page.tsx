@@ -49,12 +49,13 @@ export default function EventsClientPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative aspect-[4/3] lg:aspect-auto h-full w-full overflow-hidden bg-black/20">
                 <Image
-                  src={featuredEvent.coverImage}
-                  alt={featuredEvent.title}
-                  fill
-                  className="object-cover transition-transform duration-[1500ms] group-hover:scale-105 will-change-transform"
-                  unoptimized
-                />
+                   src={featuredEvent.coverImage}
+                   alt={featuredEvent.title}
+                   fill
+                   className="object-cover transition-transform duration-[1500ms] group-hover:scale-105 will-change-transform"
+                   sizes="(max-width: 1024px) 100vw, 50vw"
+                   priority
+                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent lg:hidden pointer-events-none" />
               </div>
               <div className="flex flex-col justify-center p-8 md:p-16 lg:p-20 relative z-10 lg:bg-black/40 lg:backdrop-blur-sm">
@@ -133,7 +134,7 @@ export default function EventsClientPage() {
                     alt={event.title}
                     fill
                     className="object-cover transition-transform duration-[1200ms] group-hover:scale-105 will-change-transform"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full font-mono text-[10px] uppercase tracking-[0.1em] text-white">

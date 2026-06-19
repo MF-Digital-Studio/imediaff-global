@@ -82,7 +82,7 @@ function ParallaxImage({
       }`}
     >
       <motion.div style={{ y }} className="absolute inset-[-10%] w-[120%] h-[120%]">
-        <Image src={src} alt={alt} fill className="object-cover" unoptimized />
+        <Image src={src} alt={alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
         {/* Subtle overlay to ensure text/UI stands out if needed, or just for mood */}
         {theme === "black" && (
           <div className="absolute inset-0 bg-black/10 mix-blend-multiply" />

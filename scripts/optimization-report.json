@@ -1,0 +1,277 @@
+{
+  "totalSaved": "18.44 MB",
+  "results": [
+    {
+      "file": "brand.png → .jpg",
+      "before": "2.08 MB",
+      "after": "217.7 KB",
+      "saved": "1.87 MB",
+      "pct": "89.8%",
+      "status": "CONVERTED_TO_JPG"
+    },
+    {
+      "file": "cinematic-production.png → .jpg",
+      "before": "724.2 KB",
+      "after": "149.9 KB",
+      "saved": "574.3 KB",
+      "pct": "79.3%",
+      "status": "CONVERTED_TO_JPG"
+    },
+    {
+      "file": "logo-map.png",
+      "before": "357.9 KB",
+      "after": "329.8 KB",
+      "saved": "28.2 KB",
+      "pct": "7.9%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "logo.png",
+      "before": "270.5 KB",
+      "after": "270.5 KB",
+      "saved": "0",
+      "pct": "0%",
+      "status": "ALREADY_OPTIMIZED"
+    },
+    {
+      "file": "baku-flame-towers.png",
+      "before": "355.1 KB",
+      "after": "310.4 KB",
+      "saved": "44.8 KB",
+      "pct": "12.6%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "trendyol-showcase.png",
+      "before": "273.9 KB",
+      "after": "273.9 KB",
+      "saved": "0",
+      "pct": "0%",
+      "status": "ALREADY_OPTIMIZED"
+    },
+    {
+      "file": "home\\noon-card.jpg",
+      "before": "1.03 MB",
+      "after": "227.3 KB",
+      "saved": "823.6 KB",
+      "pct": "78.4%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\trendyol-card.jpg",
+      "before": "618.0 KB",
+      "after": "101.0 KB",
+      "saved": "517.0 KB",
+      "pct": "83.7%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\talent\\talent-01.jpg",
+      "before": "753.3 KB",
+      "after": "122.4 KB",
+      "saved": "630.9 KB",
+      "pct": "83.8%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\talent\\talent-02.jpg",
+      "before": "790.3 KB",
+      "after": "143.7 KB",
+      "saved": "646.7 KB",
+      "pct": "81.8%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\talent\\talent-03.jpg",
+      "before": "806.4 KB",
+      "after": "153.5 KB",
+      "saved": "652.9 KB",
+      "pct": "81.0%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\talent\\talent-04.jpg",
+      "before": "808.0 KB",
+      "after": "144.9 KB",
+      "saved": "663.0 KB",
+      "pct": "82.1%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\talent\\talent-05.jpg",
+      "before": "705.3 KB",
+      "after": "110.9 KB",
+      "saved": "594.4 KB",
+      "pct": "84.3%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "home\\talent\\talent-06.jpg",
+      "before": "881.3 KB",
+      "after": "179.1 KB",
+      "saved": "702.2 KB",
+      "pct": "79.7%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "services\\service-01.jpg",
+      "before": "618.0 KB",
+      "after": "101.0 KB",
+      "saved": "517.0 KB",
+      "pct": "83.7%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "services\\service-02.jpg",
+      "before": "753.3 KB",
+      "after": "122.4 KB",
+      "saved": "630.9 KB",
+      "pct": "83.8%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "services\\service-03.jpg",
+      "before": "790.3 KB",
+      "after": "143.7 KB",
+      "saved": "646.7 KB",
+      "pct": "81.8%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "services\\service-04.jpg",
+      "before": "1.03 MB",
+      "after": "227.3 KB",
+      "saved": "823.6 KB",
+      "pct": "78.4%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "services\\service-05.jpg",
+      "before": "705.3 KB",
+      "after": "110.9 KB",
+      "saved": "594.4 KB",
+      "pct": "84.3%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "services\\service-06.jpg",
+      "before": "806.4 KB",
+      "after": "153.5 KB",
+      "saved": "652.9 KB",
+      "pct": "81.0%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "affiliate-programs\\brand-network.jpg",
+      "before": "946.1 KB",
+      "after": "189.5 KB",
+      "saved": "756.6 KB",
+      "pct": "80.0%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "affiliate-programs\\consultancy.jpg",
+      "before": "753.3 KB",
+      "after": "122.4 KB",
+      "saved": "630.9 KB",
+      "pct": "83.8%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "affiliate-programs\\legal-payouts.jpg",
+      "before": "778.2 KB",
+      "after": "137.3 KB",
+      "saved": "640.8 KB",
+      "pct": "82.4%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "affiliate-programs\\tech-shield.jpg",
+      "before": "618.0 KB",
+      "after": "101.0 KB",
+      "saved": "517.0 KB",
+      "pct": "83.7%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "images\\home\\architects\\operational-speed.jpg",
+      "before": "305.0 KB",
+      "after": "175.9 KB",
+      "saved": "129.1 KB",
+      "pct": "42.3%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "images\\home\\architects\\radical-transparency.jpg",
+      "before": "114.7 KB",
+      "after": "68.3 KB",
+      "saved": "46.4 KB",
+      "pct": "40.4%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "images\\home\\architects\\strategic-precision-v2.jpg",
+      "before": "142.7 KB",
+      "after": "81.2 KB",
+      "saved": "61.5 KB",
+      "pct": "43.1%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\algorithm-intelligence-tiktok-2026.jpg",
+      "before": "1.00 MB",
+      "after": "236.2 KB",
+      "saved": "791.2 KB",
+      "pct": "77.0%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\generative-influence-ai.jpg",
+      "before": "875.0 KB",
+      "after": "177.4 KB",
+      "saved": "697.6 KB",
+      "pct": "79.7%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\how-to-do-affiliate-marketing.jpg",
+      "before": "699.8 KB",
+      "after": "129.2 KB",
+      "saved": "570.6 KB",
+      "pct": "81.5%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\verification-economy.jpg",
+      "before": "663.5 KB",
+      "after": "96.3 KB",
+      "saved": "567.2 KB",
+      "pct": "85.5%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\what-is-affiliate-marketing.jpg",
+      "before": "596.2 KB",
+      "after": "96.8 KB",
+      "saved": "499.4 KB",
+      "pct": "83.8%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\what-is-an-influencer.jpg",
+      "before": "691.8 KB",
+      "after": "122.8 KB",
+      "saved": "569.0 KB",
+      "pct": "82.3%",
+      "status": "OPTIMIZED"
+    },
+    {
+      "file": "blog\\covers\\what-is-influencer-marketing.jpg",
+      "before": "963.4 KB",
+      "after": "215.6 KB",
+      "saved": "747.8 KB",
+      "pct": "77.6%",
+      "status": "OPTIMIZED"
+    }
+  ]
+}

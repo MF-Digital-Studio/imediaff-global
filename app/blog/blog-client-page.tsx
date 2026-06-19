@@ -58,7 +58,7 @@ export default function BlogClientPage() {
                     alt={post.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    unoptimized
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </Link>
                 <div className="flex flex-col flex-grow">
@@ -110,7 +110,7 @@ export default function BlogClientPage() {
                       alt={post.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      unoptimized
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     {/* Subtle overlay to fit the black theme */}
                     <div className="absolute inset-0 bg-black/10 mix-blend-multiply" />
@@ -167,7 +167,8 @@ export default function BlogClientPage() {
                     alt={featurePost.title}
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-105"
-                    unoptimized
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
                   />
                   {/* Gradient mask to blend with black */}
                   <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-l from-black via-black/50 to-transparent" />

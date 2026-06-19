@@ -122,6 +122,7 @@ export default function ScrollHero() {
                   alt="iMediaff"
                   fill
                   className="object-contain"
+                  sizes="(max-width: 768px) 256px, 384px"
                   priority
                 />
               </div>

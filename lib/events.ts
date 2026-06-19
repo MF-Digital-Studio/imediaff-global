@@ -39,7 +39,7 @@ export const EVENTS: EventItem[] = [
     category: "Experiential Marketing / Influencer Event",
     excerpt: "The Yumos Uzbekistan Tashkent City Park Event successfully combined influencer marketing, consumer engagement and on-ground brand interaction to create a high-impact activation.",
     description: "Yumos organized a large-scale experiential marketing event at Tashkent City Park, bringing together influencers, consumers and brand enthusiasts in an immersive activation. The event generated significant online engagement, extensive content creation and strong brand visibility through influencer participation and product distribution activities.\n\nCreating Massive Brand Visibility Through Influencer-Powered Experiences.\n\nThe Yumos Uzbekistan Tashkent City Park Event successfully combined influencer marketing, consumer engagement and on-ground brand interaction to create a high-impact activation. With more than 7.3 million video views, over 650,000 visitors and hundreds of influencer-generated contents, the campaign achieved exceptional reach and awareness both online and offline.",
-    coverImage: "/events/yumos-day/1.jpg",
+    coverImage: "/events/yumos-day/opt/1-hero.webp",
     featured: true,
     stats: [
       { value: 246828, label: "Engagement" },

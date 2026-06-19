@@ -23,8 +23,9 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
              src={post.image} 
              alt={post.title} 
              fill 
-             className="object-cover" 
-             unoptimized 
+             className="object-cover"
+             priority
+             sizes="100vw"
            />
            {/* Dark gradient overlay to ensure text readability */}
            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20" />
@@ -87,7 +88,7 @@ export default function BlogDetailClientPage({ post, allPosts }: { post: any, al
                          alt={p.title} 
                          fill 
                          className="object-cover transition-transform duration-700 group-hover:scale-105" 
-                         unoptimized 
+                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                        />
                      </div>
                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-3">{p.category}</span>

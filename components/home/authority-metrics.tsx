@@ -323,7 +323,7 @@ function ProductionVisual({ visible }: { visible: boolean }) {
           }}
         >
           <Image
-            src="/cinematic-production.png"
+            src="/cinematic-production.jpg"
             alt="Cinematic production setup representing iMediaff's high-end influencer marketing content"
             fill
             sizes="(max-width: 768px) 340px, 420px"

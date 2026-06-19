@@ -576,7 +576,7 @@ export default function AffiliateProgramsPage() {
                     alt={block.title}
                     fill
                     className="object-cover transition-transform duration-700 hover:scale-102"
-                    unoptimized
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent" />
                 </motion.div>

@@ -148,7 +148,7 @@ export default function ServicesClientPage() {
                         src={service.image} 
                         alt={service.title} 
                         fill 
-                        unoptimized
+                        sizes="(max-width: 768px) 100vw, 66vw"
                         className="object-cover"
                       />
                     </motion.div>

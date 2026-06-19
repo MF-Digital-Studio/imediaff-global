@@ -241,7 +241,7 @@ export default function AboutClientPage() {
       >
         <motion.div style={{ y: brandY }} className="absolute inset-0 scale-[1.2]">
           <Image
-            src="/brand.png"
+            src="/brand.jpg"
             alt="imediaff Global brand visual"
             fill
             priority

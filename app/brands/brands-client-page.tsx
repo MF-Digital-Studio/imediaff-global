@@ -37,7 +37,7 @@ function ParallaxImage({
     <div ref={ref} className={`relative w-full h-[480px] md:h-[600px] overflow-hidden rounded-2xl ${theme === 'white' ? 'shadow-2xl' : ''}`}>
       {/* image */}
       <motion.div style={{ y }} className="absolute inset-[-10%] w-[120%] h-[120%]">
-        <Image src={src} alt={alt} fill className="object-cover" unoptimized />
+        <Image src={src} alt={alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
       </motion.div>
 
       {/* gradient masks – blend left or right edge into background */}
