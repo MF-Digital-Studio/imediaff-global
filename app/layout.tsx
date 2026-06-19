@@ -22,7 +22,15 @@ export const metadata: Metadata = {
   title: "imediaff Global | 360° Digital Agency",
   description:
     "imediaff Global connects world-class creators and ambitious brands across Dubai and the MENA region through strategy, creativity, and measurable growth.",
-  generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/icon.svg?v=2", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-icon.png?v=2", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "imediaff Global | 360° Digital Agency",
     description:
